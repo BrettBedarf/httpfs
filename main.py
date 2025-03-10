@@ -1,45 +1,66 @@
 #!/usr/bin/env python3
-import llfuse
-import stat
-import time
-import threading
-import socket
-import json
-import requests
-import os
-import sys
 import errno
-import signal
+import json
 import logging
+import os
+import signal
+import socket
+import stat
+import sys
+import threading
+import time
+import llfuse
+import requests
 from llfuse import EntryAttributes
+import cachetools
+import asyncio
+import aiohttp
+
+# This should not block execution
+# debugpy.listen(("0.0.0.0", 5678))
+# print("Debugpy is listening on port 5678; wait_for_client")
+# debugpy.wait_for_client()
 
 # Global mapping of local filenames to HTTP URLs.
 FILES = {
-    "Running Point S01E01 Pilot 1080p NF WEB-DL DDP5 1 Atmos H 264-FLUX.mkv": "https://easydebrid.com/cdndownload/R2uzVaKTAPmsJpMq7YdEiat6BBHEd9C0/Xq9Kqi5OhWan6824yODmOyIckdZ3b7mkIloMCmpaEDT2dxQNw8Wmckr_jMbMvtZCF-QoGeAJJeZsbNn5B2RK3V4X9TdhGios_cR_fuvOG3FMETBPInYzlZFw01X095vuLHpuTgvDYl5mxzCLGFXht1lGJ73Fy80_PGqYGf619kj9Q6Dk0qOxYQpLlU0MRtBFBIT-PTRju9TJzjZn8t_--Hjkqtu_VsMv5qLAawC-4EAihf6WxBI9t6PFz0-8sUhebImeVggyfTQs1TDBHn_PnHjI5noA5hJjj-1GZxTTS8r94Y7Ydo8m77xBeUUOdWkJXCYfk4F8_4_MW4g7K0mBfEpgwxUcYFdSNRuxZWEH5JtZweBGiujPX6NrfRcBTg/Running%2520Point%2520S01E01%2520Pilot%25201080p%2520NF%2520WEB-DL%2520DDP5%25201%2520Atmos%2520H%2520264-STC%255BEZTVx.to%255D.mkv",
+    "Running Point S01E01 Pilot 1080p NF WEB-DL DDP5 1 Atmos H 264-FLUX.mkv": "https://easydebrid.com/cdndownload/WwSCAwMuo_qMAU1Q7k2SnBOGBVQELdd0/l5JjZHC_kkDieUaIX3YYG6xSu99bC1iyDLYxGEs3dsG054HfYM5Hf4X1h64K8zFXIK6n8nJuakPwhe9OrcXpcNpknZvf3cix4qwILbOvByv-RUpXltwdy9a3XmAQxAJiOemLJikMh7toFAKhqqm8DLhZroHRslqAlnocgOBUDE65PvkcaX_0nW4JRBsdS1Y4SYSDSU8GdTIwYhKaAEA2-NCc8JlRzKZIjQl9FB02dpwNOcFAWU7MPk9QfRpcvpEsI0afpzK4Uz2FAyNOwEqIL4FPkEepTXm-xuvyKxrzJMQSGQBM7bIIVtDugR2JjBWakqOzzBXk7E5PMw4fswPWZvUi9YhLqYWKtB2nOZrfFuiL/Running%2520Point%2520S01E01%2520Pilot%25201080p%2520NF%2520WEB-DL%2520DDP5%25201%2520Atmos%2520H%2520264-FLUX.mkv"
 }
 
 FILES_LOCK = threading.Lock()
 INODE_MAP = {}  # filename -> inode
 NEXT_INODE = 2  # starting inode (root is 1)
 
+# Read cache configuration
+DEFAULT_CHUNK_SIZE = 2 * 1024 * 1024  # 4MB per chunk
+CACHE_MAX_SIZE = 200 * 1024 * 1024  # 100MB total
+NUM_CACHE_CHUNKS = CACHE_MAX_SIZE // DEFAULT_CHUNK_SIZE
+MAX_PREFETCH_AHEAD = 100 * 1024 * 1024  # e.g., 100MB ahead
+# How many chunks to fetch concurrently each batch.
+PREFETCH_BATCH_SIZE = 8
+
 # Setup debug logging.
 logging.basicConfig(
     level=logging.DEBUG, format="%(asctime)s [%(levelname)s] %(message)s"
 )
 
+file_attributes_cache = {}
+
 
 def get_file_attr(filename: str) -> EntryAttributes:
     logging.debug("Getting file attributes for '%s'", filename)
+    if filename in file_attributes_cache:
+        logging.debug("Returning cached file attributes for '%s'", filename)
+        return file_attributes_cache[filename]
     attr = EntryAttributes()
-    with FILES_LOCK:
-        inode = INODE_MAP.get(filename)
-        url = FILES.get(filename)
+    inode = INODE_MAP.get(filename)
+    url = FILES.get(filename)
     if inode is None or url is None:
         logging.error("File not found: '%s'", filename)
         raise FileNotFoundError
 
     try:
-        r = requests.head(url)
+        logging.info("Fetching HEAD from remote")
+        r = requests.head(url, allow_redirects=True)
         size = int(r.headers.get("Content-Length", 0))
         logging.debug("Size of '%s': %d bytes", filename, size)
     except Exception as e:
@@ -56,6 +77,9 @@ def get_file_attr(filename: str) -> EntryAttributes:
     attr.st_mtime_ns = now_ns
     attr.st_ctime_ns = now_ns
     attr.st_nlink = 1
+    # cache so we don't keep firing http requests every read
+    file_attributes_cache[filename] = attr
+
     return attr
 
 
@@ -75,16 +99,187 @@ def get_root_attr() -> EntryAttributes:
     return attr
 
 
+# LRU cache to store chunks
+file_chunk_cache = cachetools.LRUCache(maxsize=NUM_CACHE_CHUNKS)
+cache_lock = threading.Lock()
+
+# Global dict for per-chunk events
+ongoing_requests = {}
+ongoing_lock = threading.Lock()
+
+# Global dict to track active prefetch threads per URL
+prefetch_threads = {}
+prefetch_lock = threading.Lock()
+
+
+# Global mapping: file URL -> persistent requests.Session
+sessions = {}
+session_lock = threading.Lock()
+IDLE_TIMEOUT = 300  # seconds
+
+
+def get_session_for_url(url):
+    now = time.time()
+    with session_lock:
+        if url in sessions:
+            session, _ = sessions[url]
+            sessions[url] = (session, now)
+            return session
+        else:
+            s = requests.Session()
+            sessions[url] = (s, now)
+            return s
+
+
+def cleanup_sessions():
+    while True:
+        time.sleep(60)  # check every minute
+        now = time.time()
+        with session_lock:
+            for url in list(sessions.keys()):
+                session, last_used = sessions[url]
+                if now - last_used > IDLE_TIMEOUT:
+                    session.close()
+                    del sessions[url]
+                    # also clear the redirect cache
+                    del redirect_cache[url]
+
+
+# Start cleanup thread
+threading.Thread(target=cleanup_sessions, daemon=True).start()
+
+# Global cache for resolved URLs
+redirect_cache = {}
+redirect_cache_lock = threading.Lock()
+
+
+def resolve_redirect(url):
+    with redirect_cache_lock:
+        if url in redirect_cache:
+            return redirect_cache[url]
+    session = get_session_for_url(url)
+    r = session.head(url, allow_redirects=True)
+    final_url = r.url
+    with redirect_cache_lock:
+        redirect_cache[url] = final_url
+    return final_url
+
+
+def maybe_prefetch(url, current_read_offset):
+    # Determine how far we've cached for this URL.
+    with cache_lock:
+        cached_offsets = [off for (u, off) in file_chunk_cache if u == url]
+    highest_cached = max(cached_offsets) if cached_offsets else current_read_offset
+    target = current_read_offset + MAX_PREFETCH_AHEAD
+    if highest_cached < target:
+        # Spawn a thread to prefetch continuously from the current highest offset up to the target.
+        threading.Thread(
+            target=prefetch,
+            args=(url, highest_cached, DEFAULT_CHUNK_SIZE, target - highest_cached),
+            daemon=True,
+        ).start()
+
+
+async def fetch_chunk(session, url, offset, chunk_size):
+    headers = {"Range": f"bytes={offset}-{offset + chunk_size - 1}"}
+    async with session.get(url, headers=headers) as response:
+        if response.status in (200, 206):
+            return await response.read()
+        else:
+            raise Exception(f"HTTP error {response.status}")
+
+
+# Async function to fetch multiple chunks concurrently.
+async def fetch_chunks_async(url, offsets, chunk_size):
+    async with aiohttp.ClientSession() as session:
+        tasks = [fetch_chunk(session, url, offset, chunk_size) for offset in offsets]
+        return await asyncio.gather(*tasks)
+
+
+# Synchronous wrapper around the async function.
+def fetch_chunks_sync(url, offsets, chunk_size):
+    return asyncio.run(fetch_chunks_async(url, offsets, chunk_size))
+
+
+def get_file_chunk(file_url, chunk_start, chunk_size):
+    cache_key = (file_url, chunk_start)
+    with cache_lock:
+        if cache_key in file_chunk_cache:
+            return file_chunk_cache[cache_key]
+
+    is_ongoing = False
+    with ongoing_lock:
+        event = ongoing_requests.get(cache_key)
+        if event:
+            is_ongoing = True
+        else:
+            event = threading.Event()
+            ongoing_requests[cache_key] = event
+    if is_ongoing:
+        # Wait for the fetching thread to complete
+        event.wait()
+        with cache_lock:
+            return file_chunk_cache.get(cache_key, b"")
+    else:
+        chunk = fetch_chunks_sync(file_url, chunk_start, chunk_size)
+        with cache_lock:
+            file_chunk_cache[cache_key] = chunk
+        with ongoing_lock:
+            ongoing_requests[cache_key].set()  # important to signal waiting threads
+            del ongoing_requests[cache_key]
+        return chunk
+
+
+def prefetch(url, start_offset, chunk_size, max_prefetch_bytes):
+    """
+    Prefetch multiple chunks at once until we fill up max_prefetch_bytes.
+    """
+    current = start_offset
+    end_offset = start_offset + max_prefetch_bytes
+
+    while current < end_offset:
+        # Accumulate a list of offsets we still need (and aren't cached yet).
+        offsets_to_fetch = []
+        for _ in range(PREFETCH_BATCH_SIZE):
+            if current >= end_offset:
+                break
+            cache_key = (url, current)
+            with cache_lock:
+                # If it's already cached, skip it
+                if cache_key in file_chunk_cache:
+                    current += chunk_size
+                    continue
+            offsets_to_fetch.append(current)
+            current += chunk_size
+
+        # If we didn't find any offsets to fetch this round, break out
+        if not offsets_to_fetch:
+            break
+
+        # Now fetch them in one async batch
+        chunks = fetch_chunks_sync(url, offsets_to_fetch, chunk_size)
+        # Store them in the cache
+        with cache_lock:
+            for i, offset in enumerate(offsets_to_fetch):
+                file_chunk_cache[(url, offset)] = chunks[i]
+
+    # Remove thread marker when done
+    with prefetch_lock:
+        prefetch_threads.pop(url, None)
+
+
 class HTTPFS(llfuse.Operations):
     def lookup(self, parent_inode, name, ctx):
-        logging.debug("lookup: parent_inode=%d, name=%s", parent_inode, name)
         if parent_inode != llfuse.ROOT_INODE:
             logging.error("lookup: non-root parent inode %d", parent_inode)
             raise llfuse.FUSEError(errno.ENOENT)
         filename = name.decode("utf-8") if isinstance(name, bytes) else name
+        # if filename[0] != ".":
+        #     logging.debug("lookup: parent_inode=%d, name=%s", parent_inode, name)
         with FILES_LOCK:
             if filename not in FILES:
-                logging.error("lookup: '%s' not found", filename)
+                # if filename[0] != ".":
+                # logging.error("lookup: '%s' not found", filename)
                 raise llfuse.FUSEError(errno.ENOENT)
             inode = INODE_MAP.get(filename)
             if inode is None:
@@ -140,6 +335,29 @@ class HTTPFS(llfuse.Operations):
         if flags & (os.O_WRONLY | os.O_RDWR):
             logging.error("open: write access denied for inode=%d", inode)
             raise llfuse.FUSEError(errno.EACCES)
+        with FILES_LOCK:
+            filename = next((fn for fn, ino in INODE_MAP.items() if ino == inode), None)
+            url = FILES.get(filename) if filename else None
+        if filename and url:
+            cache_key = (url, 0)
+            with cache_lock:
+                # Only start prefetch if the first chunk isn't already cached or fetching
+                if cache_key not in file_chunk_cache:
+                    with prefetch_lock:
+                        if url not in prefetch_threads:
+                            file_size = get_file_attr(filename).st_size
+                            t = threading.Thread(
+                                target=prefetch,
+                                args=(
+                                    url,
+                                    0,
+                                    DEFAULT_CHUNK_SIZE,
+                                    min(CACHE_MAX_SIZE, file_size, 10 * 1024 * 1024),
+                                ),
+                                daemon=True,
+                            )
+                            prefetch_threads[url] = t
+                            t.start()
         return inode
 
     def read(self, fh, off, size):
@@ -147,19 +365,40 @@ class HTTPFS(llfuse.Operations):
         with FILES_LOCK:
             filename = next((fn for fn, ino in INODE_MAP.items() if ino == fh), None)
             if filename is None:
-                logging.error("read: inode %d not found", fh)
                 raise llfuse.FUSEError(errno.ENOENT)
             url = FILES.get(filename)
         if not url:
-            logging.error("read: URL for '%s' not found", filename)
             raise llfuse.FUSEError(errno.ENOENT)
-        headers = {"Range": f"bytes={off}-{off + size - 1}"}
-        r = requests.get(url, headers=headers)
-        if r.status_code in (200, 206):
-            logging.debug("read: read %d bytes from '%s'", len(r.content), url)
-            return r.content
-        logging.error("read: HTTP error %d for '%s'", r.status_code, url)
-        return b""
+
+        # Determine chunk boundaries covering the requested range.
+        start_offset = off - (off % DEFAULT_CHUNK_SIZE)
+        end_offset = off + size  # Offsets at which each chunk starts
+        offsets = list(range(start_offset, end_offset, DEFAULT_CHUNK_SIZE))
+        # If range() is empty, force at least one offset
+        if not offsets:
+            offsets = [start_offset]
+
+        # Fetch all needed chunks concurrently.
+        # fetch_chunks_sync expects a list of offsets.
+        chunks = fetch_chunks_sync(url, offsets, DEFAULT_CHUNK_SIZE)
+
+        # Assemble the requested data:
+        data = bytearray()
+        for i, chunk in enumerate(chunks):
+            # For the first chunk, start at the proper offset.
+            if i == 0:
+                start_in_chunk = off - start_offset
+                data.extend(chunk[start_in_chunk:])
+            else:
+                data.extend(chunk)
+        # Trim data to exactly 'size' bytes.
+        result = bytes(data[:size])
+
+        # Trigger prefetch for data beyond what was just read.
+        maybe_prefetch(url, off + size)
+
+        logging.debug("read: returning %d bytes", len(result))
+        return result
 
 
 def listen_for_updates(port=9000):
