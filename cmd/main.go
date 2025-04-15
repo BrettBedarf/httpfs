@@ -30,6 +30,9 @@ func NewHttpFS() *HttpFS {
 	}
 }
 
+// TODO: see if the higher-lvl v2/fs lib has default method implementations for boilerplate
+// methods
+
 func (fs *HttpFS) String() string {
 	return "httpfs"
 }
