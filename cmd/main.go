@@ -5,10 +5,18 @@ import (
 	"log"
 	"os"
 	"os/signal"
+	"sync"
 	"syscall"
 
 	"github.com/brettbedarf/httpfs/util"
 	"github.com/hanwen/go-fuse/v2/fuse"
+)
+
+var (
+	nextInode   uint64       = 2                       // starting inode (root is 1)
+	sourceFiles              = make(map[string]string) // filename -> url mapping
+	inodeMap                 = make(map[string]uint64) // filename -> inode mapping
+	filesLock   sync.RWMutex                           // lock for accessing the above maps
 )
 
 // HttpFS implements the FUSE filesystem
@@ -24,6 +32,97 @@ func NewHttpFS() *HttpFS {
 
 func (fs *HttpFS) String() string {
 	return "httpfs"
+}
+
+func (fs *HttpFS) ReadDir(cancel <-chan struct{}, input *fuse.ReadIn, out *fuse.DirEntryList) fuse.Status {
+	logger := util.GetLogger("readdir")
+	logger.Debug().
+		Uint64("fh", input.Fh).
+		Int("offset", int(input.Offset)).
+		Msg("ReadDir called")
+
+	// Only allow reading the root directory for simplicity
+	if input.NodeId != fuse.FUSE_ROOT_ID {
+		logger.Error().
+			Uint64("inode", input.NodeId).
+			Msg("ReadDir: inode is not root")
+		return fuse.ENOTDIR
+	}
+
+	// Start at the provided offset
+	startIdx := int(input.Offset)
+
+	// First, add "." and ".." entries if we're at the beginning
+	if startIdx == 0 {
+		rootAttr := getRootAttr()
+		if !out.AddDirEntry(fuse.DirEntry{
+			Name: ".",
+			Mode: uint32(syscall.S_IFDIR | 0755),
+			Ino:  fuse.FUSE_ROOT_ID,
+		}) {
+			// Buffer is full
+			return fuse.OK
+		}
+		startIdx++
+	}
+
+	if startIdx == 1 {
+		if !out.AddDirEntry(fuse.DirEntry{
+			Name: "..",
+			Mode: uint32(syscall.S_IFDIR | 0755),
+			Ino:  fuse.FUSE_ROOT_ID, // Parent of root is root
+		}) {
+			// Buffer is full
+			return fuse.OK
+		}
+		startIdx++
+	}
+
+	// Now add file entries
+	filesLock.RLock()
+	defer filesLock.RUnlock()
+
+	idx := 2 // We've already processed . and ..
+	for filename := range sourceFiles {
+		// Skip entries before the requested offset
+		if idx < startIdx {
+			idx++
+			continue
+		}
+
+		// Get inode for this file
+		inode, exists := inodeMap[filename]
+		if !exists {
+			logger.Warn().
+				Str("filename", filename).
+				Msg("ReadDir: no inode found for file")
+			idx++
+			continue
+		}
+
+		// Get file attributes
+		attr := getFileAttr(filename)
+
+		// Add this entry to the result
+		if !out.AddDirEntry(fuse.DirEntry{
+			Name: filename,
+			Mode: uint32(syscall.S_IFREG | 0444), // Regular file, read-only
+			Ino:  inode,
+		}) {
+			// The buffer is full, but we were able to add some entries.
+			// We'll return OK and let the kernel call us again with a new offset.
+			return fuse.OK
+		}
+
+		logger.Debug().
+			Str("filename", filename).
+			Uint64("inode", inode).
+			Msg("ReadDir: added entry")
+
+		idx++
+	}
+
+	return fuse.OK
 }
 
 func main() {
@@ -48,7 +147,6 @@ func main() {
 
 	// Create filesystem
 	fs := NewHttpFS()
-
 	opts := &fuse.MountOptions{
 		FsName: "httpfs",
 		Name:   "httpfs",
