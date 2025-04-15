@@ -1,0 +1,9 @@
+2025-03-11 21:25:54,009 [DEBUG] Initializing pyfuse3
+2025-03-11 21:25:54,009 [DEBUG] Calling fuse_session_new
+2025-03-11 21:25:54,009 [DEBUG] Calling fuse_session_mount
+2025-03-11 21:25:54,012 [INFO] FUSE filesystem mounted on '/mnt/httpfs'
+2025-03-11 21:25:54,013 [INFO] Update server listening on port 9000
+2025-03-11 21:25:54,013 [DEBUG] pyfuse-02: No tasks waiting, starting another worker (now 2 total).
+2025-03-11 21:25:55,088 [INFO] Unmounting filesystem
+2025-03-11 21:25:55,088 [DEBUG] Calling fuse_session_unmount
+2025-03-11 21:25:55,091 [DEBUG] Calling fuse_session_destroy

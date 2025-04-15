@@ -1,0 +1,2243 @@
+2025-03-11 18:54:00,945 [DEBUG] Initializing pyfuse3
+2025-03-11 18:54:00,945 [DEBUG] Calling fuse_session_new
+2025-03-11 18:54:00,945 [DEBUG] Calling fuse_session_mount
+2025-03-11 18:54:00,948 [INFO] FUSE filesystem mounted on '/mnt/httpfs'
+2025-03-11 18:54:00,948 [INFO] Update server listening on port 9000
+2025-03-11 18:54:00,949 [DEBUG] pyfuse-02: No tasks waiting, starting another worker (now 2 total).
+2025-03-11 18:54:02,716 [DEBUG] getattr: inode=1
+2025-03-11 18:54:02,716 [DEBUG] Getting root attributes
+2025-03-11 18:54:02,716 [DEBUG] get_root_attr took 0.0001 seconds
+2025-03-11 18:54:02,725 [DEBUG] opendir: inode=1
+2025-03-11 18:54:02,725 [DEBUG] readdir: fh=1, start_id=0
+2025-03-11 18:54:02,725 [DEBUG] Getting root attributes
+2025-03-11 18:54:02,726 [DEBUG] get_root_attr took 0.0001 seconds
+2025-03-11 18:54:02,726 [DEBUG] Getting root attributes
+2025-03-11 18:54:02,726 [DEBUG] get_root_attr took 0.0000 seconds
+2025-03-11 18:54:02,726 [DEBUG] Getting file attributes for 'BigBuckBunny.mp4'
+2025-03-11 18:54:02,726 [INFO] Fetching HEAD from remote
+2025-03-11 18:54:02,727 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 18:54:02,899 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/BigBuckBunny.mp4 HTTP/1.1" 200 0
+2025-03-11 18:54:02,900 [DEBUG] Size of 'BigBuckBunny.mp4': 158008374 bytes
+2025-03-11 18:54:02,900 [DEBUG] get_file_attr took 0.1743 seconds
+2025-03-11 18:54:02,900 [DEBUG] readdir: adding entry 'BigBuckBunny.mp4'
+2025-03-11 18:54:02,900 [DEBUG] Getting file attributes for 'ElephantsDream.mp4'
+2025-03-11 18:54:02,900 [INFO] Fetching HEAD from remote
+2025-03-11 18:54:02,901 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 18:54:03,024 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/ElephantsDream.mp4 HTTP/1.1" 200 0
+2025-03-11 18:54:03,024 [DEBUG] Size of 'ElephantsDream.mp4': 169612362 bytes
+2025-03-11 18:54:03,024 [DEBUG] get_file_attr took 0.1239 seconds
+2025-03-11 18:54:03,024 [DEBUG] readdir: adding entry 'ElephantsDream.mp4'
+2025-03-11 18:54:03,024 [DEBUG] Getting file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:03,024 [INFO] Fetching HEAD from remote
+2025-03-11 18:54:03,025 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 18:54:03,150 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/ForBiggerBlazes.mp4 HTTP/1.1" 200 0
+2025-03-11 18:54:03,150 [DEBUG] Size of 'ForBiggerBlazes.mp4': 2498125 bytes
+2025-03-11 18:54:03,150 [DEBUG] get_file_attr took 0.1263 seconds
+2025-03-11 18:54:03,150 [DEBUG] readdir: adding entry 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:03,150 [DEBUG] Getting file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 18:54:03,150 [INFO] Fetching HEAD from remote
+2025-03-11 18:54:03,151 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 18:54:03,284 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/ForBiggerEscapes.mp4 HTTP/1.1" 200 0
+2025-03-11 18:54:03,284 [DEBUG] Size of 'ForBiggerEscapes.mp4': 2299653 bytes
+2025-03-11 18:54:03,284 [DEBUG] get_file_attr took 0.1338 seconds
+2025-03-11 18:54:03,284 [DEBUG] readdir: adding entry 'ForBiggerEscapes.mp4'
+2025-03-11 18:54:03,284 [DEBUG] Getting file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:03,284 [INFO] Fetching HEAD from remote
+2025-03-11 18:54:03,285 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 18:54:03,421 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/ForBiggerFun.mp4 HTTP/1.1" 200 0
+2025-03-11 18:54:03,421 [DEBUG] Size of 'ForBiggerFun.mp4': 12917485 bytes
+2025-03-11 18:54:03,421 [DEBUG] get_file_attr took 0.1366 seconds
+2025-03-11 18:54:03,421 [DEBUG] readdir: adding entry 'ForBiggerFun.mp4'
+2025-03-11 18:54:03,421 [DEBUG] Getting file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 18:54:03,421 [INFO] Fetching HEAD from remote
+2025-03-11 18:54:03,421 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 18:54:03,548 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/ForBiggerJoyrides.mp4 HTTP/1.1" 200 0
+2025-03-11 18:54:03,548 [DEBUG] Size of 'ForBiggerJoyrides.mp4': 2372820 bytes
+2025-03-11 18:54:03,548 [DEBUG] get_file_attr took 0.1269 seconds
+2025-03-11 18:54:03,548 [DEBUG] readdir: adding entry 'ForBiggerJoyrides.mp4'
+2025-03-11 18:54:03,548 [DEBUG] Getting file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:03,548 [INFO] Fetching HEAD from remote
+2025-03-11 18:54:03,548 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 18:54:03,676 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4 HTTP/1.1" 200 0
+2025-03-11 18:54:03,677 [DEBUG] Size of 'ForBiggerMeltdowns.mp4': 2252313 bytes
+2025-03-11 18:54:03,677 [DEBUG] get_file_attr took 0.1287 seconds
+2025-03-11 18:54:03,677 [DEBUG] readdir: adding entry 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:03,677 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:03,677 [INFO] Fetching HEAD from remote
+2025-03-11 18:54:03,677 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 18:54:03,806 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/Sintel.mp4 HTTP/1.1" 200 0
+2025-03-11 18:54:03,806 [DEBUG] Size of 'Sintel.mp4': 190612452 bytes
+2025-03-11 18:54:03,806 [DEBUG] get_file_attr took 0.1291 seconds
+2025-03-11 18:54:03,806 [DEBUG] readdir: adding entry 'Sintel.mp4'
+2025-03-11 18:54:03,806 [DEBUG] Getting file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:03,806 [INFO] Fetching HEAD from remote
+2025-03-11 18:54:03,806 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 18:54:03,943 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4 HTTP/1.1" 200 0
+2025-03-11 18:54:03,943 [DEBUG] Size of 'SubaruOutbackOnStreetAndDirt.mp4': 48051822 bytes
+2025-03-11 18:54:03,943 [DEBUG] get_file_attr took 0.1369 seconds
+2025-03-11 18:54:03,943 [DEBUG] readdir: adding entry 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:03,943 [DEBUG] Getting file attributes for 'TearsOfSteel.mp4'
+2025-03-11 18:54:03,943 [INFO] Fetching HEAD from remote
+2025-03-11 18:54:03,943 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 18:54:04,072 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/TearsOfSteel.mp4 HTTP/1.1" 200 0
+2025-03-11 18:54:04,072 [DEBUG] Size of 'TearsOfSteel.mp4': 185765954 bytes
+2025-03-11 18:54:04,072 [DEBUG] get_file_attr took 0.1296 seconds
+2025-03-11 18:54:04,073 [DEBUG] readdir: adding entry 'TearsOfSteel.mp4'
+2025-03-11 18:54:04,073 [DEBUG] Getting file attributes for 'VolkswagenGTIReview.mp4'
+2025-03-11 18:54:04,073 [INFO] Fetching HEAD from remote
+2025-03-11 18:54:04,073 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 18:54:04,206 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/VolkswagenGTIReview.mp4 HTTP/1.1" 200 0
+2025-03-11 18:54:04,206 [DEBUG] Size of 'VolkswagenGTIReview.mp4': 43780763 bytes
+2025-03-11 18:54:04,206 [DEBUG] get_file_attr took 0.1335 seconds
+2025-03-11 18:54:04,206 [DEBUG] readdir: adding entry 'VolkswagenGTIReview.mp4'
+2025-03-11 18:54:04,206 [DEBUG] Getting file attributes for 'WeAreGoingOnBullrun.mp4'
+2025-03-11 18:54:04,206 [INFO] Fetching HEAD from remote
+2025-03-11 18:54:04,207 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 18:54:04,334 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4 HTTP/1.1" 200 0
+2025-03-11 18:54:04,334 [DEBUG] Size of 'WeAreGoingOnBullrun.mp4': 13183260 bytes
+2025-03-11 18:54:04,334 [DEBUG] get_file_attr took 0.1279 seconds
+2025-03-11 18:54:04,334 [DEBUG] readdir: adding entry 'WeAreGoingOnBullrun.mp4'
+2025-03-11 18:54:04,334 [DEBUG] Getting file attributes for 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 18:54:04,334 [INFO] Fetching HEAD from remote
+2025-03-11 18:54:04,335 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 18:54:04,484 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4 HTTP/1.1" 200 0
+2025-03-11 18:54:04,484 [DEBUG] Size of 'WhatCarCanYouGetForAGrand.mp4': 45577410 bytes
+2025-03-11 18:54:04,484 [DEBUG] get_file_attr took 0.1500 seconds
+2025-03-11 18:54:04,484 [DEBUG] readdir: adding entry 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 18:54:04,484 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 18:54:04,485 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 18:54:04,485 [DEBUG] readdir: fh=1, start_id=15
+2025-03-11 18:54:04,485 [DEBUG] Getting root attributes
+2025-03-11 18:54:04,485 [DEBUG] get_root_attr took 0.0000 seconds
+2025-03-11 18:54:04,485 [DEBUG] Getting root attributes
+2025-03-11 18:54:04,485 [DEBUG] get_root_attr took 0.0000 seconds
+2025-03-11 18:54:04,485 [DEBUG] Getting file attributes for 'BigBuckBunny.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Returning cached file attributes for 'BigBuckBunny.mp4'
+2025-03-11 18:54:04,485 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,485 [DEBUG] readdir: adding entry 'BigBuckBunny.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Getting file attributes for 'ElephantsDream.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Returning cached file attributes for 'ElephantsDream.mp4'
+2025-03-11 18:54:04,485 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,485 [DEBUG] readdir: adding entry 'ElephantsDream.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Getting file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Returning cached file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:04,485 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,485 [DEBUG] readdir: adding entry 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Getting file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Returning cached file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 18:54:04,485 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,485 [DEBUG] readdir: adding entry 'ForBiggerEscapes.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Getting file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Returning cached file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:04,485 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,485 [DEBUG] readdir: adding entry 'ForBiggerFun.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Getting file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Returning cached file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 18:54:04,485 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,485 [DEBUG] readdir: adding entry 'ForBiggerJoyrides.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Getting file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Returning cached file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:04,485 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,485 [DEBUG] readdir: adding entry 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 18:54:04,485 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,485 [DEBUG] readdir: adding entry 'Sintel.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Getting file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Returning cached file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:04,485 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,485 [DEBUG] readdir: adding entry 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Getting file attributes for 'TearsOfSteel.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Returning cached file attributes for 'TearsOfSteel.mp4'
+2025-03-11 18:54:04,485 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,485 [DEBUG] readdir: adding entry 'TearsOfSteel.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Getting file attributes for 'VolkswagenGTIReview.mp4'
+2025-03-11 18:54:04,485 [DEBUG] Returning cached file attributes for 'VolkswagenGTIReview.mp4'
+2025-03-11 18:54:04,485 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,485 [DEBUG] readdir: adding entry 'VolkswagenGTIReview.mp4'
+2025-03-11 18:54:04,486 [DEBUG] Getting file attributes for 'WeAreGoingOnBullrun.mp4'
+2025-03-11 18:54:04,486 [DEBUG] Returning cached file attributes for 'WeAreGoingOnBullrun.mp4'
+2025-03-11 18:54:04,486 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,486 [DEBUG] readdir: adding entry 'WeAreGoingOnBullrun.mp4'
+2025-03-11 18:54:04,486 [DEBUG] Getting file attributes for 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 18:54:04,486 [DEBUG] Returning cached file attributes for 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 18:54:04,486 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,486 [DEBUG] readdir: adding entry 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 18:54:04,486 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 18:54:04,486 [DEBUG] opendir: inode=1
+2025-03-11 18:54:04,486 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 18:54:04,486 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 18:54:04,486 [DEBUG] readdir: fh=2, start_id=0
+2025-03-11 18:54:04,486 [DEBUG] Getting root attributes
+2025-03-11 18:54:04,486 [DEBUG] get_root_attr took 0.0000 seconds
+2025-03-11 18:54:04,486 [DEBUG] Getting root attributes
+2025-03-11 18:54:04,486 [DEBUG] get_root_attr took 0.0000 seconds
+2025-03-11 18:54:04,486 [DEBUG] Getting file attributes for 'BigBuckBunny.mp4'
+2025-03-11 18:54:04,486 [DEBUG] Returning cached file attributes for 'BigBuckBunny.mp4'
+2025-03-11 18:54:04,486 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,486 [DEBUG] readdir: adding entry 'BigBuckBunny.mp4'
+2025-03-11 18:54:04,486 [DEBUG] Getting file attributes for 'ElephantsDream.mp4'
+2025-03-11 18:54:04,486 [DEBUG] Returning cached file attributes for 'ElephantsDream.mp4'
+2025-03-11 18:54:04,486 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,486 [DEBUG] readdir: adding entry 'ElephantsDream.mp4'
+2025-03-11 18:54:04,486 [DEBUG] Getting file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:04,486 [DEBUG] Returning cached file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:04,486 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,486 [DEBUG] readdir: adding entry 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:04,486 [DEBUG] Getting file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 18:54:04,486 [DEBUG] Returning cached file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 18:54:04,486 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,486 [DEBUG] readdir: adding entry 'ForBiggerEscapes.mp4'
+2025-03-11 18:54:04,486 [DEBUG] Getting file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:04,486 [DEBUG] Returning cached file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:04,486 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,486 [DEBUG] readdir: adding entry 'ForBiggerFun.mp4'
+2025-03-11 18:54:04,486 [DEBUG] Getting file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 18:54:04,486 [DEBUG] Returning cached file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 18:54:04,486 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,486 [DEBUG] readdir: adding entry 'ForBiggerJoyrides.mp4'
+2025-03-11 18:54:04,486 [DEBUG] Getting file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:04,486 [DEBUG] Returning cached file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:04,486 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,487 [DEBUG] readdir: adding entry 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 18:54:04,487 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,487 [DEBUG] readdir: adding entry 'Sintel.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Getting file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Returning cached file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:04,487 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,487 [DEBUG] readdir: adding entry 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Getting file attributes for 'TearsOfSteel.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Returning cached file attributes for 'TearsOfSteel.mp4'
+2025-03-11 18:54:04,487 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,487 [DEBUG] readdir: adding entry 'TearsOfSteel.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Getting file attributes for 'VolkswagenGTIReview.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Returning cached file attributes for 'VolkswagenGTIReview.mp4'
+2025-03-11 18:54:04,487 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,487 [DEBUG] readdir: adding entry 'VolkswagenGTIReview.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Getting file attributes for 'WeAreGoingOnBullrun.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Returning cached file attributes for 'WeAreGoingOnBullrun.mp4'
+2025-03-11 18:54:04,487 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,487 [DEBUG] readdir: adding entry 'WeAreGoingOnBullrun.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Getting file attributes for 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Returning cached file attributes for 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 18:54:04,487 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,487 [DEBUG] readdir: adding entry 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 18:54:04,487 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 18:54:04,487 [DEBUG] readdir: fh=2, start_id=15
+2025-03-11 18:54:04,487 [DEBUG] Getting root attributes
+2025-03-11 18:54:04,487 [DEBUG] get_root_attr took 0.0000 seconds
+2025-03-11 18:54:04,487 [DEBUG] Getting root attributes
+2025-03-11 18:54:04,487 [DEBUG] get_root_attr took 0.0000 seconds
+2025-03-11 18:54:04,487 [DEBUG] Getting file attributes for 'BigBuckBunny.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Returning cached file attributes for 'BigBuckBunny.mp4'
+2025-03-11 18:54:04,487 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,487 [DEBUG] readdir: adding entry 'BigBuckBunny.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Getting file attributes for 'ElephantsDream.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Returning cached file attributes for 'ElephantsDream.mp4'
+2025-03-11 18:54:04,487 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,487 [DEBUG] readdir: adding entry 'ElephantsDream.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Getting file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Returning cached file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:04,487 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,487 [DEBUG] readdir: adding entry 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Getting file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Returning cached file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 18:54:04,487 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,487 [DEBUG] readdir: adding entry 'ForBiggerEscapes.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Getting file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Returning cached file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:04,487 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,487 [DEBUG] readdir: adding entry 'ForBiggerFun.mp4'
+2025-03-11 18:54:04,487 [DEBUG] Getting file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 18:54:04,488 [DEBUG] Returning cached file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 18:54:04,488 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,488 [DEBUG] readdir: adding entry 'ForBiggerJoyrides.mp4'
+2025-03-11 18:54:04,488 [DEBUG] Getting file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:04,488 [DEBUG] Returning cached file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:04,488 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,488 [DEBUG] readdir: adding entry 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:04,488 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:04,488 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 18:54:04,488 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,488 [DEBUG] readdir: adding entry 'Sintel.mp4'
+2025-03-11 18:54:04,488 [DEBUG] Getting file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:04,488 [DEBUG] Returning cached file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:04,488 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,488 [DEBUG] readdir: adding entry 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:04,488 [DEBUG] Getting file attributes for 'TearsOfSteel.mp4'
+2025-03-11 18:54:04,488 [DEBUG] Returning cached file attributes for 'TearsOfSteel.mp4'
+2025-03-11 18:54:04,488 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,488 [DEBUG] readdir: adding entry 'TearsOfSteel.mp4'
+2025-03-11 18:54:04,488 [DEBUG] Getting file attributes for 'VolkswagenGTIReview.mp4'
+2025-03-11 18:54:04,488 [DEBUG] Returning cached file attributes for 'VolkswagenGTIReview.mp4'
+2025-03-11 18:54:04,488 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,488 [DEBUG] readdir: adding entry 'VolkswagenGTIReview.mp4'
+2025-03-11 18:54:04,488 [DEBUG] Getting file attributes for 'WeAreGoingOnBullrun.mp4'
+2025-03-11 18:54:04,488 [DEBUG] Returning cached file attributes for 'WeAreGoingOnBullrun.mp4'
+2025-03-11 18:54:04,488 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,488 [DEBUG] readdir: adding entry 'WeAreGoingOnBullrun.mp4'
+2025-03-11 18:54:04,488 [DEBUG] Getting file attributes for 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 18:54:04,488 [DEBUG] Returning cached file attributes for 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 18:54:04,488 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,488 [DEBUG] readdir: adding entry 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 18:54:04,488 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 18:54:04,488 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 18:54:04,488 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 18:54:04,488 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,488 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,488 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,488 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,488 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,488 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: 'mise' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: 'mise' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: 'mise' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,489 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,490 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,490 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,490 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,490 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,490 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,493 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 18:54:04,493 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 18:54:04,493 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 18:54:04,493 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 18:54:04,493 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 18:54:04,493 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 18:54:04,493 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 18:54:04,493 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 18:54:04,493 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 18:54:04,493 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,493 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,493 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,493 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,493 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,493 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,493 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,493 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: 'mise' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: 'mise' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: 'mise' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,494 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: '.tool-versions' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: '.tool-versions' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: '.tool-versions' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: 'rust-toolchain.toml' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: 'rust-toolchain.toml' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: 'rust-toolchain.toml' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: 'Gemfile' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: 'Gemfile' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: 'Gemfile' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: '.zig-version' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: '.zig-version' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: '.zig-version' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: '.terraform-version' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: '.terraform-version' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: '.terraform-version' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: '.swift-version' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: '.swift-version' not found
+2025-03-11 18:54:04,495 [ERROR] lookup: '.swift-version' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.sdkmanrc' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.sdkmanrc' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.sdkmanrc' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.ruby-version' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.ruby-version' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.ruby-version' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.python-versions' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.python-versions' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.python-versions' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.python-version' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.python-version' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.python-version' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.nvmrc' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.nvmrc' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.nvmrc' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.node-version' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.node-version' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.node-version' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.java-version' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.java-version' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.java-version' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.go-version' not found
+2025-03-11 18:54:04,496 [ERROR] lookup: '.go-version' not found
+2025-03-11 18:54:04,497 [ERROR] lookup: '.go-version' not found
+2025-03-11 18:54:04,497 [ERROR] lookup: '.deno-version' not found
+2025-03-11 18:54:04,497 [ERROR] lookup: '.deno-version' not found
+2025-03-11 18:54:04,497 [ERROR] lookup: '.deno-version' not found
+2025-03-11 18:54:04,497 [ERROR] lookup: '.bun-version' not found
+2025-03-11 18:54:04,497 [ERROR] lookup: '.bun-version' not found
+2025-03-11 18:54:04,497 [ERROR] lookup: '.bun-version' not found
+2025-03-11 18:54:04,499 [ERROR] lookup: '.hidden' not found
+2025-03-11 18:54:04,518 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 18:54:04,518 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 18:54:04,518 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 18:54:04,518 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 18:54:04,518 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 18:54:04,518 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 18:54:04,518 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 18:54:04,519 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 18:54:04,519 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 18:54:04,519 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,519 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,519 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,519 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,519 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,519 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,519 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,519 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,519 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,519 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 18:54:04,519 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 18:54:04,519 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 18:54:04,519 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 18:54:04,519 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 18:54:04,519 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 18:54:04,519 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 18:54:04,520 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 18:54:04,520 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 18:54:04,520 [ERROR] lookup: 'mise' not found
+2025-03-11 18:54:04,520 [ERROR] lookup: 'mise' not found
+2025-03-11 18:54:04,520 [ERROR] lookup: 'mise' not found
+2025-03-11 18:54:04,520 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,520 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,520 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,520 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,520 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,520 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,520 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,520 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,520 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,520 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,520 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,520 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,522 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 18:54:04,522 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 18:54:04,522 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 18:54:04,522 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 18:54:04,522 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 18:54:04,523 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 18:54:04,523 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 18:54:04,523 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 18:54:04,523 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 18:54:04,523 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,523 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,523 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,523 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,523 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,523 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,523 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,523 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,523 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,523 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 18:54:04,523 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 18:54:04,523 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 18:54:04,523 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 18:54:04,524 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 18:54:04,524 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 18:54:04,524 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 18:54:04,524 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 18:54:04,524 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 18:54:04,524 [ERROR] lookup: 'mise' not found
+2025-03-11 18:54:04,524 [ERROR] lookup: 'mise' not found
+2025-03-11 18:54:04,524 [ERROR] lookup: 'mise' not found
+2025-03-11 18:54:04,524 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,524 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,524 [ERROR] lookup: '.mise' not found
+2025-03-11 18:54:04,524 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,524 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,524 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,524 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,524 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,524 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: '.config' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: '.tool-versions' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: '.tool-versions' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: '.tool-versions' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: 'rust-toolchain.toml' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: 'rust-toolchain.toml' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: 'rust-toolchain.toml' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: 'Gemfile' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: 'Gemfile' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: 'Gemfile' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: '.zig-version' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: '.zig-version' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: '.zig-version' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: '.terraform-version' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: '.terraform-version' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: '.terraform-version' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: '.swift-version' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: '.swift-version' not found
+2025-03-11 18:54:04,525 [ERROR] lookup: '.swift-version' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.sdkmanrc' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.sdkmanrc' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.sdkmanrc' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.ruby-version' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.ruby-version' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.ruby-version' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.python-versions' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.python-versions' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.python-versions' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.python-version' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.python-version' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.python-version' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.nvmrc' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.nvmrc' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.nvmrc' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.node-version' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.node-version' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.node-version' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.java-version' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.java-version' not found
+2025-03-11 18:54:04,526 [ERROR] lookup: '.java-version' not found
+2025-03-11 18:54:04,527 [ERROR] lookup: '.go-version' not found
+2025-03-11 18:54:04,527 [ERROR] lookup: '.go-version' not found
+2025-03-11 18:54:04,527 [ERROR] lookup: '.go-version' not found
+2025-03-11 18:54:04,527 [ERROR] lookup: '.deno-version' not found
+2025-03-11 18:54:04,527 [ERROR] lookup: '.deno-version' not found
+2025-03-11 18:54:04,527 [ERROR] lookup: '.deno-version' not found
+2025-03-11 18:54:04,527 [ERROR] lookup: '.bun-version' not found
+2025-03-11 18:54:04,527 [ERROR] lookup: '.bun-version' not found
+2025-03-11 18:54:04,527 [ERROR] lookup: '.bun-version' not found
+2025-03-11 18:54:04,541 [ERROR] lookup: '.git' not found
+2025-03-11 18:54:04,543 [ERROR] lookup: '.python-version' not found
+2025-03-11 18:54:04,544 [ERROR] lookup: '.terraform' not found
+2025-03-11 18:54:04,544 [ERROR] lookup: '.terraform' not found
+2025-03-11 18:54:04,685 [DEBUG] open: inode=2, flags=32768
+2025-03-11 18:54:04,685 [DEBUG] read: fh=3, off=0, size=32768
+2025-03-11 18:54:04,685 [DEBUG] Getting file attributes for 'ElephantsDream.mp4'
+2025-03-11 18:54:04,685 [DEBUG] Returning cached file attributes for 'ElephantsDream.mp4'
+2025-03-11 18:54:04,685 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:04,685 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:04,685 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:05,340 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.6541 seconds
+2025-03-11 18:54:05,340 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 0.00 MB; active prefetch threads: 0
+2025-03-11 18:54:05,340 [DEBUG] fetch_chunks_sync took 0.6553 seconds
+2025-03-11 18:54:05,341 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:05,341 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:05,341 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:05,341 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:05,342 [DEBUG] read: fh=3, off=32768, size=80474
+2025-03-11 18:54:05,343 [DEBUG] Getting file attributes for 'ElephantsDream.mp4'
+2025-03-11 18:54:05,343 [DEBUG] Returning cached file attributes for 'ElephantsDream.mp4'
+2025-03-11 18:54:05,343 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:05,343 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:05,343 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:06,023 [DEBUG] fetch_chunk: offset=10518528, chunk_size=2097152, elapsed=0.6812 seconds
+2025-03-11 18:54:06,028 [DEBUG] fetch_chunk: offset=6324224, chunk_size=2097152, elapsed=0.6864 seconds
+2025-03-11 18:54:06,045 [DEBUG] fetch_chunk: offset=8421376, chunk_size=2097152, elapsed=0.7028 seconds
+2025-03-11 18:54:06,046 [DEBUG] fetch_chunk: offset=2129920, chunk_size=2097152, elapsed=0.7042 seconds
+2025-03-11 18:54:06,047 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.7038 seconds
+2025-03-11 18:54:06,048 [DEBUG] fetch_chunk: offset=4227072, chunk_size=2097152, elapsed=0.7058 seconds
+2025-03-11 18:54:06,048 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 0.00 MB; active prefetch threads: 0
+2025-03-11 18:54:06,048 [DEBUG] fetch_chunks_sync took 0.7049 seconds
+2025-03-11 18:54:06,049 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:06,050 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:06,050 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:06,050 [DEBUG] read: returning 80474 bytes
+2025-03-11 18:54:06,050 [DEBUG] read: fh=3, off=113242, size=32768
+2025-03-11 18:54:06,050 [DEBUG] Getting file attributes for 'ElephantsDream.mp4'
+2025-03-11 18:54:06,050 [DEBUG] Returning cached file attributes for 'ElephantsDream.mp4'
+2025-03-11 18:54:06,050 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:06,050 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:06,050 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:06,051 [DEBUG] fetch_chunk: offset=32768, chunk_size=2097152, elapsed=0.7097 seconds
+2025-03-11 18:54:06,052 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 0.00 MB; active prefetch threads: 0
+2025-03-11 18:54:06,052 [DEBUG] fetch_chunks_sync took 0.7112 seconds
+2025-03-11 18:54:06,052 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:06,053 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:06,552 [DEBUG] fetch_chunk: offset=4307546, chunk_size=2097152, elapsed=0.5015 seconds
+2025-03-11 18:54:06,656 [DEBUG] fetch_chunk: offset=8501850, chunk_size=2097152, elapsed=0.6049 seconds
+2025-03-11 18:54:06,666 [DEBUG] fetch_chunk: offset=2210394, chunk_size=2097152, elapsed=0.6156 seconds
+2025-03-11 18:54:06,715 [DEBUG] fetch_chunk: offset=10599002, chunk_size=2097152, elapsed=0.6637 seconds
+2025-03-11 18:54:06,716 [DEBUG] fetch_chunk: offset=113242, chunk_size=2097152, elapsed=0.6654 seconds
+2025-03-11 18:54:06,742 [DEBUG] fetch_chunk: offset=6404698, chunk_size=2097152, elapsed=0.6907 seconds
+2025-03-11 18:54:06,743 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 12.00 MB; active prefetch threads: 0
+2025-03-11 18:54:06,743 [DEBUG] fetch_chunks_sync took 0.6936 seconds
+2025-03-11 18:54:06,743 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:06,743 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:06,750 [DEBUG] fetch_chunk: offset=14712832, chunk_size=2097152, elapsed=0.6961 seconds
+2025-03-11 18:54:06,763 [DEBUG] fetch_chunk: offset=12615680, chunk_size=2097152, elapsed=0.7101 seconds
+2025-03-11 18:54:06,775 [DEBUG] fetch_chunk: offset=21004288, chunk_size=2097152, elapsed=0.7209 seconds
+2025-03-11 18:54:06,781 [DEBUG] fetch_chunk: offset=23101440, chunk_size=2097152, elapsed=0.7272 seconds
+2025-03-11 18:54:06,807 [DEBUG] fetch_chunk: offset=16809984, chunk_size=2097152, elapsed=0.7530 seconds
+2025-03-11 18:54:06,817 [DEBUG] fetch_chunk: offset=18907136, chunk_size=2097152, elapsed=0.7625 seconds
+2025-03-11 18:54:06,817 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 24.00 MB; active prefetch threads: 0
+2025-03-11 18:54:06,817 [DEBUG] fetch_chunks_sync took 0.7650 seconds
+2025-03-11 18:54:06,817 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:06,817 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:06,867 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.8167 seconds
+2025-03-11 18:54:06,868 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 36.00 MB; active prefetch threads: 0
+2025-03-11 18:54:06,868 [DEBUG] fetch_chunks_sync took 0.8176 seconds
+2025-03-11 18:54:06,869 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:06,869 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:06,869 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:06,869 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:06,871 [DEBUG] read: fh=3, off=146010, size=44814
+2025-03-11 18:54:06,871 [DEBUG] Getting file attributes for 'ElephantsDream.mp4'
+2025-03-11 18:54:06,871 [DEBUG] Returning cached file attributes for 'ElephantsDream.mp4'
+2025-03-11 18:54:06,871 [DEBUG] get_file_attr took 0.0002 seconds
+2025-03-11 18:54:06,871 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:06,872 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:07,405 [DEBUG] fetch_chunk: offset=23181914, chunk_size=2097152, elapsed=0.6610 seconds
+2025-03-11 18:54:07,406 [DEBUG] fetch_chunk: offset=12696154, chunk_size=2097152, elapsed=0.6629 seconds
+2025-03-11 18:54:07,478 [DEBUG] fetch_chunk: offset=18987610, chunk_size=2097152, elapsed=0.7340 seconds
+2025-03-11 18:54:07,511 [DEBUG] fetch_chunk: offset=16890458, chunk_size=2097152, elapsed=0.7678 seconds
+2025-03-11 18:54:07,517 [DEBUG] fetch_chunk: offset=29392896, chunk_size=2097152, elapsed=0.6991 seconds
+2025-03-11 18:54:07,547 [DEBUG] fetch_chunk: offset=31490048, chunk_size=2097152, elapsed=0.7289 seconds
+2025-03-11 18:54:07,569 [DEBUG] fetch_chunk: offset=33587200, chunk_size=2097152, elapsed=0.7509 seconds
+2025-03-11 18:54:07,570 [DEBUG] fetch_chunk: offset=35684352, chunk_size=2097152, elapsed=0.7521 seconds
+2025-03-11 18:54:07,573 [DEBUG] fetch_chunk: offset=31490048, chunk_size=2097152, elapsed=0.7026 seconds
+2025-03-11 18:54:07,574 [DEBUG] fetch_chunk: offset=25198592, chunk_size=2097152, elapsed=0.7561 seconds
+2025-03-11 18:54:07,576 [DEBUG] fetch_chunk: offset=21084762, chunk_size=2097152, elapsed=0.8321 seconds
+2025-03-11 18:54:07,578 [DEBUG] fetch_chunk: offset=33587200, chunk_size=2097152, elapsed=0.7071 seconds
+2025-03-11 18:54:07,584 [DEBUG] fetch_chunk: offset=27295744, chunk_size=2097152, elapsed=0.7133 seconds
+2025-03-11 18:54:07,603 [DEBUG] fetch_chunk: offset=25198592, chunk_size=2097152, elapsed=0.7339 seconds
+2025-03-11 18:54:07,612 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.7405 seconds
+2025-03-11 18:54:07,613 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 36.00 MB; active prefetch threads: 0
+2025-03-11 18:54:07,613 [DEBUG] fetch_chunks_sync took 0.7415 seconds
+2025-03-11 18:54:07,615 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:07,615 [DEBUG] maybe_prefetch took 0.0002 seconds
+2025-03-11 18:54:07,615 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:07,615 [DEBUG] read: returning 44814 bytes
+2025-03-11 18:54:07,616 [DEBUG] read: fh=3, off=190824, size=32768
+2025-03-11 18:54:07,616 [DEBUG] Getting file attributes for 'ElephantsDream.mp4'
+2025-03-11 18:54:07,616 [DEBUG] Returning cached file attributes for 'ElephantsDream.mp4'
+2025-03-11 18:54:07,616 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:07,616 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:07,616 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:07,632 [DEBUG] fetch_chunk: offset=27295744, chunk_size=2097152, elapsed=0.8138 seconds
+2025-03-11 18:54:07,632 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 36.00 MB; active prefetch threads: 0
+2025-03-11 18:54:07,632 [DEBUG] fetch_chunks_sync took 0.8148 seconds
+2025-03-11 18:54:07,632 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:07,632 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:07,649 [DEBUG] fetch_chunk: offset=14793306, chunk_size=2097152, elapsed=0.9052 seconds
+2025-03-11 18:54:07,649 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 48.00 MB; active prefetch threads: 0
+2025-03-11 18:54:07,649 [DEBUG] fetch_chunks_sync took 0.9064 seconds
+2025-03-11 18:54:07,650 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:07,650 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:07,676 [DEBUG] fetch_chunk: offset=29392896, chunk_size=2097152, elapsed=0.8053 seconds
+2025-03-11 18:54:07,676 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 60.00 MB; active prefetch threads: 0
+2025-03-11 18:54:07,676 [DEBUG] fetch_chunks_sync took 0.8071 seconds
+2025-03-11 18:54:07,676 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:07,676 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:08,248 [DEBUG] fetch_chunk: offset=31490048, chunk_size=2097152, elapsed=0.6322 seconds
+2025-03-11 18:54:08,296 [DEBUG] fetch_chunk: offset=33587200, chunk_size=2097152, elapsed=0.6807 seconds
+2025-03-11 18:54:08,313 [DEBUG] fetch_chunk: offset=37781504, chunk_size=2097152, elapsed=0.6808 seconds
+2025-03-11 18:54:08,318 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.7015 seconds
+2025-03-11 18:54:08,319 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 60.00 MB; active prefetch threads: 0
+2025-03-11 18:54:08,319 [DEBUG] fetch_chunks_sync took 0.7027 seconds
+2025-03-11 18:54:08,320 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:08,320 [DEBUG] maybe_prefetch took 0.0002 seconds
+2025-03-11 18:54:08,320 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:08,320 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:08,322 [DEBUG] open: inode=2, flags=32768
+2025-03-11 18:54:08,322 [DEBUG] read: fh=4, off=0, size=32768
+2025-03-11 18:54:08,322 [DEBUG] Getting file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:08,322 [DEBUG] Returning cached file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:08,323 [DEBUG] get_file_attr took 0.0006 seconds
+2025-03-11 18:54:08,323 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:08,323 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:08,331 [DEBUG] fetch_chunk: offset=37781504, chunk_size=2097152, elapsed=0.6547 seconds
+2025-03-11 18:54:08,335 [DEBUG] fetch_chunk: offset=31570522, chunk_size=2097152, elapsed=0.6854 seconds
+2025-03-11 18:54:08,338 [DEBUG] fetch_chunk: offset=25279066, chunk_size=2097152, elapsed=0.6882 seconds
+2025-03-11 18:54:08,338 [DEBUG] fetch_chunk: offset=29392896, chunk_size=2097152, elapsed=0.7230 seconds
+2025-03-11 18:54:08,341 [DEBUG] fetch_chunk: offset=27295744, chunk_size=2097152, elapsed=0.7259 seconds
+2025-03-11 18:54:08,342 [DEBUG] fetch_chunk: offset=25198592, chunk_size=2097152, elapsed=0.7271 seconds
+2025-03-11 18:54:08,343 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 60.00 MB; active prefetch threads: 0
+2025-03-11 18:54:08,343 [DEBUG] fetch_chunks_sync took 0.7285 seconds
+2025-03-11 18:54:08,343 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:08,343 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:08,346 [DEBUG] fetch_chunk: offset=33667674, chunk_size=2097152, elapsed=0.6957 seconds
+2025-03-11 18:54:08,348 [DEBUG] fetch_chunk: offset=29473370, chunk_size=2097152, elapsed=0.6978 seconds
+2025-03-11 18:54:08,404 [DEBUG] fetch_chunk: offset=35764826, chunk_size=2097152, elapsed=0.7542 seconds
+2025-03-11 18:54:08,445 [DEBUG] fetch_chunk: offset=39878656, chunk_size=2097152, elapsed=0.8122 seconds
+2025-03-11 18:54:08,476 [DEBUG] fetch_chunk: offset=41975808, chunk_size=2097152, elapsed=0.8430 seconds
+2025-03-11 18:54:08,511 [DEBUG] fetch_chunk: offset=44072960, chunk_size=2097152, elapsed=0.8779 seconds
+2025-03-11 18:54:08,670 [DEBUG] fetch_chunk: offset=27376218, chunk_size=2097152, elapsed=1.0204 seconds
+2025-03-11 18:54:08,672 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 60.00 MB; active prefetch threads: 0
+2025-03-11 18:54:08,672 [DEBUG] fetch_chunks_sync took 1.0223 seconds
+2025-03-11 18:54:08,672 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:08,672 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:08,676 [DEBUG] fetch_chunk: offset=46170112, chunk_size=2097152, elapsed=1.0434 seconds
+2025-03-11 18:54:08,712 [DEBUG] fetch_chunk: offset=41975808, chunk_size=2097152, elapsed=1.0353 seconds
+2025-03-11 18:54:08,900 [DEBUG] fetch_chunk: offset=46170112, chunk_size=2097152, elapsed=0.5789 seconds
+2025-03-11 18:54:08,903 [DEBUG] fetch_chunk: offset=44072960, chunk_size=2097152, elapsed=1.2266 seconds
+2025-03-11 18:54:08,910 [DEBUG] fetch_chunk: offset=46170112, chunk_size=2097152, elapsed=1.2327 seconds
+2025-03-11 18:54:08,922 [DEBUG] fetch_chunk: offset=41975808, chunk_size=2097152, elapsed=0.6005 seconds
+2025-03-11 18:54:08,929 [DEBUG] fetch_chunk: offset=46170112, chunk_size=2097152, elapsed=0.5856 seconds
+2025-03-11 18:54:08,976 [DEBUG] fetch_chunk: offset=37781504, chunk_size=2097152, elapsed=0.6555 seconds
+2025-03-11 18:54:08,997 [DEBUG] fetch_chunk: offset=44072960, chunk_size=2097152, elapsed=0.6757 seconds
+2025-03-11 18:54:09,013 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.6897 seconds
+2025-03-11 18:54:09,013 [DEBUG] fetch_chunk: offset=37781504, chunk_size=2097152, elapsed=0.6694 seconds
+2025-03-11 18:54:09,014 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 72.00 MB; active prefetch threads: 0
+2025-03-11 18:54:09,014 [DEBUG] fetch_chunks_sync took 0.6911 seconds
+2025-03-11 18:54:09,015 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:09,015 [DEBUG] maybe_prefetch took 0.0002 seconds
+2025-03-11 18:54:09,015 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:09,015 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:09,016 [DEBUG] read: fh=4, off=2498125, size=32768
+2025-03-11 18:54:09,016 [DEBUG] Getting file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:09,017 [DEBUG] Returning cached file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:09,017 [DEBUG] get_file_attr took 0.0003 seconds
+2025-03-11 18:54:09,017 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:09,017 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:09,025 [DEBUG] fetch_chunk: offset=41975808, chunk_size=2097152, elapsed=0.6814 seconds
+2025-03-11 18:54:09,031 [DEBUG] fetch_chunk: offset=39878656, chunk_size=2097152, elapsed=0.6872 seconds
+2025-03-11 18:54:09,037 [DEBUG] fetch_chunk: offset=39878656, chunk_size=2097152, elapsed=1.3600 seconds
+2025-03-11 18:54:09,038 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 72.00 MB; active prefetch threads: 0
+2025-03-11 18:54:09,038 [DEBUG] fetch_chunks_sync took 1.3612 seconds
+2025-03-11 18:54:09,038 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:09,038 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:09,048 [DEBUG] fetch_chunk: offset=44072960, chunk_size=2097152, elapsed=0.7044 seconds
+2025-03-11 18:54:09,049 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 82.00 MB; active prefetch threads: 0
+2025-03-11 18:54:09,049 [DEBUG] fetch_chunks_sync took 0.7056 seconds
+2025-03-11 18:54:09,049 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:09,049 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:09,051 [DEBUG] fetch_chunk: offset=39878656, chunk_size=2097152, elapsed=0.7301 seconds
+2025-03-11 18:54:09,052 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 82.00 MB; active prefetch threads: 0
+2025-03-11 18:54:09,052 [DEBUG] fetch_chunks_sync took 0.7320 seconds
+2025-03-11 18:54:09,052 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:09,052 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:09,224 [DEBUG] fetch_chunk: offset=48267264, chunk_size=2097152, elapsed=1.5911 seconds
+2025-03-11 18:54:09,226 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 82.00 MB; active prefetch threads: 0
+2025-03-11 18:54:09,226 [DEBUG] fetch_chunks_sync took 1.5940 seconds
+2025-03-11 18:54:09,226 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:09,227 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:09,242 [DEBUG] fetch_chunk: offset=42056282, chunk_size=2097152, elapsed=0.5699 seconds
+2025-03-11 18:54:09,245 [DEBUG] fetch_chunk: offset=48347738, chunk_size=2097152, elapsed=0.5728 seconds
+2025-03-11 18:54:09,255 [DEBUG] fetch_chunk: offset=46250586, chunk_size=2097152, elapsed=0.5825 seconds
+2025-03-11 18:54:09,266 [DEBUG] fetch_chunk: offset=37861978, chunk_size=2097152, elapsed=0.5938 seconds
+2025-03-11 18:54:09,274 [DEBUG] fetch_chunk: offset=44153434, chunk_size=2097152, elapsed=0.6020 seconds
+2025-03-11 18:54:09,279 [DEBUG] fetch_chunk: offset=39959130, chunk_size=2097152, elapsed=0.6065 seconds
+2025-03-11 18:54:09,279 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 84.00 MB; active prefetch threads: 0
+2025-03-11 18:54:09,280 [DEBUG] fetch_chunks_sync took 0.6077 seconds
+2025-03-11 18:54:09,280 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:09,280 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:09,441 [DEBUG] fetch_chunk: offset=2129920, chunk_size=2097152, elapsed=0.4253 seconds
+2025-03-11 18:54:09,491 [DEBUG] fetch_chunk: offset=2097152, chunk_size=2097152, elapsed=0.4567 seconds
+2025-03-11 18:54:09,492 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 96.00 MB; active prefetch threads: 0
+2025-03-11 18:54:09,493 [DEBUG] fetch_chunks_sync took 0.4759 seconds
+2025-03-11 18:54:09,493 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:09,493 [DEBUG] maybe_prefetch took 0.0003 seconds
+2025-03-11 18:54:09,493 [DEBUG] read: returning 0 bytes
+2025-03-11 18:54:09,494 [DEBUG] read: fh=4, off=2498125, size=32768
+2025-03-11 18:54:09,495 [DEBUG] Getting file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:09,495 [DEBUG] Returning cached file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:09,495 [DEBUG] get_file_attr took 0.0005 seconds
+2025-03-11 18:54:09,496 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:09,496 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:09,697 [DEBUG] fetch_chunk: offset=32768, chunk_size=2097152, elapsed=0.6816 seconds
+2025-03-11 18:54:09,698 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 96.00 MB; active prefetch threads: 0
+2025-03-11 18:54:09,698 [DEBUG] fetch_chunks_sync took 0.6836 seconds
+2025-03-11 18:54:09,710 [DEBUG] fetch_chunk: offset=52461568, chunk_size=2097152, elapsed=0.6720 seconds
+2025-03-11 18:54:09,754 [DEBUG] fetch_chunk: offset=48267264, chunk_size=2097152, elapsed=0.7022 seconds
+2025-03-11 18:54:09,768 [DEBUG] fetch_chunk: offset=50364416, chunk_size=2097152, elapsed=0.7302 seconds
+2025-03-11 18:54:09,779 [DEBUG] fetch_chunk: offset=52461568, chunk_size=2097152, elapsed=0.7269 seconds
+2025-03-11 18:54:09,782 [DEBUG] fetch_chunk: offset=52461568, chunk_size=2097152, elapsed=0.7330 seconds
+2025-03-11 18:54:09,783 [DEBUG] fetch_chunk: offset=48267264, chunk_size=2097152, elapsed=0.7446 seconds
+2025-03-11 18:54:09,843 [DEBUG] fetch_chunk: offset=58753024, chunk_size=2097152, elapsed=0.7905 seconds
+2025-03-11 18:54:09,853 [DEBUG] fetch_chunk: offset=58753024, chunk_size=2097152, elapsed=0.8150 seconds
+2025-03-11 18:54:09,873 [DEBUG] fetch_chunk: offset=56655872, chunk_size=2097152, elapsed=0.8234 seconds
+2025-03-11 18:54:09,877 [DEBUG] fetch_chunk: offset=54558720, chunk_size=2097152, elapsed=0.8389 seconds
+2025-03-11 18:54:09,882 [DEBUG] fetch_chunk: offset=58753024, chunk_size=2097152, elapsed=0.8327 seconds
+2025-03-11 18:54:09,899 [DEBUG] fetch_chunk: offset=56655872, chunk_size=2097152, elapsed=0.8606 seconds
+2025-03-11 18:54:09,899 [DEBUG] fetch_chunk: offset=54558720, chunk_size=2097152, elapsed=0.8498 seconds
+2025-03-11 18:54:09,901 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 98.35 MB; active prefetch threads: 0
+2025-03-11 18:54:09,901 [DEBUG] fetch_chunks_sync took 0.8630 seconds
+2025-03-11 18:54:09,901 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:09,901 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:09,951 [DEBUG] fetch_chunk: offset=56655872, chunk_size=2097152, elapsed=0.8990 seconds
+2025-03-11 18:54:09,980 [DEBUG] fetch_chunk: offset=48267264, chunk_size=2097152, elapsed=0.9312 seconds
+2025-03-11 18:54:10,002 [DEBUG] fetch_chunk: offset=50364416, chunk_size=2097152, elapsed=0.9530 seconds
+2025-03-11 18:54:10,003 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 108.35 MB; active prefetch threads: 0
+2025-03-11 18:54:10,003 [DEBUG] fetch_chunks_sync took 0.9545 seconds
+2025-03-11 18:54:10,003 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:10,003 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:10,033 [DEBUG] fetch_chunk: offset=60850176, chunk_size=2097152, elapsed=0.8051 seconds
+2025-03-11 18:54:10,050 [DEBUG] fetch_chunk: offset=56655872, chunk_size=2097152, elapsed=0.8225 seconds
+2025-03-11 18:54:10,071 [DEBUG] fetch_chunk: offset=58753024, chunk_size=2097152, elapsed=0.8430 seconds
+2025-03-11 18:54:10,075 [DEBUG] fetch_chunk: offset=2097152, chunk_size=2097152, elapsed=0.5778 seconds
+2025-03-11 18:54:10,075 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 108.35 MB; active prefetch threads: 0
+2025-03-11 18:54:10,075 [DEBUG] fetch_chunks_sync took 0.5796 seconds
+2025-03-11 18:54:10,075 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:10,075 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:10,075 [DEBUG] read: returning 0 bytes
+2025-03-11 18:54:10,079 [DEBUG] fetch_chunk: offset=56736346, chunk_size=2097152, elapsed=0.7984 seconds
+2025-03-11 18:54:10,079 [DEBUG] read: fh=4, off=6405, size=47729
+2025-03-11 18:54:10,079 [DEBUG] Getting file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:10,079 [DEBUG] Returning cached file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:10,080 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:10,080 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:10,080 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:10,082 [DEBUG] fetch_chunk: offset=54558720, chunk_size=2097152, elapsed=0.8547 seconds
+2025-03-11 18:54:10,086 [DEBUG] fetch_chunk: offset=54558720, chunk_size=2097152, elapsed=1.0336 seconds
+2025-03-11 18:54:10,091 [DEBUG] fetch_chunk: offset=50364416, chunk_size=2097152, elapsed=0.8638 seconds
+2025-03-11 18:54:10,097 [DEBUG] fetch_chunk: offset=58833498, chunk_size=2097152, elapsed=0.8164 seconds
+2025-03-11 18:54:10,097 [DEBUG] fetch_chunk: offset=54639194, chunk_size=2097152, elapsed=0.8169 seconds
+2025-03-11 18:54:10,098 [DEBUG] fetch_chunk: offset=52542042, chunk_size=2097152, elapsed=0.8180 seconds
+2025-03-11 18:54:10,099 [DEBUG] fetch_chunk: offset=50364416, chunk_size=2097152, elapsed=1.0471 seconds
+2025-03-11 18:54:10,100 [DEBUG] fetch_chunk: offset=60930650, chunk_size=2097152, elapsed=0.8194 seconds
+2025-03-11 18:54:10,100 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 108.35 MB; active prefetch threads: 0
+2025-03-11 18:54:10,100 [DEBUG] fetch_chunks_sync took 1.0481 seconds
+2025-03-11 18:54:10,100 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:10,100 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:10,105 [DEBUG] fetch_chunk: offset=52461568, chunk_size=2097152, elapsed=0.8773 seconds
+2025-03-11 18:54:10,105 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 108.35 MB; active prefetch threads: 0
+2025-03-11 18:54:10,106 [DEBUG] fetch_chunks_sync took 0.8791 seconds
+2025-03-11 18:54:10,106 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:10,106 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:10,142 [DEBUG] fetch_chunk: offset=50444890, chunk_size=2097152, elapsed=0.8620 seconds
+2025-03-11 18:54:10,142 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 110.35 MB; active prefetch threads: 0
+2025-03-11 18:54:10,142 [DEBUG] fetch_chunks_sync took 0.8627 seconds
+2025-03-11 18:54:10,142 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:10,142 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:10,435 [DEBUG] fetch_chunk: offset=62947328, chunk_size=2097152, elapsed=0.5331 seconds
+2025-03-11 18:54:10,704 [DEBUG] fetch_chunk: offset=67141632, chunk_size=2097152, elapsed=0.8029 seconds
+2025-03-11 18:54:10,716 [DEBUG] fetch_chunk: offset=62947328, chunk_size=2097152, elapsed=0.7124 seconds
+2025-03-11 18:54:10,719 [DEBUG] fetch_chunk: offset=60850176, chunk_size=2097152, elapsed=0.7156 seconds
+2025-03-11 18:54:10,732 [DEBUG] fetch_chunk: offset=69238784, chunk_size=2097152, elapsed=0.7278 seconds
+2025-03-11 18:54:10,748 [DEBUG] fetch_chunk: offset=65044480, chunk_size=2097152, elapsed=0.7444 seconds
+2025-03-11 18:54:10,750 [DEBUG] fetch_chunk: offset=71335936, chunk_size=2097152, elapsed=0.8481 seconds
+2025-03-11 18:54:10,761 [DEBUG] fetch_chunk: offset=69238784, chunk_size=2097152, elapsed=0.8596 seconds
+2025-03-11 18:54:10,766 [DEBUG] fetch_chunk: offset=60850176, chunk_size=2097152, elapsed=0.8651 seconds
+2025-03-11 18:54:10,768 [DEBUG] fetch_chunk: offset=71335936, chunk_size=2097152, elapsed=0.7645 seconds
+2025-03-11 18:54:10,770 [DEBUG] fetch_chunk: offset=67141632, chunk_size=2097152, elapsed=0.7662 seconds
+2025-03-11 18:54:10,771 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 122.35 MB; active prefetch threads: 0
+2025-03-11 18:54:10,771 [DEBUG] fetch_chunks_sync took 0.7678 seconds
+2025-03-11 18:54:10,771 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:10,771 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:10,795 [DEBUG] fetch_chunk: offset=60850176, chunk_size=2097152, elapsed=0.6950 seconds
+2025-03-11 18:54:10,883 [DEBUG] fetch_chunk: offset=71335936, chunk_size=2097152, elapsed=0.7772 seconds
+2025-03-11 18:54:10,907 [DEBUG] fetch_chunk: offset=65124954, chunk_size=2097152, elapsed=0.7638 seconds
+2025-03-11 18:54:10,908 [DEBUG] fetch_chunk: offset=71335936, chunk_size=2097152, elapsed=0.8067 seconds
+2025-03-11 18:54:10,910 [DEBUG] fetch_chunk: offset=69238784, chunk_size=2097152, elapsed=0.8042 seconds
+2025-03-11 18:54:10,913 [DEBUG] fetch_chunk: offset=67222106, chunk_size=2097152, elapsed=0.7700 seconds
+2025-03-11 18:54:10,925 [DEBUG] fetch_chunk: offset=69319258, chunk_size=2097152, elapsed=0.7824 seconds
+2025-03-11 18:54:10,929 [DEBUG] fetch_chunk: offset=63027802, chunk_size=2097152, elapsed=0.7865 seconds
+2025-03-11 18:54:10,932 [DEBUG] fetch_chunk: offset=69238784, chunk_size=2097152, elapsed=0.8314 seconds
+2025-03-11 18:54:10,934 [DEBUG] fetch_chunk: offset=73433088, chunk_size=2097152, elapsed=0.8281 seconds
+2025-03-11 18:54:10,944 [DEBUG] fetch_chunk: offset=73513562, chunk_size=2097152, elapsed=0.8010 seconds
+2025-03-11 18:54:11,037 [DEBUG] fetch_chunk: offset=65044480, chunk_size=2097152, elapsed=1.1361 seconds
+2025-03-11 18:54:11,039 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 132.35 MB; active prefetch threads: 0
+2025-03-11 18:54:11,039 [DEBUG] fetch_chunks_sync took 1.1379 seconds
+2025-03-11 18:54:11,039 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:11,039 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:11,060 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.9803 seconds
+2025-03-11 18:54:11,060 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 132.35 MB; active prefetch threads: 0
+2025-03-11 18:54:11,060 [DEBUG] fetch_chunks_sync took 0.9809 seconds
+2025-03-11 18:54:11,062 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:11,062 [DEBUG] maybe_prefetch took 0.0003 seconds
+2025-03-11 18:54:11,062 [DEBUG] read: returning 47729 bytes
+2025-03-11 18:54:11,067 [DEBUG] read: fh=4, off=54134, size=32768
+2025-03-11 18:54:11,067 [DEBUG] Getting file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:11,067 [DEBUG] Returning cached file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:11,067 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:11,067 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:11,068 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:11,162 [DEBUG] fetch_chunk: offset=67141632, chunk_size=2097152, elapsed=1.0565 seconds
+2025-03-11 18:54:11,199 [DEBUG] fetch_chunk: offset=62947328, chunk_size=2097152, elapsed=1.0988 seconds
+2025-03-11 18:54:11,218 [DEBUG] fetch_chunk: offset=71416410, chunk_size=2097152, elapsed=1.0756 seconds
+2025-03-11 18:54:11,219 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 132.35 MB; active prefetch threads: 0
+2025-03-11 18:54:11,219 [DEBUG] fetch_chunks_sync took 1.0769 seconds
+2025-03-11 18:54:11,219 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:11,219 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:11,255 [DEBUG] fetch_chunk: offset=65044480, chunk_size=2097152, elapsed=1.1493 seconds
+2025-03-11 18:54:11,282 [DEBUG] fetch_chunk: offset=67141632, chunk_size=2097152, elapsed=1.1810 seconds
+2025-03-11 18:54:11,306 [DEBUG] fetch_chunk: offset=73433088, chunk_size=2097152, elapsed=0.5344 seconds
+2025-03-11 18:54:11,307 [DEBUG] fetch_chunk: offset=62947328, chunk_size=2097152, elapsed=1.2011 seconds
+2025-03-11 18:54:11,308 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 144.35 MB; active prefetch threads: 0
+2025-03-11 18:54:11,308 [DEBUG] fetch_chunks_sync took 1.2024 seconds
+2025-03-11 18:54:11,308 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:11,308 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:11,309 [DEBUG] fetch_chunk: offset=77627392, chunk_size=2097152, elapsed=0.5368 seconds
+2025-03-11 18:54:11,367 [DEBUG] fetch_chunk: offset=75530240, chunk_size=2097152, elapsed=0.5949 seconds
+2025-03-11 18:54:11,373 [DEBUG] fetch_chunk: offset=79724544, chunk_size=2097152, elapsed=0.6010 seconds
+2025-03-11 18:54:11,464 [DEBUG] fetch_chunk: offset=65044480, chunk_size=2097152, elapsed=1.3633 seconds
+2025-03-11 18:54:11,465 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 146.35 MB; active prefetch threads: 0
+2025-03-11 18:54:11,465 [DEBUG] fetch_chunks_sync took 1.3646 seconds
+2025-03-11 18:54:11,465 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:11,465 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:11,487 [DEBUG] fetch_chunk: offset=83918848, chunk_size=2097152, elapsed=0.7145 seconds
+2025-03-11 18:54:11,534 [DEBUG] fetch_chunk: offset=81821696, chunk_size=2097152, elapsed=0.7623 seconds
+2025-03-11 18:54:11,536 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 146.35 MB; active prefetch threads: 0
+2025-03-11 18:54:11,536 [DEBUG] fetch_chunks_sync took 0.7645 seconds
+2025-03-11 18:54:11,536 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:11,536 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:11,594 [DEBUG] fetch_chunk: offset=75530240, chunk_size=2097152, elapsed=0.5549 seconds
+2025-03-11 18:54:11,605 [DEBUG] fetch_chunk: offset=81821696, chunk_size=2097152, elapsed=0.5655 seconds
+2025-03-11 18:54:11,662 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.5944 seconds
+2025-03-11 18:54:11,663 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 156.35 MB; active prefetch threads: 0
+2025-03-11 18:54:11,663 [DEBUG] fetch_chunks_sync took 0.5952 seconds
+2025-03-11 18:54:11,664 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:11,664 [DEBUG] maybe_prefetch took 0.0003 seconds
+2025-03-11 18:54:11,664 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:11,669 [DEBUG] fetch_chunk: offset=77627392, chunk_size=2097152, elapsed=0.6292 seconds
+2025-03-11 18:54:11,671 [DEBUG] read: fh=4, off=86902, size=32768
+2025-03-11 18:54:11,671 [DEBUG] Getting file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:11,671 [DEBUG] Returning cached file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:11,671 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:11,672 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:11,672 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:11,684 [DEBUG] fetch_chunk: offset=79724544, chunk_size=2097152, elapsed=0.6444 seconds
+2025-03-11 18:54:11,688 [DEBUG] fetch_chunk: offset=83918848, chunk_size=2097152, elapsed=0.6489 seconds
+2025-03-11 18:54:11,690 [DEBUG] fetch_chunk: offset=73433088, chunk_size=2097152, elapsed=0.6514 seconds
+2025-03-11 18:54:11,692 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 156.35 MB; active prefetch threads: 0
+2025-03-11 18:54:11,692 [DEBUG] fetch_chunks_sync took 0.6530 seconds
+2025-03-11 18:54:11,692 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:11,692 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:11,820 [DEBUG] fetch_chunk: offset=81902170, chunk_size=2097152, elapsed=0.6004 seconds
+2025-03-11 18:54:11,833 [DEBUG] fetch_chunk: offset=79805018, chunk_size=2097152, elapsed=0.6137 seconds
+2025-03-11 18:54:11,835 [DEBUG] fetch_chunk: offset=86096474, chunk_size=2097152, elapsed=0.6157 seconds
+2025-03-11 18:54:11,837 [DEBUG] fetch_chunk: offset=83999322, chunk_size=2097152, elapsed=0.6168 seconds
+2025-03-11 18:54:11,844 [DEBUG] fetch_chunk: offset=77707866, chunk_size=2097152, elapsed=0.6245 seconds
+2025-03-11 18:54:11,856 [DEBUG] fetch_chunk: offset=75610714, chunk_size=2097152, elapsed=0.6365 seconds
+2025-03-11 18:54:11,857 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 156.35 MB; active prefetch threads: 0
+2025-03-11 18:54:11,857 [DEBUG] fetch_chunks_sync took 0.6379 seconds
+2025-03-11 18:54:11,857 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:11,857 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:11,899 [DEBUG] fetch_chunk: offset=83918848, chunk_size=2097152, elapsed=0.5903 seconds
+2025-03-11 18:54:11,918 [DEBUG] fetch_chunk: offset=75530240, chunk_size=2097152, elapsed=0.6095 seconds
+2025-03-11 18:54:11,922 [DEBUG] fetch_chunk: offset=79724544, chunk_size=2097152, elapsed=0.6137 seconds
+2025-03-11 18:54:11,924 [DEBUG] fetch_chunk: offset=77627392, chunk_size=2097152, elapsed=0.6150 seconds
+2025-03-11 18:54:11,946 [DEBUG] fetch_chunk: offset=81821696, chunk_size=2097152, elapsed=0.6375 seconds
+2025-03-11 18:54:12,058 [DEBUG] fetch_chunk: offset=86016000, chunk_size=2097152, elapsed=0.7489 seconds
+2025-03-11 18:54:12,059 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 168.35 MB; active prefetch threads: 0
+2025-03-11 18:54:12,059 [DEBUG] fetch_chunks_sync took 0.7512 seconds
+2025-03-11 18:54:12,059 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:12,060 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:12,063 [DEBUG] fetch_chunk: offset=75530240, chunk_size=2097152, elapsed=0.5976 seconds
+2025-03-11 18:54:12,119 [DEBUG] fetch_chunk: offset=77627392, chunk_size=2097152, elapsed=0.6539 seconds
+2025-03-11 18:54:12,120 [DEBUG] fetch_chunk: offset=81821696, chunk_size=2097152, elapsed=0.6545 seconds
+2025-03-11 18:54:12,126 [DEBUG] fetch_chunk: offset=83918848, chunk_size=2097152, elapsed=0.6610 seconds
+2025-03-11 18:54:12,134 [DEBUG] fetch_chunk: offset=88113152, chunk_size=2097152, elapsed=0.5976 seconds
+2025-03-11 18:54:12,139 [DEBUG] fetch_chunk: offset=79724544, chunk_size=2097152, elapsed=0.6738 seconds
+2025-03-11 18:54:12,140 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 170.35 MB; active prefetch threads: 0
+2025-03-11 18:54:12,140 [DEBUG] fetch_chunks_sync took 0.6752 seconds
+2025-03-11 18:54:12,140 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:12,140 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:12,297 [DEBUG] fetch_chunk: offset=86016000, chunk_size=2097152, elapsed=0.7609 seconds
+2025-03-11 18:54:12,309 [DEBUG] fetch_chunk: offset=96501760, chunk_size=2097152, elapsed=0.7720 seconds
+2025-03-11 18:54:12,332 [DEBUG] fetch_chunk: offset=94404608, chunk_size=2097152, elapsed=0.6394 seconds
+2025-03-11 18:54:12,332 [DEBUG] fetch_chunk: offset=94404608, chunk_size=2097152, elapsed=0.7953 seconds
+2025-03-11 18:54:12,345 [DEBUG] fetch_chunk: offset=90210304, chunk_size=2097152, elapsed=0.8085 seconds
+2025-03-11 18:54:12,392 [DEBUG] fetch_chunk: offset=90210304, chunk_size=2097152, elapsed=0.6996 seconds
+2025-03-11 18:54:12,393 [DEBUG] fetch_chunk: offset=92307456, chunk_size=2097152, elapsed=0.7004 seconds
+2025-03-11 18:54:12,394 [DEBUG] fetch_chunk: offset=86016000, chunk_size=2097152, elapsed=0.7018 seconds
+2025-03-11 18:54:12,398 [DEBUG] fetch_chunk: offset=96501760, chunk_size=2097152, elapsed=0.7051 seconds
+2025-03-11 18:54:12,400 [DEBUG] fetch_chunk: offset=88113152, chunk_size=2097152, elapsed=0.7075 seconds
+2025-03-11 18:54:12,401 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 170.35 MB; active prefetch threads: 0
+2025-03-11 18:54:12,401 [DEBUG] fetch_chunks_sync took 0.7092 seconds
+2025-03-11 18:54:12,401 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:12,401 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:12,552 [DEBUG] fetch_chunk: offset=90290778, chunk_size=2097152, elapsed=0.6946 seconds
+2025-03-11 18:54:12,609 [DEBUG] fetch_chunk: offset=96582234, chunk_size=2097152, elapsed=0.7510 seconds
+2025-03-11 18:54:12,613 [DEBUG] fetch_chunk: offset=88193626, chunk_size=2097152, elapsed=0.7555 seconds
+2025-03-11 18:54:12,614 [DEBUG] fetch_chunk: offset=92387930, chunk_size=2097152, elapsed=0.7561 seconds
+2025-03-11 18:54:12,655 [DEBUG] fetch_chunk: offset=94485082, chunk_size=2097152, elapsed=0.7969 seconds
+2025-03-11 18:54:12,662 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.9900 seconds
+2025-03-11 18:54:12,663 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 180.35 MB; active prefetch threads: 0
+2025-03-11 18:54:12,663 [DEBUG] fetch_chunks_sync took 0.9914 seconds
+2025-03-11 18:54:12,663 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:12,663 [DEBUG] maybe_prefetch took 0.0002 seconds
+2025-03-11 18:54:12,664 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:12,670 [DEBUG] read: fh=4, off=686546, size=41634
+2025-03-11 18:54:12,670 [DEBUG] Getting file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:12,670 [DEBUG] Returning cached file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 18:54:12,670 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:12,670 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:12,670 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:12,700 [DEBUG] fetch_chunk: offset=92307456, chunk_size=2097152, elapsed=1.1632 seconds
+2025-03-11 18:54:12,701 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 180.35 MB; active prefetch threads: 0
+2025-03-11 18:54:12,701 [DEBUG] fetch_chunks_sync took 1.1647 seconds
+2025-03-11 18:54:12,702 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:12,702 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:12,711 [DEBUG] fetch_chunk: offset=96501760, chunk_size=2097152, elapsed=0.6506 seconds
+2025-03-11 18:54:12,714 [DEBUG] fetch_chunk: offset=98679386, chunk_size=2097152, elapsed=0.8560 seconds
+2025-03-11 18:54:12,715 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 180.35 MB; active prefetch threads: 0
+2025-03-11 18:54:12,715 [DEBUG] fetch_chunks_sync took 0.8576 seconds
+2025-03-11 18:54:12,715 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:12,715 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:12,761 [DEBUG] fetch_chunk: offset=98598912, chunk_size=2097152, elapsed=0.7007 seconds
+2025-03-11 18:54:12,761 [DEBUG] fetch_chunk: offset=92307456, chunk_size=2097152, elapsed=0.7013 seconds
+2025-03-11 18:54:12,764 [DEBUG] fetch_chunk: offset=94404608, chunk_size=2097152, elapsed=0.7040 seconds
+2025-03-11 18:54:12,766 [DEBUG] fetch_chunk: offset=88113152, chunk_size=2097152, elapsed=0.7063 seconds
+2025-03-11 18:54:12,767 [DEBUG] fetch_chunk: offset=90210304, chunk_size=2097152, elapsed=0.7072 seconds
+2025-03-11 18:54:12,769 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.35 MB; active prefetch threads: 0
+2025-03-11 18:54:12,769 [DEBUG] fetch_chunks_sync took 0.7094 seconds
+2025-03-11 18:54:12,769 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:12,769 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:12,774 [DEBUG] fetch_chunk: offset=92307456, chunk_size=2097152, elapsed=0.6327 seconds
+2025-03-11 18:54:12,810 [DEBUG] fetch_chunk: offset=90210304, chunk_size=2097152, elapsed=0.6696 seconds
+2025-03-11 18:54:12,846 [DEBUG] fetch_chunk: offset=88113152, chunk_size=2097152, elapsed=0.7051 seconds
+2025-03-11 18:54:12,850 [DEBUG] fetch_chunk: offset=94404608, chunk_size=2097152, elapsed=0.7087 seconds
+2025-03-11 18:54:12,899 [DEBUG] fetch_chunk: offset=96501760, chunk_size=2097152, elapsed=0.7585 seconds
+2025-03-11 18:54:12,900 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 194.35 MB; active prefetch threads: 0
+2025-03-11 18:54:12,901 [DEBUG] fetch_chunks_sync took 0.7602 seconds
+2025-03-11 18:54:12,901 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:12,901 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:12,964 [DEBUG] fetch_chunk: offset=98598912, chunk_size=2097152, elapsed=0.5631 seconds
+2025-03-11 18:54:13,005 [DEBUG] fetch_chunk: offset=102793216, chunk_size=2097152, elapsed=0.6035 seconds
+2025-03-11 18:54:13,009 [DEBUG] fetch_chunk: offset=104890368, chunk_size=2097152, elapsed=0.6077 seconds
+2025-03-11 18:54:13,052 [DEBUG] fetch_chunk: offset=100696064, chunk_size=2097152, elapsed=0.6506 seconds
+2025-03-11 18:54:13,053 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 194.35 MB; active prefetch threads: 0
+2025-03-11 18:54:13,053 [DEBUG] fetch_chunks_sync took 0.6521 seconds
+2025-03-11 18:54:13,053 [DEBUG] prefetch took 6.1841 seconds
+2025-03-11 18:54:13,181 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.5107 seconds
+2025-03-11 18:54:13,182 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 198.35 MB; active prefetch threads: 0
+2025-03-11 18:54:13,182 [DEBUG] fetch_chunks_sync took 0.5121 seconds
+2025-03-11 18:54:13,184 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:13,184 [DEBUG] maybe_prefetch took 0.0007 seconds
+2025-03-11 18:54:13,184 [DEBUG] read: returning 41634 bytes
+2025-03-11 18:54:13,201 [DEBUG] open: inode=3, flags=32768
+2025-03-11 18:54:13,202 [DEBUG] read: fh=5, off=0, size=32768
+2025-03-11 18:54:13,202 [DEBUG] Getting file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 18:54:13,202 [DEBUG] Returning cached file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 18:54:13,202 [DEBUG] get_file_attr took 0.0002 seconds
+2025-03-11 18:54:13,202 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:13,202 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:13,269 [DEBUG] fetch_chunk: offset=98598912, chunk_size=2097152, elapsed=0.5668 seconds
+2025-03-11 18:54:13,278 [DEBUG] fetch_chunk: offset=100696064, chunk_size=2097152, elapsed=0.5759 seconds
+2025-03-11 18:54:13,310 [DEBUG] fetch_chunk: offset=104890368, chunk_size=2097152, elapsed=0.6079 seconds
+2025-03-11 18:54:13,331 [DEBUG] fetch_chunk: offset=102873690, chunk_size=2097152, elapsed=0.6157 seconds
+2025-03-11 18:54:13,331 [DEBUG] fetch_chunk: offset=102793216, chunk_size=2097152, elapsed=0.6287 seconds
+2025-03-11 18:54:13,332 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 198.35 MB; active prefetch threads: 0
+2025-03-11 18:54:13,332 [DEBUG] fetch_chunks_sync took 0.6302 seconds
+2025-03-11 18:54:13,332 [DEBUG] fetch_chunk: offset=100776538, chunk_size=2097152, elapsed=0.6171 seconds
+2025-03-11 18:54:13,332 [DEBUG] prefetch took 5.7176 seconds
+2025-03-11 18:54:13,333 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 198.35 MB; active prefetch threads: 0
+2025-03-11 18:54:13,333 [DEBUG] fetch_chunks_sync took 0.6180 seconds
+2025-03-11 18:54:13,333 [DEBUG] prefetch took 7.2834 seconds
+2025-03-11 18:54:13,344 [DEBUG] fetch_chunk: offset=102793216, chunk_size=2097152, elapsed=0.5745 seconds
+2025-03-11 18:54:13,373 [DEBUG] fetch_chunk: offset=100696064, chunk_size=2097152, elapsed=0.6036 seconds
+2025-03-11 18:54:13,374 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 198.35 MB; active prefetch threads: 0
+2025-03-11 18:54:13,374 [DEBUG] fetch_chunks_sync took 0.6048 seconds
+2025-03-11 18:54:13,374 [DEBUG] prefetch took 8.0331 seconds
+2025-03-11 18:54:13,439 [DEBUG] fetch_chunk: offset=100696064, chunk_size=2097152, elapsed=0.5378 seconds
+2025-03-11 18:54:13,476 [DEBUG] fetch_chunk: offset=104890368, chunk_size=2097152, elapsed=0.5746 seconds
+2025-03-11 18:54:13,482 [DEBUG] fetch_chunk: offset=102793216, chunk_size=2097152, elapsed=0.5809 seconds
+2025-03-11 18:54:13,483 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 198.35 MB; active prefetch threads: 0
+2025-03-11 18:54:13,483 [DEBUG] fetch_chunks_sync took 0.5821 seconds
+2025-03-11 18:54:13,483 [DEBUG] prefetch took 5.1627 seconds
+2025-03-11 18:54:13,777 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.5748 seconds
+2025-03-11 18:54:13,777 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 198.35 MB; active prefetch threads: 0
+2025-03-11 18:54:13,778 [DEBUG] fetch_chunks_sync took 0.5756 seconds
+2025-03-11 18:54:13,778 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:13,778 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:13,778 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:13,778 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:13,779 [DEBUG] read: fh=5, off=2299653, size=32768
+2025-03-11 18:54:13,779 [DEBUG] Getting file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 18:54:13,779 [DEBUG] Returning cached file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 18:54:13,779 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:13,779 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:13,780 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:14,131 [DEBUG] fetch_chunk: offset=2129920, chunk_size=2097152, elapsed=0.3524 seconds
+2025-03-11 18:54:14,183 [DEBUG] fetch_chunk: offset=2097152, chunk_size=2097152, elapsed=0.4028 seconds
+2025-03-11 18:54:14,184 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 198.35 MB; active prefetch threads: 0
+2025-03-11 18:54:14,184 [DEBUG] fetch_chunks_sync took 0.4043 seconds
+2025-03-11 18:54:14,184 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:14,184 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:14,184 [DEBUG] read: returning 0 bytes
+2025-03-11 18:54:14,184 [DEBUG] read: fh=5, off=2299653, size=32768
+2025-03-11 18:54:14,184 [DEBUG] Getting file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 18:54:14,184 [DEBUG] Returning cached file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 18:54:14,185 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:14,185 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:14,185 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:14,321 [DEBUG] fetch_chunk: offset=32768, chunk_size=2097152, elapsed=0.5428 seconds
+2025-03-11 18:54:14,322 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 198.35 MB; active prefetch threads: 0
+2025-03-11 18:54:14,322 [DEBUG] fetch_chunks_sync took 0.5438 seconds
+2025-03-11 18:54:14,541 [DEBUG] fetch_chunk: offset=2097152, chunk_size=2097152, elapsed=0.3558 seconds
+2025-03-11 18:54:14,541 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 196.51 MB; active prefetch threads: 0
+2025-03-11 18:54:14,541 [DEBUG] fetch_chunks_sync took 0.3568 seconds
+2025-03-11 18:54:14,541 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:14,541 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:14,542 [DEBUG] read: returning 0 bytes
+2025-03-11 18:54:14,542 [DEBUG] open: inode=3, flags=32768
+2025-03-11 18:54:14,542 [DEBUG] read: fh=6, off=0, size=32768
+2025-03-11 18:54:14,542 [DEBUG] Getting file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:14,542 [DEBUG] Returning cached file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:14,542 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:14,542 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:14,542 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:15,226 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.6834 seconds
+2025-03-11 18:54:15,227 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 196.51 MB; active prefetch threads: 0
+2025-03-11 18:54:15,227 [DEBUG] fetch_chunks_sync took 0.6846 seconds
+2025-03-11 18:54:15,228 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:15,228 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:15,228 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:15,228 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:15,229 [DEBUG] read: fh=6, off=12917485, size=32768
+2025-03-11 18:54:15,229 [DEBUG] Getting file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:15,229 [DEBUG] Returning cached file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:15,229 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:15,229 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:15,229 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:15,713 [DEBUG] fetch_chunk: offset=12582912, chunk_size=2097152, elapsed=0.4842 seconds
+2025-03-11 18:54:15,714 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 196.51 MB; active prefetch threads: 0
+2025-03-11 18:54:15,714 [DEBUG] fetch_chunks_sync took 0.4854 seconds
+2025-03-11 18:54:15,714 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:15,714 [DEBUG] maybe_prefetch took 0.0002 seconds
+2025-03-11 18:54:15,714 [DEBUG] read: returning 0 bytes
+2025-03-11 18:54:15,715 [DEBUG] read: fh=6, off=12917485, size=32768
+2025-03-11 18:54:15,715 [DEBUG] Getting file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:15,715 [DEBUG] Returning cached file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:15,715 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:15,715 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:15,715 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:15,753 [DEBUG] fetch_chunk: offset=4227072, chunk_size=2097152, elapsed=0.5249 seconds
+2025-03-11 18:54:15,844 [DEBUG] fetch_chunk: offset=10518528, chunk_size=2097152, elapsed=0.6159 seconds
+2025-03-11 18:54:15,846 [DEBUG] fetch_chunk: offset=8421376, chunk_size=2097152, elapsed=0.6178 seconds
+2025-03-11 18:54:15,902 [DEBUG] fetch_chunk: offset=2129920, chunk_size=2097152, elapsed=0.6736 seconds
+2025-03-11 18:54:15,953 [DEBUG] fetch_chunk: offset=32768, chunk_size=2097152, elapsed=0.7255 seconds
+2025-03-11 18:54:16,010 [DEBUG] fetch_chunk: offset=6324224, chunk_size=2097152, elapsed=0.7814 seconds
+2025-03-11 18:54:16,011 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 196.51 MB; active prefetch threads: 0
+2025-03-11 18:54:16,011 [DEBUG] fetch_chunks_sync took 0.7830 seconds
+2025-03-11 18:54:16,011 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:16,011 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:16,091 [DEBUG] fetch_chunk: offset=12582912, chunk_size=2097152, elapsed=0.3752 seconds
+2025-03-11 18:54:16,091 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 196.51 MB; active prefetch threads: 0
+2025-03-11 18:54:16,091 [DEBUG] fetch_chunks_sync took 0.3762 seconds
+2025-03-11 18:54:16,091 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:16,092 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:16,092 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:16,092 [DEBUG] read: returning 0 bytes
+2025-03-11 18:54:16,092 [DEBUG] read: fh=6, off=19957, size=32768
+2025-03-11 18:54:16,092 [DEBUG] Getting file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:16,092 [DEBUG] Returning cached file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:16,092 [DEBUG] get_file_attr took 0.0002 seconds
+2025-03-11 18:54:16,093 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:16,093 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:16,401 [DEBUG] fetch_chunk: offset=12615680, chunk_size=2097152, elapsed=0.3904 seconds
+2025-03-11 18:54:16,402 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 196.51 MB; active prefetch threads: 0
+2025-03-11 18:54:16,402 [DEBUG] fetch_chunks_sync took 0.3913 seconds
+2025-03-11 18:54:16,457 [DEBUG] fetch_chunk: offset=12615680, chunk_size=2097152, elapsed=0.3650 seconds
+2025-03-11 18:54:16,457 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 194.80 MB; active prefetch threads: 0
+2025-03-11 18:54:16,457 [DEBUG] fetch_chunks_sync took 0.3659 seconds
+2025-03-11 18:54:16,613 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.5204 seconds
+2025-03-11 18:54:16,614 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 194.80 MB; active prefetch threads: 0
+2025-03-11 18:54:16,614 [DEBUG] fetch_chunks_sync took 0.5211 seconds
+2025-03-11 18:54:16,614 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:16,615 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:16,615 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:16,619 [DEBUG] read: fh=6, off=52725, size=32768
+2025-03-11 18:54:16,619 [DEBUG] Getting file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:16,620 [DEBUG] Returning cached file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:16,620 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:16,620 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:16,620 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:17,166 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.5461 seconds
+2025-03-11 18:54:17,167 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 194.80 MB; active prefetch threads: 0
+2025-03-11 18:54:17,167 [DEBUG] fetch_chunks_sync took 0.5470 seconds
+2025-03-11 18:54:17,167 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:17,167 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:17,168 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:17,173 [DEBUG] read: fh=6, off=85493, size=32768
+2025-03-11 18:54:17,173 [DEBUG] Getting file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:17,173 [DEBUG] Returning cached file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:17,173 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:17,173 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:17,173 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:17,766 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.5926 seconds
+2025-03-11 18:54:17,767 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 194.80 MB; active prefetch threads: 0
+2025-03-11 18:54:17,767 [DEBUG] fetch_chunks_sync took 0.5934 seconds
+2025-03-11 18:54:17,767 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:17,767 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:17,767 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:17,770 [DEBUG] read: fh=6, off=3256721, size=32768
+2025-03-11 18:54:17,770 [DEBUG] Getting file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:17,770 [DEBUG] Returning cached file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:17,770 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:17,770 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:17,770 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:18,273 [DEBUG] fetch_chunk: offset=2097152, chunk_size=2097152, elapsed=0.5026 seconds
+2025-03-11 18:54:18,274 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 194.80 MB; active prefetch threads: 0
+2025-03-11 18:54:18,274 [DEBUG] fetch_chunks_sync took 0.5035 seconds
+2025-03-11 18:54:18,274 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:18,274 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:18,274 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:18,274 [DEBUG] read: fh=6, off=3289489, size=32768
+2025-03-11 18:54:18,274 [DEBUG] Getting file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:18,275 [DEBUG] Returning cached file attributes for 'ForBiggerFun.mp4'
+2025-03-11 18:54:18,275 [DEBUG] get_file_attr took 0.0002 seconds
+2025-03-11 18:54:18,275 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:18,275 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:18,790 [DEBUG] fetch_chunk: offset=2097152, chunk_size=2097152, elapsed=0.5148 seconds
+2025-03-11 18:54:18,790 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 194.80 MB; active prefetch threads: 0
+2025-03-11 18:54:18,790 [DEBUG] fetch_chunks_sync took 0.5158 seconds
+2025-03-11 18:54:18,791 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:18,791 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:18,791 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:18,804 [DEBUG] open: inode=4, flags=32768
+2025-03-11 18:54:18,805 [DEBUG] read: fh=7, off=0, size=32768
+2025-03-11 18:54:18,805 [DEBUG] Getting file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 18:54:18,805 [DEBUG] Returning cached file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 18:54:18,805 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:18,805 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:18,805 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:19,443 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.6382 seconds
+2025-03-11 18:54:19,444 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 194.80 MB; active prefetch threads: 0
+2025-03-11 18:54:19,444 [DEBUG] fetch_chunks_sync took 0.6390 seconds
+2025-03-11 18:54:19,444 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:19,445 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:19,445 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:19,445 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:19,445 [DEBUG] read: fh=7, off=2372820, size=32768
+2025-03-11 18:54:19,445 [DEBUG] Getting file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 18:54:19,446 [DEBUG] Returning cached file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 18:54:19,446 [DEBUG] get_file_attr took 0.0004 seconds
+2025-03-11 18:54:19,446 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:19,446 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:19,850 [DEBUG] fetch_chunk: offset=2129920, chunk_size=2097152, elapsed=0.4044 seconds
+2025-03-11 18:54:19,874 [DEBUG] fetch_chunk: offset=2097152, chunk_size=2097152, elapsed=0.4280 seconds
+2025-03-11 18:54:19,875 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 194.80 MB; active prefetch threads: 0
+2025-03-11 18:54:19,875 [DEBUG] fetch_chunks_sync took 0.4288 seconds
+2025-03-11 18:54:19,875 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:19,875 [DEBUG] maybe_prefetch took 0.0002 seconds
+2025-03-11 18:54:19,875 [DEBUG] read: returning 0 bytes
+2025-03-11 18:54:19,875 [DEBUG] read: fh=7, off=2372820, size=32768
+2025-03-11 18:54:19,875 [DEBUG] Getting file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 18:54:19,875 [DEBUG] Returning cached file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 18:54:19,875 [DEBUG] get_file_attr took 0.0002 seconds
+2025-03-11 18:54:19,875 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:19,875 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:20,088 [DEBUG] fetch_chunk: offset=32768, chunk_size=2097152, elapsed=0.6425 seconds
+2025-03-11 18:54:20,089 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 194.80 MB; active prefetch threads: 0
+2025-03-11 18:54:20,089 [DEBUG] fetch_chunks_sync took 0.6442 seconds
+2025-03-11 18:54:20,240 [DEBUG] fetch_chunk: offset=2097152, chunk_size=2097152, elapsed=0.3647 seconds
+2025-03-11 18:54:20,241 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 193.03 MB; active prefetch threads: 0
+2025-03-11 18:54:20,241 [DEBUG] fetch_chunks_sync took 0.3657 seconds
+2025-03-11 18:54:20,241 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:20,241 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:20,241 [DEBUG] read: returning 0 bytes
+2025-03-11 18:54:20,242 [DEBUG] open: inode=4, flags=32768
+2025-03-11 18:54:20,242 [DEBUG] read: fh=8, off=0, size=32768
+2025-03-11 18:54:20,242 [DEBUG] Getting file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:20,242 [DEBUG] Returning cached file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:20,242 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:20,242 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:20,242 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:20,773 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.5307 seconds
+2025-03-11 18:54:20,774 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 193.03 MB; active prefetch threads: 0
+2025-03-11 18:54:20,774 [DEBUG] fetch_chunks_sync took 0.5316 seconds
+2025-03-11 18:54:20,774 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:20,775 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:20,775 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:20,775 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:20,775 [DEBUG] read: fh=8, off=2252313, size=32768
+2025-03-11 18:54:20,776 [DEBUG] Getting file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:20,776 [DEBUG] Returning cached file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:20,776 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:20,776 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:20,776 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:21,137 [DEBUG] fetch_chunk: offset=2129920, chunk_size=2097152, elapsed=0.3617 seconds
+2025-03-11 18:54:21,170 [DEBUG] fetch_chunk: offset=2097152, chunk_size=2097152, elapsed=0.3944 seconds
+2025-03-11 18:54:21,171 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 193.03 MB; active prefetch threads: 0
+2025-03-11 18:54:21,171 [DEBUG] fetch_chunks_sync took 0.3953 seconds
+2025-03-11 18:54:21,171 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:21,171 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:21,171 [DEBUG] read: returning 0 bytes
+2025-03-11 18:54:21,171 [DEBUG] read: fh=8, off=2252313, size=32768
+2025-03-11 18:54:21,171 [DEBUG] Getting file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:21,172 [DEBUG] Returning cached file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:21,172 [DEBUG] get_file_attr took 0.0003 seconds
+2025-03-11 18:54:21,172 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:21,172 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:21,361 [DEBUG] fetch_chunk: offset=32768, chunk_size=2097152, elapsed=0.5860 seconds
+2025-03-11 18:54:21,361 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 193.03 MB; active prefetch threads: 0
+2025-03-11 18:54:21,361 [DEBUG] fetch_chunks_sync took 0.5869 seconds
+2025-03-11 18:54:21,543 [DEBUG] fetch_chunk: offset=2097152, chunk_size=2097152, elapsed=0.3707 seconds
+2025-03-11 18:54:21,543 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:21,544 [DEBUG] fetch_chunks_sync took 0.3717 seconds
+2025-03-11 18:54:21,544 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:21,544 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:21,544 [DEBUG] read: returning 0 bytes
+2025-03-11 18:54:21,544 [DEBUG] read: fh=8, off=6518, size=34657
+2025-03-11 18:54:21,544 [DEBUG] Getting file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:21,544 [DEBUG] Returning cached file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:21,544 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:21,544 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:21,544 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:22,055 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.5106 seconds
+2025-03-11 18:54:22,056 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:22,056 [DEBUG] fetch_chunks_sync took 0.5116 seconds
+2025-03-11 18:54:22,057 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:22,057 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:22,057 [DEBUG] read: returning 34657 bytes
+2025-03-11 18:54:22,061 [DEBUG] read: fh=8, off=41175, size=32768
+2025-03-11 18:54:22,061 [DEBUG] Getting file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:22,061 [DEBUG] Returning cached file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:22,061 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:22,061 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:22,061 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:22,623 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.5619 seconds
+2025-03-11 18:54:22,624 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:22,624 [DEBUG] fetch_chunks_sync took 0.5628 seconds
+2025-03-11 18:54:22,625 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:22,625 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:22,625 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:22,632 [DEBUG] read: fh=8, off=73943, size=32768
+2025-03-11 18:54:22,632 [DEBUG] Getting file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:22,632 [DEBUG] Returning cached file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:22,632 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:22,632 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:22,632 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:23,153 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.5204 seconds
+2025-03-11 18:54:23,153 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:23,153 [DEBUG] fetch_chunks_sync took 0.5213 seconds
+2025-03-11 18:54:23,154 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:23,155 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:23,155 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:23,158 [DEBUG] read: fh=8, off=943150, size=37601
+2025-03-11 18:54:23,158 [DEBUG] Getting file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:23,158 [DEBUG] Returning cached file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 18:54:23,158 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:23,158 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:23,159 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:23,663 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.5046 seconds
+2025-03-11 18:54:23,664 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:23,664 [DEBUG] fetch_chunks_sync took 0.5056 seconds
+2025-03-11 18:54:23,665 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:23,665 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:23,665 [DEBUG] read: returning 37601 bytes
+2025-03-11 18:54:23,677 [DEBUG] open: inode=5, flags=32768
+2025-03-11 18:54:23,677 [DEBUG] read: fh=9, off=0, size=32768
+2025-03-11 18:54:23,677 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:23,677 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 18:54:23,677 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:23,677 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:23,677 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:24,273 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.5958 seconds
+2025-03-11 18:54:24,274 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:24,274 [DEBUG] fetch_chunks_sync took 0.5968 seconds
+2025-03-11 18:54:24,274 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:24,274 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:24,274 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:24,274 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:24,275 [DEBUG] read: fh=9, off=32768, size=32768
+2025-03-11 18:54:24,275 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:24,276 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 18:54:24,276 [DEBUG] get_file_attr took 0.0003 seconds
+2025-03-11 18:54:24,276 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:24,276 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:24,792 [DEBUG] fetch_chunk: offset=2129920, chunk_size=2097152, elapsed=0.5173 seconds
+2025-03-11 18:54:24,871 [DEBUG] fetch_chunk: offset=4227072, chunk_size=2097152, elapsed=0.5955 seconds
+2025-03-11 18:54:24,916 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.6393 seconds
+2025-03-11 18:54:24,916 [DEBUG] fetch_chunk: offset=32768, chunk_size=2097152, elapsed=0.6415 seconds
+2025-03-11 18:54:24,916 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:24,917 [DEBUG] fetch_chunks_sync took 0.6406 seconds
+2025-03-11 18:54:24,918 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:24,918 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:24,918 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:24,918 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:24,919 [DEBUG] read: fh=9, off=65536, size=32768
+2025-03-11 18:54:24,919 [DEBUG] fetch_chunk: offset=10518528, chunk_size=2097152, elapsed=0.6442 seconds
+2025-03-11 18:54:24,919 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:24,920 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 18:54:24,920 [DEBUG] get_file_attr took 0.0006 seconds
+2025-03-11 18:54:24,920 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:24,920 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:24,988 [DEBUG] fetch_chunk: offset=6324224, chunk_size=2097152, elapsed=0.7132 seconds
+2025-03-11 18:54:24,989 [DEBUG] fetch_chunk: offset=8421376, chunk_size=2097152, elapsed=0.7142 seconds
+2025-03-11 18:54:24,990 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:24,990 [DEBUG] fetch_chunks_sync took 0.7159 seconds
+2025-03-11 18:54:24,990 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:24,990 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:25,472 [DEBUG] fetch_chunk: offset=65536, chunk_size=2097152, elapsed=0.5533 seconds
+2025-03-11 18:54:25,548 [DEBUG] fetch_chunk: offset=2162688, chunk_size=2097152, elapsed=0.6287 seconds
+2025-03-11 18:54:25,564 [DEBUG] fetch_chunk: offset=12615680, chunk_size=2097152, elapsed=0.5733 seconds
+2025-03-11 18:54:25,576 [DEBUG] fetch_chunk: offset=4259840, chunk_size=2097152, elapsed=0.6567 seconds
+2025-03-11 18:54:25,577 [DEBUG] fetch_chunk: offset=6356992, chunk_size=2097152, elapsed=0.6579 seconds
+2025-03-11 18:54:25,578 [DEBUG] fetch_chunk: offset=10551296, chunk_size=2097152, elapsed=0.6590 seconds
+2025-03-11 18:54:25,579 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.6583 seconds
+2025-03-11 18:54:25,580 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:25,580 [DEBUG] fetch_chunks_sync took 0.6595 seconds
+2025-03-11 18:54:25,581 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:25,581 [DEBUG] maybe_prefetch took 0.0002 seconds
+2025-03-11 18:54:25,581 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:25,581 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:25,582 [DEBUG] read: fh=9, off=98304, size=32768
+2025-03-11 18:54:25,582 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:25,583 [DEBUG] fetch_chunk: offset=8454144, chunk_size=2097152, elapsed=0.6634 seconds
+2025-03-11 18:54:25,583 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 18:54:25,583 [DEBUG] get_file_attr took 0.0011 seconds
+2025-03-11 18:54:25,583 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:25,584 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:25,584 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:25,585 [DEBUG] fetch_chunks_sync took 0.6666 seconds
+2025-03-11 18:54:25,585 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:25,585 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:25,657 [DEBUG] fetch_chunk: offset=21004288, chunk_size=2097152, elapsed=0.6662 seconds
+2025-03-11 18:54:25,698 [DEBUG] fetch_chunk: offset=23101440, chunk_size=2097152, elapsed=0.7077 seconds
+2025-03-11 18:54:25,712 [DEBUG] fetch_chunk: offset=14712832, chunk_size=2097152, elapsed=0.7213 seconds
+2025-03-11 18:54:25,724 [DEBUG] fetch_chunk: offset=18907136, chunk_size=2097152, elapsed=0.7331 seconds
+2025-03-11 18:54:25,747 [DEBUG] fetch_chunk: offset=16809984, chunk_size=2097152, elapsed=0.7567 seconds
+2025-03-11 18:54:25,748 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:25,748 [DEBUG] fetch_chunks_sync took 0.7578 seconds
+2025-03-11 18:54:25,748 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:25,748 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:26,157 [DEBUG] fetch_chunk: offset=14712832, chunk_size=2097152, elapsed=0.5746 seconds
+2025-03-11 18:54:26,178 [DEBUG] fetch_chunk: offset=18907136, chunk_size=2097152, elapsed=0.5953 seconds
+2025-03-11 18:54:26,216 [DEBUG] fetch_chunk: offset=12615680, chunk_size=2097152, elapsed=0.6339 seconds
+2025-03-11 18:54:26,226 [DEBUG] fetch_chunk: offset=18939904, chunk_size=2097152, elapsed=0.6408 seconds
+2025-03-11 18:54:26,235 [DEBUG] fetch_chunk: offset=12648448, chunk_size=2097152, elapsed=0.6503 seconds
+2025-03-11 18:54:26,244 [DEBUG] fetch_chunk: offset=21037056, chunk_size=2097152, elapsed=0.6591 seconds
+2025-03-11 18:54:26,246 [DEBUG] fetch_chunk: offset=21004288, chunk_size=2097152, elapsed=0.6639 seconds
+2025-03-11 18:54:26,249 [DEBUG] fetch_chunk: offset=16842752, chunk_size=2097152, elapsed=0.6641 seconds
+2025-03-11 18:54:26,250 [DEBUG] fetch_chunk: offset=16809984, chunk_size=2097152, elapsed=0.6676 seconds
+2025-03-11 18:54:26,250 [DEBUG] fetch_chunk: offset=14745600, chunk_size=2097152, elapsed=0.6651 seconds
+2025-03-11 18:54:26,251 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:26,251 [DEBUG] fetch_chunks_sync took 0.6700 seconds
+2025-03-11 18:54:26,251 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:26,251 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:26,260 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.6763 seconds
+2025-03-11 18:54:26,261 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:26,261 [DEBUG] fetch_chunks_sync took 0.6776 seconds
+2025-03-11 18:54:26,262 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:26,262 [DEBUG] maybe_prefetch took 0.0002 seconds
+2025-03-11 18:54:26,262 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:26,262 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:26,263 [DEBUG] read: fh=9, off=131072, size=70170
+2025-03-11 18:54:26,263 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:26,263 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 18:54:26,263 [DEBUG] get_file_attr took 0.0003 seconds
+2025-03-11 18:54:26,264 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:26,264 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:26,365 [DEBUG] fetch_chunk: offset=29392896, chunk_size=2097152, elapsed=0.6166 seconds
+2025-03-11 18:54:26,388 [DEBUG] fetch_chunk: offset=27295744, chunk_size=2097152, elapsed=0.6397 seconds
+2025-03-11 18:54:26,425 [DEBUG] fetch_chunk: offset=25198592, chunk_size=2097152, elapsed=0.6771 seconds
+2025-03-11 18:54:26,527 [DEBUG] fetch_chunk: offset=31490048, chunk_size=2097152, elapsed=0.7788 seconds
+2025-03-11 18:54:26,536 [DEBUG] fetch_chunk: offset=33587200, chunk_size=2097152, elapsed=0.7873 seconds
+2025-03-11 18:54:26,557 [DEBUG] fetch_chunk: offset=35684352, chunk_size=2097152, elapsed=0.8084 seconds
+2025-03-11 18:54:26,558 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:26,558 [DEBUG] fetch_chunks_sync took 0.8099 seconds
+2025-03-11 18:54:26,558 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:26,558 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:26,589 [DEBUG] fetch_chunk: offset=23134208, chunk_size=2097152, elapsed=1.0035 seconds
+2025-03-11 18:54:26,590 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:26,590 [DEBUG] fetch_chunks_sync took 1.0051 seconds
+2025-03-11 18:54:26,590 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:26,590 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:26,863 [DEBUG] fetch_chunk: offset=29392896, chunk_size=2097152, elapsed=0.6111 seconds
+2025-03-11 18:54:26,867 [DEBUG] fetch_chunk: offset=27295744, chunk_size=2097152, elapsed=0.6154 seconds
+2025-03-11 18:54:26,868 [DEBUG] fetch_chunk: offset=29392896, chunk_size=2097152, elapsed=0.6044 seconds
+2025-03-11 18:54:26,874 [DEBUG] fetch_chunk: offset=33587200, chunk_size=2097152, elapsed=0.6221 seconds
+2025-03-11 18:54:26,877 [DEBUG] fetch_chunk: offset=25198592, chunk_size=2097152, elapsed=0.6147 seconds
+2025-03-11 18:54:26,887 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.6227 seconds
+2025-03-11 18:54:26,888 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:26,888 [DEBUG] fetch_chunks_sync took 0.6240 seconds
+2025-03-11 18:54:26,888 [DEBUG] fetch_chunk: offset=27295744, chunk_size=2097152, elapsed=0.6253 seconds
+2025-03-11 18:54:26,889 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:26,889 [DEBUG] maybe_prefetch took 0.0005 seconds
+2025-03-11 18:54:26,889 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:26,889 [DEBUG] read: returning 70170 bytes
+2025-03-11 18:54:26,889 [DEBUG] read: fh=9, off=201242, size=32768
+2025-03-11 18:54:26,890 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:26,890 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 18:54:26,890 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:26,890 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:26,890 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:26,892 [DEBUG] fetch_chunk: offset=33587200, chunk_size=2097152, elapsed=0.6282 seconds
+2025-03-11 18:54:26,896 [DEBUG] fetch_chunk: offset=25198592, chunk_size=2097152, elapsed=0.6453 seconds
+2025-03-11 18:54:26,900 [DEBUG] fetch_chunk: offset=31490048, chunk_size=2097152, elapsed=0.6367 seconds
+2025-03-11 18:54:26,900 [DEBUG] fetch_chunk: offset=31490048, chunk_size=2097152, elapsed=0.6485 seconds
+2025-03-11 18:54:26,901 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:26,901 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:26,901 [DEBUG] fetch_chunks_sync took 0.6393 seconds
+2025-03-11 18:54:26,902 [DEBUG] fetch_chunks_sync took 0.6507 seconds
+2025-03-11 18:54:26,902 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:26,902 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:26,902 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:26,902 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:27,306 [DEBUG] fetch_chunk: offset=44072960, chunk_size=2097152, elapsed=0.7471 seconds
+2025-03-11 18:54:27,355 [DEBUG] fetch_chunk: offset=41975808, chunk_size=2097152, elapsed=0.7964 seconds
+2025-03-11 18:54:27,366 [DEBUG] fetch_chunk: offset=33619968, chunk_size=2097152, elapsed=0.7754 seconds
+2025-03-11 18:54:27,370 [DEBUG] fetch_chunk: offset=27328512, chunk_size=2097152, elapsed=0.7801 seconds
+2025-03-11 18:54:27,374 [DEBUG] fetch_chunk: offset=37781504, chunk_size=2097152, elapsed=0.8155 seconds
+2025-03-11 18:54:27,374 [DEBUG] fetch_chunk: offset=39878656, chunk_size=2097152, elapsed=0.8157 seconds
+2025-03-11 18:54:27,376 [DEBUG] fetch_chunk: offset=46170112, chunk_size=2097152, elapsed=0.8171 seconds
+2025-03-11 18:54:27,376 [DEBUG] fetch_chunk: offset=29425664, chunk_size=2097152, elapsed=0.7858 seconds
+2025-03-11 18:54:27,378 [DEBUG] fetch_chunk: offset=35717120, chunk_size=2097152, elapsed=0.7873 seconds
+2025-03-11 18:54:27,381 [DEBUG] fetch_chunk: offset=25231360, chunk_size=2097152, elapsed=0.7909 seconds
+2025-03-11 18:54:27,387 [DEBUG] fetch_chunk: offset=31522816, chunk_size=2097152, elapsed=0.7964 seconds
+2025-03-11 18:54:27,388 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 191.15 MB; active prefetch threads: 0
+2025-03-11 18:54:27,388 [DEBUG] fetch_chunks_sync took 0.7982 seconds
+2025-03-11 18:54:27,389 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:27,390 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:27,476 [DEBUG] fetch_chunk: offset=48267264, chunk_size=2097152, elapsed=0.9175 seconds
+2025-03-11 18:54:27,478 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:27,478 [DEBUG] fetch_chunks_sync took 0.9202 seconds
+2025-03-11 18:54:27,481 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:27,481 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:27,657 [DEBUG] fetch_chunk: offset=44072960, chunk_size=2097152, elapsed=0.7546 seconds
+2025-03-11 18:54:27,668 [DEBUG] fetch_chunk: offset=46170112, chunk_size=2097152, elapsed=0.7651 seconds
+2025-03-11 18:54:27,669 [DEBUG] fetch_chunk: offset=46170112, chunk_size=2097152, elapsed=0.7791 seconds
+2025-03-11 18:54:27,669 [DEBUG] fetch_chunk: offset=41975808, chunk_size=2097152, elapsed=0.7798 seconds
+2025-03-11 18:54:27,669 [DEBUG] fetch_chunk: offset=41975808, chunk_size=2097152, elapsed=0.7666 seconds
+2025-03-11 18:54:27,677 [DEBUG] fetch_chunk: offset=39878656, chunk_size=2097152, elapsed=0.7745 seconds
+2025-03-11 18:54:27,679 [DEBUG] fetch_chunk: offset=37781504, chunk_size=2097152, elapsed=0.7770 seconds
+2025-03-11 18:54:27,681 [DEBUG] fetch_chunk: offset=37781504, chunk_size=2097152, elapsed=0.7784 seconds
+2025-03-11 18:54:27,681 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:27,681 [DEBUG] fetch_chunks_sync took 0.7797 seconds
+2025-03-11 18:54:27,681 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:27,681 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:27,685 [DEBUG] fetch_chunk: offset=44072960, chunk_size=2097152, elapsed=0.7954 seconds
+2025-03-11 18:54:27,687 [DEBUG] fetch_chunk: offset=44072960, chunk_size=2097152, elapsed=0.7843 seconds
+2025-03-11 18:54:27,690 [DEBUG] fetch_chunk: offset=39878656, chunk_size=2097152, elapsed=0.8000 seconds
+2025-03-11 18:54:27,691 [DEBUG] fetch_chunk: offset=37781504, chunk_size=2097152, elapsed=0.8014 seconds
+2025-03-11 18:54:27,691 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:27,691 [DEBUG] fetch_chunks_sync took 0.8028 seconds
+2025-03-11 18:54:27,692 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:27,692 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:27,716 [DEBUG] fetch_chunk: offset=41975808, chunk_size=2097152, elapsed=0.8132 seconds
+2025-03-11 18:54:27,731 [DEBUG] fetch_chunk: offset=46170112, chunk_size=2097152, elapsed=0.8289 seconds
+2025-03-11 18:54:27,755 [DEBUG] fetch_chunk: offset=39878656, chunk_size=2097152, elapsed=0.8525 seconds
+2025-03-11 18:54:27,756 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:27,756 [DEBUG] fetch_chunks_sync took 0.8543 seconds
+2025-03-11 18:54:27,756 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:27,756 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:28,026 [DEBUG] fetch_chunk: offset=42008576, chunk_size=2097152, elapsed=0.6358 seconds
+2025-03-11 18:54:28,036 [DEBUG] fetch_chunk: offset=39911424, chunk_size=2097152, elapsed=0.6453 seconds
+2025-03-11 18:54:28,037 [DEBUG] fetch_chunk: offset=48300032, chunk_size=2097152, elapsed=0.6462 seconds
+2025-03-11 18:54:28,049 [DEBUG] fetch_chunk: offset=46202880, chunk_size=2097152, elapsed=0.6580 seconds
+2025-03-11 18:54:28,059 [DEBUG] fetch_chunk: offset=44105728, chunk_size=2097152, elapsed=0.6689 seconds
+2025-03-11 18:54:28,061 [DEBUG] fetch_chunk: offset=37814272, chunk_size=2097152, elapsed=0.6705 seconds
+2025-03-11 18:54:28,061 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:28,062 [DEBUG] fetch_chunks_sync took 0.6723 seconds
+2025-03-11 18:54:28,062 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:28,062 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:28,063 [DEBUG] fetch_chunk: offset=52461568, chunk_size=2097152, elapsed=0.5818 seconds
+2025-03-11 18:54:28,127 [DEBUG] fetch_chunk: offset=60850176, chunk_size=2097152, elapsed=0.6456 seconds
+2025-03-11 18:54:28,188 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=1.2979 seconds
+2025-03-11 18:54:28,190 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:28,190 [DEBUG] fetch_chunks_sync took 1.3003 seconds
+2025-03-11 18:54:28,191 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:28,191 [DEBUG] maybe_prefetch took 0.0002 seconds
+2025-03-11 18:54:28,191 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:28,191 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:28,192 [DEBUG] read: fh=9, off=234010, size=32768
+2025-03-11 18:54:28,193 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:28,193 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 18:54:28,193 [DEBUG] get_file_attr took 0.0003 seconds
+2025-03-11 18:54:28,193 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:28,193 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:28,332 [DEBUG] fetch_chunk: offset=56655872, chunk_size=2097152, elapsed=0.8500 seconds
+2025-03-11 18:54:28,375 [DEBUG] fetch_chunk: offset=56655872, chunk_size=2097152, elapsed=0.6929 seconds
+2025-03-11 18:54:28,394 [DEBUG] fetch_chunk: offset=58753024, chunk_size=2097152, elapsed=0.9119 seconds
+2025-03-11 18:54:28,396 [DEBUG] fetch_chunk: offset=52461568, chunk_size=2097152, elapsed=0.7136 seconds
+2025-03-11 18:54:28,401 [DEBUG] fetch_chunk: offset=54558720, chunk_size=2097152, elapsed=0.9193 seconds
+2025-03-11 18:54:28,402 [DEBUG] fetch_chunk: offset=58753024, chunk_size=2097152, elapsed=0.7199 seconds
+2025-03-11 18:54:28,416 [DEBUG] fetch_chunk: offset=54558720, chunk_size=2097152, elapsed=0.7245 seconds
+2025-03-11 18:54:28,422 [DEBUG] fetch_chunk: offset=56655872, chunk_size=2097152, elapsed=0.7301 seconds
+2025-03-11 18:54:28,423 [DEBUG] fetch_chunk: offset=50364416, chunk_size=2097152, elapsed=0.7411 seconds
+2025-03-11 18:54:28,423 [DEBUG] fetch_chunk: offset=50364416, chunk_size=2097152, elapsed=0.7315 seconds
+2025-03-11 18:54:28,446 [DEBUG] fetch_chunk: offset=52461568, chunk_size=2097152, elapsed=0.7536 seconds
+2025-03-11 18:54:28,462 [DEBUG] fetch_chunk: offset=50364416, chunk_size=2097152, elapsed=0.9808 seconds
+2025-03-11 18:54:28,463 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:28,463 [DEBUG] fetch_chunks_sync took 0.9827 seconds
+2025-03-11 18:54:28,463 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:28,464 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:28,491 [DEBUG] fetch_chunk: offset=58753024, chunk_size=2097152, elapsed=0.7990 seconds
+2025-03-11 18:54:28,492 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:28,492 [DEBUG] fetch_chunks_sync took 0.8006 seconds
+2025-03-11 18:54:28,492 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:28,492 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:28,499 [DEBUG] fetch_chunk: offset=58753024, chunk_size=2097152, elapsed=0.7430 seconds
+2025-03-11 18:54:28,547 [DEBUG] fetch_chunk: offset=52461568, chunk_size=2097152, elapsed=0.7909 seconds
+2025-03-11 18:54:28,565 [DEBUG] fetch_chunk: offset=54558720, chunk_size=2097152, elapsed=0.8091 seconds
+2025-03-11 18:54:28,647 [DEBUG] fetch_chunk: offset=54558720, chunk_size=2097152, elapsed=0.9646 seconds
+2025-03-11 18:54:28,649 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:28,649 [DEBUG] fetch_chunks_sync took 0.9675 seconds
+2025-03-11 18:54:28,649 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:28,649 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:28,766 [DEBUG] fetch_chunk: offset=58785792, chunk_size=2097152, elapsed=0.7037 seconds
+2025-03-11 18:54:28,769 [DEBUG] fetch_chunk: offset=56655872, chunk_size=2097152, elapsed=1.0132 seconds
+2025-03-11 18:54:28,772 [DEBUG] fetch_chunk: offset=52494336, chunk_size=2097152, elapsed=0.7093 seconds
+2025-03-11 18:54:28,776 [DEBUG] fetch_chunk: offset=50364416, chunk_size=2097152, elapsed=1.0202 seconds
+2025-03-11 18:54:28,777 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:28,777 [DEBUG] fetch_chunks_sync took 1.0213 seconds
+2025-03-11 18:54:28,777 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:28,777 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:28,787 [DEBUG] fetch_chunk: offset=56688640, chunk_size=2097152, elapsed=0.7244 seconds
+2025-03-11 18:54:28,788 [DEBUG] fetch_chunk: offset=54591488, chunk_size=2097152, elapsed=0.7258 seconds
+2025-03-11 18:54:28,804 [DEBUG] fetch_chunk: offset=60882944, chunk_size=2097152, elapsed=0.7420 seconds
+2025-03-11 18:54:28,841 [DEBUG] fetch_chunk: offset=50397184, chunk_size=2097152, elapsed=0.7792 seconds
+2025-03-11 18:54:28,842 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:28,842 [DEBUG] fetch_chunks_sync took 0.7804 seconds
+2025-03-11 18:54:28,842 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:28,842 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:28,843 [DEBUG] fetch_chunk: offset=50397184, chunk_size=2097152, elapsed=0.6513 seconds
+2025-03-11 18:54:28,854 [DEBUG] fetch_chunk: offset=52494336, chunk_size=2097152, elapsed=0.6619 seconds
+2025-03-11 18:54:28,866 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.6719 seconds
+2025-03-11 18:54:28,867 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:28,867 [DEBUG] fetch_chunks_sync took 0.6737 seconds
+2025-03-11 18:54:28,867 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:28,867 [DEBUG] maybe_prefetch took 0.0002 seconds
+2025-03-11 18:54:28,867 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:28,867 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:28,868 [DEBUG] read: fh=9, off=266778, size=32768
+2025-03-11 18:54:28,868 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:28,868 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 18:54:28,868 [DEBUG] get_file_attr took 0.0004 seconds
+2025-03-11 18:54:28,868 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:28,869 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:28,878 [DEBUG] fetch_chunk: offset=58785792, chunk_size=2097152, elapsed=0.6860 seconds
+2025-03-11 18:54:28,892 [DEBUG] fetch_chunk: offset=56688640, chunk_size=2097152, elapsed=0.6999 seconds
+2025-03-11 18:54:28,896 [DEBUG] fetch_chunk: offset=54591488, chunk_size=2097152, elapsed=0.7039 seconds
+2025-03-11 18:54:28,897 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:28,897 [DEBUG] fetch_chunks_sync took 0.7064 seconds
+2025-03-11 18:54:28,897 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:28,897 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:29,263 [DEBUG] fetch_chunk: offset=62947328, chunk_size=2097152, elapsed=0.7997 seconds
+2025-03-11 18:54:29,264 [DEBUG] fetch_chunk: offset=62947328, chunk_size=2097152, elapsed=0.7721 seconds
+2025-03-11 18:54:29,265 [DEBUG] fetch_chunk: offset=65044480, chunk_size=2097152, elapsed=0.8013 seconds
+2025-03-11 18:54:29,266 [DEBUG] fetch_chunk: offset=69238784, chunk_size=2097152, elapsed=0.7733 seconds
+2025-03-11 18:54:29,266 [DEBUG] fetch_chunk: offset=67141632, chunk_size=2097152, elapsed=0.8021 seconds
+2025-03-11 18:54:29,267 [DEBUG] fetch_chunk: offset=67141632, chunk_size=2097152, elapsed=0.7745 seconds
+2025-03-11 18:54:29,269 [DEBUG] fetch_chunk: offset=65044480, chunk_size=2097152, elapsed=0.7760 seconds
+2025-03-11 18:54:29,269 [DEBUG] fetch_chunk: offset=71335936, chunk_size=2097152, elapsed=0.7766 seconds
+2025-03-11 18:54:29,270 [DEBUG] fetch_chunk: offset=69238784, chunk_size=2097152, elapsed=0.8059 seconds
+2025-03-11 18:54:29,272 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:29,272 [DEBUG] fetch_chunks_sync took 0.7800 seconds
+2025-03-11 18:54:29,273 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:29,273 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:29,472 [DEBUG] fetch_chunk: offset=69238784, chunk_size=2097152, elapsed=0.8215 seconds
+2025-03-11 18:54:29,521 [DEBUG] fetch_chunk: offset=65044480, chunk_size=2097152, elapsed=0.8715 seconds
+2025-03-11 18:54:29,539 [DEBUG] fetch_chunk: offset=73433088, chunk_size=2097152, elapsed=1.0750 seconds
+2025-03-11 18:54:29,544 [DEBUG] fetch_chunk: offset=67141632, chunk_size=2097152, elapsed=0.7662 seconds
+2025-03-11 18:54:29,579 [DEBUG] fetch_chunk: offset=69238784, chunk_size=2097152, elapsed=0.8012 seconds
+2025-03-11 18:54:29,586 [DEBUG] fetch_chunk: offset=71335936, chunk_size=2097152, elapsed=0.8080 seconds
+2025-03-11 18:54:29,603 [DEBUG] fetch_chunk: offset=71335936, chunk_size=2097152, elapsed=1.1389 seconds
+2025-03-11 18:54:29,604 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:29,604 [DEBUG] fetch_chunks_sync took 1.1407 seconds
+2025-03-11 18:54:29,604 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:29,604 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:29,622 [DEBUG] fetch_chunk: offset=71368704, chunk_size=2097152, elapsed=0.7793 seconds
+2025-03-11 18:54:29,626 [DEBUG] fetch_chunk: offset=65044480, chunk_size=2097152, elapsed=0.8483 seconds
+2025-03-11 18:54:29,634 [DEBUG] fetch_chunk: offset=62947328, chunk_size=2097152, elapsed=0.9840 seconds
+2025-03-11 18:54:29,645 [DEBUG] fetch_chunk: offset=69271552, chunk_size=2097152, elapsed=0.8016 seconds
+2025-03-11 18:54:29,664 [DEBUG] fetch_chunk: offset=69271552, chunk_size=2097152, elapsed=0.7957 seconds
+2025-03-11 18:54:29,681 [DEBUG] fetch_chunk: offset=67174400, chunk_size=2097152, elapsed=0.8132 seconds
+2025-03-11 18:54:29,684 [DEBUG] fetch_chunk: offset=65077248, chunk_size=2097152, elapsed=0.8162 seconds
+2025-03-11 18:54:29,685 [DEBUG] fetch_chunk: offset=62980096, chunk_size=2097152, elapsed=0.8173 seconds
+2025-03-11 18:54:29,688 [DEBUG] fetch_chunk: offset=67174400, chunk_size=2097152, elapsed=0.7910 seconds
+2025-03-11 18:54:29,692 [DEBUG] fetch_chunk: offset=67174400, chunk_size=2097152, elapsed=0.8494 seconds
+2025-03-11 18:54:29,703 [DEBUG] fetch_chunk: offset=71335936, chunk_size=2097152, elapsed=1.0530 seconds
+2025-03-11 18:54:29,745 [DEBUG] fetch_chunk: offset=69271552, chunk_size=2097152, elapsed=0.8481 seconds
+2025-03-11 18:54:29,769 [DEBUG] fetch_chunk: offset=62980096, chunk_size=2097152, elapsed=0.9267 seconds
+2025-03-11 18:54:29,781 [DEBUG] fetch_chunk: offset=65077248, chunk_size=2097152, elapsed=0.9384 seconds
+2025-03-11 18:54:29,801 [DEBUG] fetch_chunk: offset=65077248, chunk_size=2097152, elapsed=0.9042 seconds
+2025-03-11 18:54:29,830 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.9618 seconds
+2025-03-11 18:54:29,831 [DEBUG] fetch_chunk: offset=73465856, chunk_size=2097152, elapsed=0.9877 seconds
+2025-03-11 18:54:29,832 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:29,832 [DEBUG] fetch_chunks_sync took 0.9640 seconds
+2025-03-11 18:54:29,833 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:29,833 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:29,833 [DEBUG] maybe_prefetch took 0.0004 seconds
+2025-03-11 18:54:29,834 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:29,834 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:29,834 [DEBUG] read: fh=9, off=299546, size=32768
+2025-03-11 18:54:29,835 [DEBUG] fetch_chunks_sync took 0.9922 seconds
+2025-03-11 18:54:29,835 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:29,835 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:29,836 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 18:54:29,836 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:29,837 [DEBUG] get_file_attr took 0.0016 seconds
+2025-03-11 18:54:29,837 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:29,837 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:29,861 [DEBUG] fetch_chunk: offset=71368704, chunk_size=2097152, elapsed=0.9934 seconds
+2025-03-11 18:54:29,863 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:29,863 [DEBUG] fetch_chunks_sync took 0.9959 seconds
+2025-03-11 18:54:29,863 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:29,863 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:29,874 [DEBUG] fetch_chunk: offset=62980096, chunk_size=2097152, elapsed=0.9766 seconds
+2025-03-11 18:54:29,929 [DEBUG] fetch_chunk: offset=75530240, chunk_size=2097152, elapsed=0.6553 seconds
+2025-03-11 18:54:29,930 [DEBUG] fetch_chunk: offset=77627392, chunk_size=2097152, elapsed=0.6565 seconds
+2025-03-11 18:54:29,935 [DEBUG] fetch_chunk: offset=73433088, chunk_size=2097152, elapsed=0.6614 seconds
+2025-03-11 18:54:29,939 [DEBUG] fetch_chunk: offset=79724544, chunk_size=2097152, elapsed=0.6650 seconds
+2025-03-11 18:54:29,947 [DEBUG] fetch_chunk: offset=71368704, chunk_size=2097152, elapsed=1.0494 seconds
+2025-03-11 18:54:29,948 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:29,948 [DEBUG] fetch_chunks_sync took 1.0512 seconds
+2025-03-11 18:54:29,949 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:29,949 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:29,949 [DEBUG] fetch_chunk: offset=81821696, chunk_size=2097152, elapsed=0.6754 seconds
+2025-03-11 18:54:29,978 [DEBUG] fetch_chunk: offset=83918848, chunk_size=2097152, elapsed=0.7041 seconds
+2025-03-11 18:54:29,979 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:29,979 [DEBUG] fetch_chunks_sync took 0.7059 seconds
+2025-03-11 18:54:29,979 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:29,979 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:29,993 [DEBUG] fetch_chunk: offset=67141632, chunk_size=2097152, elapsed=1.3426 seconds
+2025-03-11 18:54:29,993 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:29,993 [DEBUG] fetch_chunks_sync took 1.3441 seconds
+2025-03-11 18:54:29,994 [DEBUG] prefetch took 4.4130 seconds
+2025-03-11 18:54:30,185 [DEBUG] fetch_chunk: offset=75530240, chunk_size=2097152, elapsed=0.5805 seconds
+2025-03-11 18:54:30,192 [DEBUG] fetch_chunk: offset=77627392, chunk_size=2097152, elapsed=0.5872 seconds
+2025-03-11 18:54:30,196 [DEBUG] fetch_chunk: offset=79724544, chunk_size=2097152, elapsed=0.5914 seconds
+2025-03-11 18:54:30,235 [DEBUG] fetch_chunk: offset=86016000, chunk_size=2097152, elapsed=0.6297 seconds
+2025-03-11 18:54:30,235 [DEBUG] fetch_chunk: offset=83918848, chunk_size=2097152, elapsed=0.6304 seconds
+2025-03-11 18:54:30,540 [DEBUG] fetch_chunk: offset=81821696, chunk_size=2097152, elapsed=0.9346 seconds
+2025-03-11 18:54:30,541 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:30,541 [DEBUG] fetch_chunks_sync took 0.9366 seconds
+2025-03-11 18:54:30,541 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:30,541 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:30,581 [DEBUG] fetch_chunk: offset=86048768, chunk_size=2097152, elapsed=0.7437 seconds
+2025-03-11 18:54:30,586 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.7483 seconds
+2025-03-11 18:54:30,587 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:30,587 [DEBUG] fetch_chunks_sync took 0.7500 seconds
+2025-03-11 18:54:30,587 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:30,587 [DEBUG] maybe_prefetch took 0.0002 seconds
+2025-03-11 18:54:30,587 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:30,587 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:30,588 [DEBUG] read: fh=9, off=332314, size=32768
+2025-03-11 18:54:30,588 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:30,588 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 18:54:30,588 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:30,590 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:30,590 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:30,591 [DEBUG] fetch_chunk: offset=75563008, chunk_size=2097152, elapsed=0.7276 seconds
+2025-03-11 18:54:30,598 [DEBUG] fetch_chunk: offset=79724544, chunk_size=2097152, elapsed=0.7639 seconds
+2025-03-11 18:54:30,599 [DEBUG] fetch_chunk: offset=83918848, chunk_size=2097152, elapsed=0.7648 seconds
+2025-03-11 18:54:30,601 [DEBUG] fetch_chunk: offset=81854464, chunk_size=2097152, elapsed=0.7646 seconds
+2025-03-11 18:54:30,607 [DEBUG] fetch_chunk: offset=81821696, chunk_size=2097152, elapsed=0.7730 seconds
+2025-03-11 18:54:30,614 [DEBUG] fetch_chunk: offset=79757312, chunk_size=2097152, elapsed=0.7501 seconds
+2025-03-11 18:54:30,619 [DEBUG] fetch_chunk: offset=83951616, chunk_size=2097152, elapsed=0.7550 seconds
+2025-03-11 18:54:30,619 [DEBUG] fetch_chunk: offset=83951616, chunk_size=2097152, elapsed=0.7823 seconds
+2025-03-11 18:54:30,669 [DEBUG] fetch_chunk: offset=75563008, chunk_size=2097152, elapsed=0.8323 seconds
+2025-03-11 18:54:30,701 [DEBUG] fetch_chunk: offset=77660160, chunk_size=2097152, elapsed=0.8376 seconds
+2025-03-11 18:54:30,703 [DEBUG] fetch_chunk: offset=77627392, chunk_size=2097152, elapsed=0.8692 seconds
+2025-03-11 18:54:30,708 [DEBUG] fetch_chunk: offset=81854464, chunk_size=2097152, elapsed=0.8443 seconds
+2025-03-11 18:54:30,710 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:30,710 [DEBUG] fetch_chunks_sync took 0.8467 seconds
+2025-03-11 18:54:30,710 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:30,710 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:30,716 [DEBUG] fetch_chunk: offset=77660160, chunk_size=2097152, elapsed=0.8791 seconds
+2025-03-11 18:54:30,717 [DEBUG] fetch_chunk: offset=79757312, chunk_size=2097152, elapsed=0.8802 seconds
+2025-03-11 18:54:30,718 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:30,718 [DEBUG] fetch_chunks_sync took 0.8829 seconds
+2025-03-11 18:54:30,719 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:30,719 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:30,728 [DEBUG] fetch_chunk: offset=77660160, chunk_size=2097152, elapsed=0.7785 seconds
+2025-03-11 18:54:30,748 [DEBUG] fetch_chunk: offset=62947328, chunk_size=2097152, elapsed=1.9709 seconds
+2025-03-11 18:54:30,749 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:30,749 [DEBUG] fetch_chunks_sync took 1.9720 seconds
+2025-03-11 18:54:30,749 [DEBUG] prefetch took 4.4872 seconds
+2025-03-11 18:54:30,830 [DEBUG] fetch_chunk: offset=94404608, chunk_size=2097152, elapsed=0.8504 seconds
+2025-03-11 18:54:30,831 [DEBUG] fetch_chunk: offset=96501760, chunk_size=2097152, elapsed=0.8514 seconds
+2025-03-11 18:54:30,836 [DEBUG] fetch_chunk: offset=90210304, chunk_size=2097152, elapsed=0.8563 seconds
+2025-03-11 18:54:30,870 [DEBUG] fetch_chunk: offset=75563008, chunk_size=2097152, elapsed=0.9212 seconds
+2025-03-11 18:54:30,882 [DEBUG] fetch_chunk: offset=75530240, chunk_size=2097152, elapsed=1.0484 seconds
+2025-03-11 18:54:30,883 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:30,883 [DEBUG] fetch_chunks_sync took 1.0500 seconds
+2025-03-11 18:54:30,883 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:30,883 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:31,224 [DEBUG] fetch_chunk: offset=81854464, chunk_size=2097152, elapsed=1.2750 seconds
+2025-03-11 18:54:31,228 [DEBUG] fetch_chunk: offset=90210304, chunk_size=2097152, elapsed=0.6869 seconds
+2025-03-11 18:54:31,235 [DEBUG] fetch_chunk: offset=79757312, chunk_size=2097152, elapsed=1.2856 seconds
+2025-03-11 18:54:31,242 [DEBUG] fetch_chunk: offset=88113152, chunk_size=2097152, elapsed=0.7010 seconds
+2025-03-11 18:54:31,261 [DEBUG] fetch_chunk: offset=94404608, chunk_size=2097152, elapsed=0.7196 seconds
+2025-03-11 18:54:31,263 [DEBUG] fetch_chunk: offset=92307456, chunk_size=2097152, elapsed=0.6748 seconds
+2025-03-11 18:54:31,266 [DEBUG] fetch_chunk: offset=96501760, chunk_size=2097152, elapsed=0.7246 seconds
+2025-03-11 18:54:31,267 [DEBUG] fetch_chunk: offset=92307456, chunk_size=2097152, elapsed=0.7253 seconds
+2025-03-11 18:54:31,268 [DEBUG] fetch_chunk: offset=96501760, chunk_size=2097152, elapsed=0.6798 seconds
+2025-03-11 18:54:31,273 [DEBUG] fetch_chunk: offset=90210304, chunk_size=2097152, elapsed=0.6851 seconds
+2025-03-11 18:54:31,275 [DEBUG] fetch_chunk: offset=94404608, chunk_size=2097152, elapsed=0.6863 seconds
+2025-03-11 18:54:31,299 [DEBUG] fetch_chunk: offset=88113152, chunk_size=2097152, elapsed=0.7113 seconds
+2025-03-11 18:54:31,301 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 192.80 MB; active prefetch threads: 0
+2025-03-11 18:54:31,301 [DEBUG] fetch_chunks_sync took 0.7136 seconds
+2025-03-11 18:54:31,301 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:31,302 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:31,436 [DEBUG] fetch_chunk: offset=86048768, chunk_size=2097152, elapsed=0.7250 seconds
+2025-03-11 18:54:31,465 [DEBUG] fetch_chunk: offset=96534528, chunk_size=2097152, elapsed=0.7543 seconds
+2025-03-11 18:54:31,484 [DEBUG] fetch_chunk: offset=92340224, chunk_size=2097152, elapsed=0.7734 seconds
+2025-03-11 18:54:31,495 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.9056 seconds
+2025-03-11 18:54:31,496 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 194.64 MB; active prefetch threads: 0
+2025-03-11 18:54:31,496 [DEBUG] fetch_chunks_sync took 0.9066 seconds
+2025-03-11 18:54:31,496 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:31,496 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:31,497 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:31,497 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:31,497 [DEBUG] read: fh=9, off=365082, size=32768
+2025-03-11 18:54:31,497 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:31,498 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 18:54:31,498 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:31,498 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:31,498 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:31,501 [DEBUG] fetch_chunk: offset=96534528, chunk_size=2097152, elapsed=0.7813 seconds
+2025-03-11 18:54:31,503 [DEBUG] fetch_chunk: offset=90243072, chunk_size=2097152, elapsed=0.7840 seconds
+2025-03-11 18:54:31,518 [DEBUG] fetch_chunk: offset=88145920, chunk_size=2097152, elapsed=0.8072 seconds
+2025-03-11 18:54:31,520 [DEBUG] fetch_chunk: offset=94437376, chunk_size=2097152, elapsed=0.8090 seconds
+2025-03-11 18:54:31,523 [DEBUG] fetch_chunk: offset=83951616, chunk_size=2097152, elapsed=1.5738 seconds
+2025-03-11 18:54:31,524 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 194.64 MB; active prefetch threads: 0
+2025-03-11 18:54:31,524 [DEBUG] fetch_chunks_sync took 1.5759 seconds
+2025-03-11 18:54:31,525 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:31,525 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:31,527 [DEBUG] fetch_chunk: offset=90243072, chunk_size=2097152, elapsed=0.8166 seconds
+2025-03-11 18:54:31,528 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 194.64 MB; active prefetch threads: 0
+2025-03-11 18:54:31,529 [DEBUG] fetch_chunks_sync took 0.8185 seconds
+2025-03-11 18:54:31,529 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:31,529 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:31,535 [DEBUG] fetch_chunk: offset=98598912, chunk_size=2097152, elapsed=0.9937 seconds
+2025-03-11 18:54:31,536 [DEBUG] fetch_chunk: offset=98631680, chunk_size=2097152, elapsed=0.8162 seconds
+2025-03-11 18:54:31,537 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 194.64 MB; active prefetch threads: 0
+2025-03-11 18:54:31,537 [DEBUG] fetch_chunks_sync took 0.9958 seconds
+2025-03-11 18:54:31,537 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:31,537 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:31,561 [DEBUG] fetch_chunk: offset=86016000, chunk_size=2097152, elapsed=1.5816 seconds
+2025-03-11 18:54:31,562 [DEBUG] fetch_chunk: offset=94404608, chunk_size=2097152, elapsed=0.6779 seconds
+2025-03-11 18:54:31,564 [DEBUG] fetch_chunk: offset=92307456, chunk_size=2097152, elapsed=0.6795 seconds
+2025-03-11 18:54:31,607 [DEBUG] fetch_chunk: offset=94437376, chunk_size=2097152, elapsed=0.8875 seconds
+2025-03-11 18:54:31,617 [DEBUG] fetch_chunk: offset=96501760, chunk_size=2097152, elapsed=0.7325 seconds
+2025-03-11 18:54:31,634 [DEBUG] fetch_chunk: offset=92340224, chunk_size=2097152, elapsed=0.9151 seconds
+2025-03-11 18:54:31,647 [DEBUG] fetch_chunk: offset=88113152, chunk_size=2097152, elapsed=0.7634 seconds
+2025-03-11 18:54:31,667 [DEBUG] fetch_chunk: offset=90210304, chunk_size=2097152, elapsed=0.7832 seconds
+2025-03-11 18:54:31,668 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 194.64 MB; active prefetch threads: 0
+2025-03-11 18:54:31,668 [DEBUG] fetch_chunks_sync took 0.7853 seconds
+2025-03-11 18:54:31,668 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:31,668 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:31,746 [DEBUG] fetch_chunk: offset=92307456, chunk_size=2097152, elapsed=1.7664 seconds
+2025-03-11 18:54:31,792 [DEBUG] fetch_chunk: offset=88145920, chunk_size=2097152, elapsed=1.0735 seconds
+2025-03-11 18:54:31,794 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 194.64 MB; active prefetch threads: 0
+2025-03-11 18:54:31,794 [DEBUG] fetch_chunks_sync took 1.0753 seconds
+2025-03-11 18:54:31,794 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:31,794 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:31,834 [DEBUG] fetch_chunk: offset=102793216, chunk_size=2097152, elapsed=0.5309 seconds
+2025-03-11 18:54:31,839 [DEBUG] fetch_chunk: offset=88113152, chunk_size=2097152, elapsed=1.8595 seconds
+2025-03-11 18:54:31,841 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 196.35 MB; active prefetch threads: 0
+2025-03-11 18:54:31,841 [DEBUG] fetch_chunks_sync took 1.8619 seconds
+2025-03-11 18:54:31,841 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:31,842 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:31,843 [DEBUG] fetch_chunk: offset=104890368, chunk_size=2097152, elapsed=0.5402 seconds
+2025-03-11 18:54:31,860 [DEBUG] fetch_chunk: offset=100696064, chunk_size=2097152, elapsed=0.5576 seconds
+2025-03-11 18:54:31,868 [DEBUG] fetch_chunk: offset=98598912, chunk_size=2097152, elapsed=0.5662 seconds
+2025-03-11 18:54:31,869 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 196.35 MB; active prefetch threads: 0
+2025-03-11 18:54:31,870 [DEBUG] fetch_chunks_sync took 0.5681 seconds
+2025-03-11 18:54:31,870 [DEBUG] prefetch took 1.2825 seconds
+2025-03-11 18:54:32,112 [DEBUG] fetch_chunk: offset=100696064, chunk_size=2097152, elapsed=0.6146 seconds
+2025-03-11 18:54:32,115 [DEBUG] fetch_chunk: offset=104890368, chunk_size=2097152, elapsed=0.6178 seconds
+2025-03-11 18:54:32,150 [DEBUG] fetch_chunk: offset=94437376, chunk_size=2097152, elapsed=0.6245 seconds
+2025-03-11 18:54:32,152 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.6545 seconds
+2025-03-11 18:54:32,153 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 198.12 MB; active prefetch threads: 0
+2025-03-11 18:54:32,153 [DEBUG] fetch_chunks_sync took 0.6557 seconds
+2025-03-11 18:54:32,154 [DEBUG] prefetch took 0.0000 seconds
+2025-03-11 18:54:32,154 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:32,154 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:32,154 [DEBUG] read: fh=9, off=397850, size=32768
+2025-03-11 18:54:32,154 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:32,154 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 18:54:32,154 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:32,154 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:32,154 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:32,165 [DEBUG] fetch_chunk: offset=98631680, chunk_size=2097152, elapsed=0.6357 seconds
+2025-03-11 18:54:32,176 [DEBUG] fetch_chunk: offset=90243072, chunk_size=2097152, elapsed=0.6508 seconds
+2025-03-11 18:54:32,178 [DEBUG] fetch_chunk: offset=102793216, chunk_size=2097152, elapsed=0.6413 seconds
+2025-03-11 18:54:32,182 [DEBUG] fetch_chunk: offset=88145920, chunk_size=2097152, elapsed=0.6571 seconds
+2025-03-11 18:54:32,184 [DEBUG] fetch_chunk: offset=100728832, chunk_size=2097152, elapsed=0.6547 seconds
+2025-03-11 18:54:32,189 [DEBUG] fetch_chunk: offset=92340224, chunk_size=2097152, elapsed=0.6635 seconds
+2025-03-11 18:54:32,190 [DEBUG] fetch_chunk: offset=102825984, chunk_size=2097152, elapsed=0.6608 seconds
+2025-03-11 18:54:32,197 [DEBUG] fetch_chunk: offset=98598912, chunk_size=2097152, elapsed=0.6998 seconds
+2025-03-11 18:54:32,216 [DEBUG] fetch_chunk: offset=102793216, chunk_size=2097152, elapsed=0.7193 seconds
+2025-03-11 18:54:32,217 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 198.12 MB; active prefetch threads: 0
+2025-03-11 18:54:32,217 [DEBUG] fetch_chunks_sync took 0.7209 seconds
+2025-03-11 18:54:32,219 [DEBUG] prefetch took 0.7223 seconds
+2025-03-11 18:54:32,248 [DEBUG] fetch_chunk: offset=96534528, chunk_size=2097152, elapsed=0.7227 seconds
+2025-03-11 18:54:32,249 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 198.12 MB; active prefetch threads: 0
+2025-03-11 18:54:32,249 [DEBUG] fetch_chunks_sync took 0.7243 seconds
+2025-03-11 18:54:32,249 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:32,249 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:32,252 [DEBUG] fetch_chunk: offset=104923136, chunk_size=2097152, elapsed=0.7231 seconds
+2025-03-11 18:54:32,253 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 198.12 MB; active prefetch threads: 0
+2025-03-11 18:54:32,253 [DEBUG] fetch_chunks_sync took 0.7249 seconds
+2025-03-11 18:54:32,254 [DEBUG] prefetch took 3.3864 seconds
+2025-03-11 18:54:32,335 [DEBUG] fetch_chunk: offset=102793216, chunk_size=2097152, elapsed=0.6662 seconds
+2025-03-11 18:54:32,349 [DEBUG] fetch_chunk: offset=104890368, chunk_size=2097152, elapsed=0.6803 seconds
+2025-03-11 18:54:32,390 [DEBUG] fetch_chunk: offset=100696064, chunk_size=2097152, elapsed=0.8527 seconds
+2025-03-11 18:54:32,391 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:32,391 [DEBUG] fetch_chunks_sync took 0.8538 seconds
+2025-03-11 18:54:32,391 [DEBUG] prefetch took 8.1164 seconds
+2025-03-11 18:54:32,404 [DEBUG] fetch_chunk: offset=100728832, chunk_size=2097152, elapsed=0.6095 seconds
+2025-03-11 18:54:32,444 [DEBUG] fetch_chunk: offset=102825984, chunk_size=2097152, elapsed=0.6496 seconds
+2025-03-11 18:54:32,444 [DEBUG] fetch_chunk: offset=100696064, chunk_size=2097152, elapsed=0.6018 seconds
+2025-03-11 18:54:32,445 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:32,445 [DEBUG] fetch_chunks_sync took 0.6509 seconds
+2025-03-11 18:54:32,445 [DEBUG] prefetch took 7.5269 seconds
+2025-03-11 18:54:32,449 [DEBUG] fetch_chunk: offset=104890368, chunk_size=2097152, elapsed=0.6063 seconds
+2025-03-11 18:54:32,510 [DEBUG] fetch_chunk: offset=102793216, chunk_size=2097152, elapsed=0.6675 seconds
+2025-03-11 18:54:32,511 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:32,511 [DEBUG] fetch_chunks_sync took 0.6695 seconds
+2025-03-11 18:54:32,511 [DEBUG] prefetch took 5.6221 seconds
+2025-03-11 18:54:32,678 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.5238 seconds
+2025-03-11 18:54:32,679 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:32,679 [DEBUG] fetch_chunks_sync took 0.5245 seconds
+2025-03-11 18:54:32,679 [DEBUG] prefetch took 0.0000 seconds
+2025-03-11 18:54:32,679 [DEBUG] maybe_prefetch took 0.0002 seconds
+2025-03-11 18:54:32,679 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:32,679 [DEBUG] read: fh=9, off=430618, size=32768
+2025-03-11 18:54:32,679 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:32,679 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 18:54:32,679 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:32,680 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:32,680 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:32,766 [DEBUG] fetch_chunk: offset=104923136, chunk_size=2097152, elapsed=0.5167 seconds
+2025-03-11 18:54:32,774 [DEBUG] fetch_chunk: offset=102825984, chunk_size=2097152, elapsed=0.5243 seconds
+2025-03-11 18:54:32,805 [DEBUG] fetch_chunk: offset=100728832, chunk_size=2097152, elapsed=0.5555 seconds
+2025-03-11 18:54:32,805 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:32,805 [DEBUG] fetch_chunks_sync took 0.5563 seconds
+2025-03-11 18:54:32,805 [DEBUG] prefetch took 4.6147 seconds
+2025-03-11 18:54:32,985 [DEBUG] fetch_chunk: offset=100696064, chunk_size=2097152, elapsed=1.3161 seconds
+2025-03-11 18:54:32,985 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:32,985 [DEBUG] fetch_chunks_sync took 1.3170 seconds
+2025-03-11 18:54:32,985 [DEBUG] prefetch took 3.1524 seconds
+2025-03-11 18:54:33,232 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.5524 seconds
+2025-03-11 18:54:33,233 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:33,233 [DEBUG] fetch_chunks_sync took 0.5533 seconds
+2025-03-11 18:54:33,233 [DEBUG] prefetch took 0.0000 seconds
+2025-03-11 18:54:33,233 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:33,233 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:33,233 [DEBUG] read: fh=9, off=463386, size=147261
+2025-03-11 18:54:33,233 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:33,233 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 18:54:33,233 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:33,233 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:33,233 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:33,757 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.5229 seconds
+2025-03-11 18:54:33,757 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:33,757 [DEBUG] fetch_chunks_sync took 0.5237 seconds
+2025-03-11 18:54:33,757 [DEBUG] prefetch took 0.0000 seconds
+2025-03-11 18:54:33,758 [DEBUG] maybe_prefetch took 0.0002 seconds
+2025-03-11 18:54:33,758 [DEBUG] read: returning 147261 bytes
+2025-03-11 18:54:33,758 [DEBUG] read: fh=9, off=610647, size=32768
+2025-03-11 18:54:33,758 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 18:54:33,758 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 18:54:33,758 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:33,758 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:33,758 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:34,280 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.5220 seconds
+2025-03-11 18:54:34,281 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:34,281 [DEBUG] fetch_chunks_sync took 0.5229 seconds
+2025-03-11 18:54:34,281 [DEBUG] prefetch took 0.0000 seconds
+2025-03-11 18:54:34,281 [DEBUG] maybe_prefetch took 0.0002 seconds
+2025-03-11 18:54:34,281 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:34,282 [DEBUG] open: inode=5, flags=32768
+2025-03-11 18:54:34,282 [DEBUG] read: fh=10, off=0, size=32768
+2025-03-11 18:54:34,282 [DEBUG] Getting file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:34,282 [DEBUG] Returning cached file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:34,282 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:34,282 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:34,282 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:34,885 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.6030 seconds
+2025-03-11 18:54:34,886 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:34,886 [DEBUG] fetch_chunks_sync took 0.6038 seconds
+2025-03-11 18:54:34,886 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:34,886 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:34,886 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:34,886 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:34,887 [DEBUG] read: fh=10, off=32768, size=70270
+2025-03-11 18:54:34,887 [DEBUG] Getting file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:34,887 [DEBUG] Returning cached file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:34,887 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:34,887 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:34,887 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:35,548 [DEBUG] fetch_chunk: offset=8421376, chunk_size=2097152, elapsed=0.6612 seconds
+2025-03-11 18:54:35,576 [DEBUG] fetch_chunk: offset=10518528, chunk_size=2097152, elapsed=0.6888 seconds
+2025-03-11 18:54:35,632 [DEBUG] fetch_chunk: offset=4227072, chunk_size=2097152, elapsed=0.7448 seconds
+2025-03-11 18:54:35,648 [DEBUG] fetch_chunk: offset=32768, chunk_size=2097152, elapsed=0.7614 seconds
+2025-03-11 18:54:35,654 [DEBUG] fetch_chunk: offset=2129920, chunk_size=2097152, elapsed=0.7668 seconds
+2025-03-11 18:54:35,654 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.7671 seconds
+2025-03-11 18:54:35,655 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:35,655 [DEBUG] fetch_chunks_sync took 0.7680 seconds
+2025-03-11 18:54:35,656 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:35,656 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:35,656 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:35,656 [DEBUG] read: returning 70270 bytes
+2025-03-11 18:54:35,657 [DEBUG] read: fh=10, off=103038, size=32768
+2025-03-11 18:54:35,657 [DEBUG] Getting file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:35,657 [DEBUG] Returning cached file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:35,657 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:35,657 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:35,658 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:35,669 [DEBUG] fetch_chunk: offset=6324224, chunk_size=2097152, elapsed=0.7826 seconds
+2025-03-11 18:54:35,670 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:35,670 [DEBUG] fetch_chunks_sync took 0.7838 seconds
+2025-03-11 18:54:35,670 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:35,670 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:36,169 [DEBUG] fetch_chunk: offset=6394494, chunk_size=2097152, elapsed=0.5122 seconds
+2025-03-11 18:54:36,245 [DEBUG] fetch_chunk: offset=10588798, chunk_size=2097152, elapsed=0.5882 seconds
+2025-03-11 18:54:36,275 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.6168 seconds
+2025-03-11 18:54:36,275 [DEBUG] fetch_chunk: offset=103038, chunk_size=2097152, elapsed=0.6187 seconds
+2025-03-11 18:54:36,276 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:36,276 [DEBUG] fetch_chunks_sync took 0.6186 seconds
+2025-03-11 18:54:36,277 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:36,278 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:36,278 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:36,278 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:36,279 [DEBUG] fetch_chunk: offset=4297342, chunk_size=2097152, elapsed=0.6219 seconds
+2025-03-11 18:54:36,279 [DEBUG] read: fh=10, off=135806, size=53658
+2025-03-11 18:54:36,280 [DEBUG] Getting file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:36,280 [DEBUG] Returning cached file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:36,280 [DEBUG] get_file_attr took 0.0002 seconds
+2025-03-11 18:54:36,280 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:36,280 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:36,280 [DEBUG] fetch_chunk: offset=2200190, chunk_size=2097152, elapsed=0.6236 seconds
+2025-03-11 18:54:36,362 [DEBUG] fetch_chunk: offset=8491646, chunk_size=2097152, elapsed=0.7046 seconds
+2025-03-11 18:54:36,363 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:36,363 [DEBUG] fetch_chunks_sync took 0.7073 seconds
+2025-03-11 18:54:36,363 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:36,363 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:36,377 [DEBUG] fetch_chunk: offset=14712832, chunk_size=2097152, elapsed=0.7063 seconds
+2025-03-11 18:54:36,444 [DEBUG] fetch_chunk: offset=12615680, chunk_size=2097152, elapsed=0.7740 seconds
+2025-03-11 18:54:36,448 [DEBUG] fetch_chunk: offset=16809984, chunk_size=2097152, elapsed=0.7772 seconds
+2025-03-11 18:54:36,481 [DEBUG] fetch_chunk: offset=21004288, chunk_size=2097152, elapsed=0.8105 seconds
+2025-03-11 18:54:36,483 [DEBUG] fetch_chunk: offset=18907136, chunk_size=2097152, elapsed=0.8131 seconds
+2025-03-11 18:54:36,579 [DEBUG] fetch_chunk: offset=23101440, chunk_size=2097152, elapsed=0.9088 seconds
+2025-03-11 18:54:36,580 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:36,580 [DEBUG] fetch_chunks_sync took 0.9099 seconds
+2025-03-11 18:54:36,580 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:36,580 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:36,947 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.6667 seconds
+2025-03-11 18:54:36,948 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:36,948 [DEBUG] fetch_chunks_sync took 0.6680 seconds
+2025-03-11 18:54:36,949 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:36,949 [DEBUG] maybe_prefetch took 0.0002 seconds
+2025-03-11 18:54:36,949 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:36,949 [DEBUG] read: returning 53658 bytes
+2025-03-11 18:54:36,950 [DEBUG] read: fh=10, off=189464, size=32768
+2025-03-11 18:54:36,950 [DEBUG] Getting file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:36,950 [DEBUG] Returning cached file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:36,950 [DEBUG] get_file_attr took 0.0002 seconds
+2025-03-11 18:54:36,950 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:36,952 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:36,957 [DEBUG] fetch_chunk: offset=16809984, chunk_size=2097152, elapsed=0.6781 seconds
+2025-03-11 18:54:36,960 [DEBUG] fetch_chunk: offset=12615680, chunk_size=2097152, elapsed=0.6819 seconds
+2025-03-11 18:54:36,960 [DEBUG] fetch_chunk: offset=18907136, chunk_size=2097152, elapsed=0.6812 seconds
+2025-03-11 18:54:36,963 [DEBUG] fetch_chunk: offset=14712832, chunk_size=2097152, elapsed=0.6843 seconds
+2025-03-11 18:54:36,974 [DEBUG] fetch_chunk: offset=21004288, chunk_size=2097152, elapsed=0.6945 seconds
+2025-03-11 18:54:36,975 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:36,975 [DEBUG] fetch_chunks_sync took 0.6973 seconds
+2025-03-11 18:54:36,975 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:36,975 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:36,991 [DEBUG] fetch_chunk: offset=21074558, chunk_size=2097152, elapsed=0.6274 seconds
+2025-03-11 18:54:36,995 [DEBUG] fetch_chunk: offset=18977406, chunk_size=2097152, elapsed=0.6308 seconds
+2025-03-11 18:54:37,033 [DEBUG] fetch_chunk: offset=14783102, chunk_size=2097152, elapsed=0.6697 seconds
+2025-03-11 18:54:37,092 [DEBUG] fetch_chunk: offset=12685950, chunk_size=2097152, elapsed=0.7283 seconds
+2025-03-11 18:54:37,148 [DEBUG] fetch_chunk: offset=27295744, chunk_size=2097152, elapsed=0.5679 seconds
+2025-03-11 18:54:37,178 [DEBUG] fetch_chunk: offset=25198592, chunk_size=2097152, elapsed=0.5980 seconds
+2025-03-11 18:54:37,197 [DEBUG] fetch_chunk: offset=16880254, chunk_size=2097152, elapsed=0.8337 seconds
+2025-03-11 18:54:37,211 [DEBUG] fetch_chunk: offset=35684352, chunk_size=2097152, elapsed=0.6310 seconds
+2025-03-11 18:54:37,228 [DEBUG] fetch_chunk: offset=31490048, chunk_size=2097152, elapsed=0.6472 seconds
+2025-03-11 18:54:37,312 [DEBUG] fetch_chunk: offset=29392896, chunk_size=2097152, elapsed=0.7313 seconds
+2025-03-11 18:54:37,313 [DEBUG] fetch_chunk: offset=33587200, chunk_size=2097152, elapsed=0.7328 seconds
+2025-03-11 18:54:37,314 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:37,314 [DEBUG] fetch_chunks_sync took 0.7344 seconds
+2025-03-11 18:54:37,315 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:37,315 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:37,428 [DEBUG] fetch_chunk: offset=23171710, chunk_size=2097152, elapsed=1.0642 seconds
+2025-03-11 18:54:37,429 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:37,429 [DEBUG] fetch_chunks_sync took 1.0656 seconds
+2025-03-11 18:54:37,429 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:37,429 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:37,626 [DEBUG] fetch_chunk: offset=29392896, chunk_size=2097152, elapsed=0.6756 seconds
+2025-03-11 18:54:37,652 [DEBUG] fetch_chunk: offset=25198592, chunk_size=2097152, elapsed=0.6774 seconds
+2025-03-11 18:54:37,672 [DEBUG] fetch_chunk: offset=33587200, chunk_size=2097152, elapsed=0.6964 seconds
+2025-03-11 18:54:37,673 [DEBUG] fetch_chunk: offset=31490048, chunk_size=2097152, elapsed=0.6974 seconds
+2025-03-11 18:54:37,676 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.7238 seconds
+2025-03-11 18:54:37,676 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:37,677 [DEBUG] fetch_chunks_sync took 0.7262 seconds
+2025-03-11 18:54:37,677 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:37,677 [DEBUG] maybe_prefetch took 0.0002 seconds
+2025-03-11 18:54:37,677 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:37,677 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:37,679 [DEBUG] read: fh=10, off=9716283, size=32768
+2025-03-11 18:54:37,679 [DEBUG] Getting file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:37,679 [DEBUG] Returning cached file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:37,679 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:37,679 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:37,679 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:37,680 [DEBUG] fetch_chunk: offset=27295744, chunk_size=2097152, elapsed=0.7046 seconds
+2025-03-11 18:54:37,682 [DEBUG] fetch_chunk: offset=25198592, chunk_size=2097152, elapsed=0.7322 seconds
+2025-03-11 18:54:37,685 [DEBUG] fetch_chunk: offset=31490048, chunk_size=2097152, elapsed=0.7350 seconds
+2025-03-11 18:54:37,686 [DEBUG] fetch_chunk: offset=33587200, chunk_size=2097152, elapsed=0.7359 seconds
+2025-03-11 18:54:37,687 [DEBUG] fetch_chunk: offset=29392896, chunk_size=2097152, elapsed=0.7119 seconds
+2025-03-11 18:54:37,688 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:37,688 [DEBUG] fetch_chunks_sync took 0.7134 seconds
+2025-03-11 18:54:37,688 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:37,688 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:37,698 [DEBUG] fetch_chunk: offset=27295744, chunk_size=2097152, elapsed=0.7481 seconds
+2025-03-11 18:54:37,699 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:37,699 [DEBUG] fetch_chunks_sync took 0.7499 seconds
+2025-03-11 18:54:37,699 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:37,699 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:37,913 [DEBUG] fetch_chunk: offset=46170112, chunk_size=2097152, elapsed=0.5977 seconds
+2025-03-11 18:54:37,946 [DEBUG] fetch_chunk: offset=37781504, chunk_size=2097152, elapsed=0.6311 seconds
+2025-03-11 18:54:38,046 [DEBUG] fetch_chunk: offset=25268862, chunk_size=2097152, elapsed=0.6172 seconds
+2025-03-11 18:54:38,065 [DEBUG] fetch_chunk: offset=33657470, chunk_size=2097152, elapsed=0.6356 seconds
+2025-03-11 18:54:38,083 [DEBUG] fetch_chunk: offset=44072960, chunk_size=2097152, elapsed=0.7676 seconds
+2025-03-11 18:54:38,088 [DEBUG] fetch_chunk: offset=41975808, chunk_size=2097152, elapsed=0.7732 seconds
+2025-03-11 18:54:38,091 [DEBUG] fetch_chunk: offset=29463166, chunk_size=2097152, elapsed=0.6616 seconds
+2025-03-11 18:54:38,096 [DEBUG] fetch_chunk: offset=35754622, chunk_size=2097152, elapsed=0.6671 seconds
+2025-03-11 18:54:38,107 [DEBUG] fetch_chunk: offset=39878656, chunk_size=2097152, elapsed=0.7920 seconds
+2025-03-11 18:54:38,108 [DEBUG] fetch_chunk: offset=27366014, chunk_size=2097152, elapsed=0.6785 seconds
+2025-03-11 18:54:38,109 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 200.00 MB; active prefetch threads: 0
+2025-03-11 18:54:38,109 [DEBUG] fetch_chunk: offset=31560318, chunk_size=2097152, elapsed=0.6799 seconds
+2025-03-11 18:54:38,109 [DEBUG] fetch_chunks_sync took 0.7948 seconds
+2025-03-11 18:54:38,112 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 199.79 MB; active prefetch threads: 0
+2025-03-11 18:54:38,112 [DEBUG] fetch_chunks_sync took 0.6832 seconds
+2025-03-11 18:54:38,115 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:38,115 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:38,377 [DEBUG] fetch_chunk: offset=44072960, chunk_size=2097152, elapsed=0.6990 seconds
+2025-03-11 18:54:38,385 [DEBUG] fetch_chunk: offset=8388608, chunk_size=2097152, elapsed=0.7056 seconds
+2025-03-11 18:54:38,386 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 199.79 MB; active prefetch threads: 0
+2025-03-11 18:54:38,386 [DEBUG] fetch_chunks_sync took 0.7065 seconds
+2025-03-11 18:54:38,386 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:38,386 [DEBUG] maybe_prefetch took 0.0002 seconds
+2025-03-11 18:54:38,386 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:38,386 [DEBUG] read: fh=10, off=9749051, size=32768
+2025-03-11 18:54:38,387 [DEBUG] Getting file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:38,387 [DEBUG] Returning cached file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 18:54:38,387 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:38,387 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:38,387 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:38,389 [DEBUG] fetch_chunk: offset=39878656, chunk_size=2097152, elapsed=0.7116 seconds
+2025-03-11 18:54:38,397 [DEBUG] fetch_chunk: offset=44072960, chunk_size=2097152, elapsed=0.6976 seconds
+2025-03-11 18:54:38,404 [DEBUG] fetch_chunk: offset=41975808, chunk_size=2097152, elapsed=0.7047 seconds
+2025-03-11 18:54:38,406 [DEBUG] fetch_chunk: offset=37781504, chunk_size=2097152, elapsed=0.7178 seconds
+2025-03-11 18:54:38,418 [DEBUG] fetch_chunk: offset=39878656, chunk_size=2097152, elapsed=0.7181 seconds
+2025-03-11 18:54:38,419 [DEBUG] fetch_chunk: offset=39878656, chunk_size=2097152, elapsed=0.7303 seconds
+2025-03-11 18:54:38,419 [DEBUG] fetch_chunk: offset=37781504, chunk_size=2097152, elapsed=0.7418 seconds
+2025-03-11 18:54:38,420 [DEBUG] fetch_chunk: offset=44072960, chunk_size=2097152, elapsed=0.7313 seconds
+2025-03-11 18:54:38,420 [DEBUG] fetch_chunk: offset=37781504, chunk_size=2097152, elapsed=0.7208 seconds
+2025-03-11 18:54:38,434 [DEBUG] fetch_chunk: offset=41975808, chunk_size=2097152, elapsed=0.7450 seconds
+2025-03-11 18:54:38,434 [DEBUG] fetch_chunk: offset=41975808, chunk_size=2097152, elapsed=0.7562 seconds
+2025-03-11 18:54:38,437 [DEBUG] fetch_chunk: offset=46170112, chunk_size=2097152, elapsed=0.7485 seconds
+2025-03-11 18:54:38,438 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 199.79 MB; active prefetch threads: 0
+2025-03-11 18:54:38,438 [DEBUG] fetch_chunks_sync took 0.7498 seconds
+2025-03-11 18:54:38,438 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:38,449 [DEBUG] fetch_chunk: offset=46170112, chunk_size=2097152, elapsed=0.7712 seconds
+2025-03-11 18:54:38,449 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 199.79 MB; active prefetch threads: 0
+2025-03-11 18:54:38,449 [DEBUG] fetch_chunks_sync took 0.7726 seconds
+2025-03-11 18:54:38,450 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:38,456 [DEBUG] fetch_chunk: offset=46170112, chunk_size=2097152, elapsed=0.7566 seconds
+2025-03-11 18:54:38,457 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 199.79 MB; active prefetch threads: 0
+2025-03-11 18:54:38,457 [DEBUG] fetch_chunks_sync took 0.7578 seconds
+2025-03-11 18:54:38,458 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:38,707 [DEBUG] fetch_chunk: offset=42046078, chunk_size=2097152, elapsed=0.5911 seconds
+2025-03-11 18:54:38,709 [DEBUG] fetch_chunk: offset=46240382, chunk_size=2097152, elapsed=0.5933 seconds
+2025-03-11 18:54:38,711 [DEBUG] fetch_chunk: offset=37851774, chunk_size=2097152, elapsed=0.5963 seconds
+2025-03-11 18:54:38,712 [DEBUG] fetch_chunk: offset=39948926, chunk_size=2097152, elapsed=0.5964 seconds
+2025-03-11 18:54:38,716 [DEBUG] fetch_chunk: offset=44143230, chunk_size=2097152, elapsed=0.6003 seconds
+2025-03-11 18:54:38,717 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 199.79 MB; active prefetch threads: 0
+2025-03-11 18:54:38,717 [DEBUG] fetch_chunks_sync took 0.6026 seconds
+2025-03-11 18:54:39,023 [DEBUG] fetch_chunk: offset=8388608, chunk_size=2097152, elapsed=0.6358 seconds
+2025-03-11 18:54:39,024 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 199.52 MB; active prefetch threads: 0
+2025-03-11 18:54:39,024 [DEBUG] fetch_chunks_sync took 0.6368 seconds
+2025-03-11 18:54:39,024 [DEBUG] fetch_chunks_sync took 0.0000 seconds
+2025-03-11 18:54:39,024 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:39,024 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:39,033 [DEBUG] open: inode=6, flags=32768
+2025-03-11 18:54:39,033 [DEBUG] read: fh=11, off=0, size=32768
+2025-03-11 18:54:39,033 [DEBUG] Getting file attributes for 'TearsOfSteel.mp4'
+2025-03-11 18:54:39,033 [DEBUG] Returning cached file attributes for 'TearsOfSteel.mp4'
+2025-03-11 18:54:39,033 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:39,033 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:39,033 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:39,651 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.6176 seconds
+2025-03-11 18:54:39,651 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 199.52 MB; active prefetch threads: 0
+2025-03-11 18:54:39,651 [DEBUG] fetch_chunks_sync took 0.6185 seconds
+2025-03-11 18:54:39,652 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:39,652 [DEBUG] maybe_prefetch took 0.0001 seconds
+2025-03-11 18:54:39,652 [DEBUG] read: returning 32768 bytes
+2025-03-11 18:54:39,652 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:39,652 [DEBUG] read: fh=11, off=32768, size=50499
+2025-03-11 18:54:39,652 [DEBUG] Getting file attributes for 'TearsOfSteel.mp4'
+2025-03-11 18:54:39,652 [DEBUG] Returning cached file attributes for 'TearsOfSteel.mp4'
+2025-03-11 18:54:39,652 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 18:54:39,653 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:39,653 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:40,207 [DEBUG] fetch_chunk: offset=4227072, chunk_size=2097152, elapsed=0.5541 seconds
+2025-03-11 18:54:40,258 [DEBUG] fetch_chunk: offset=2129920, chunk_size=2097152, elapsed=0.6050 seconds
+2025-03-11 18:54:40,299 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.6456 seconds
+2025-03-11 18:54:40,299 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 199.52 MB; active prefetch threads: 0
+2025-03-11 18:54:40,299 [DEBUG] fetch_chunks_sync took 0.6469 seconds
+2025-03-11 18:54:40,301 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:40,301 [DEBUG] maybe_prefetch took 0.0002 seconds
+2025-03-11 18:54:40,301 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:40,301 [DEBUG] read: returning 50499 bytes
+2025-03-11 18:54:40,302 [DEBUG] read: fh=11, off=83267, size=32768
+2025-03-11 18:54:40,303 [DEBUG] Getting file attributes for 'TearsOfSteel.mp4'
+2025-03-11 18:54:40,303 [DEBUG] Returning cached file attributes for 'TearsOfSteel.mp4'
+2025-03-11 18:54:40,303 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 18:54:40,303 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:40,303 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:40,317 [DEBUG] fetch_chunk: offset=32768, chunk_size=2097152, elapsed=0.6645 seconds
+2025-03-11 18:54:40,511 [DEBUG] fetch_chunk: offset=10518528, chunk_size=2097152, elapsed=0.8579 seconds
+2025-03-11 18:54:40,515 [DEBUG] fetch_chunk: offset=8421376, chunk_size=2097152, elapsed=0.8627 seconds
+2025-03-11 18:54:40,553 [DEBUG] fetch_chunk: offset=6324224, chunk_size=2097152, elapsed=0.9002 seconds
+2025-03-11 18:54:40,554 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 199.52 MB; active prefetch threads: 0
+2025-03-11 18:54:40,554 [DEBUG] fetch_chunks_sync took 0.9021 seconds
+2025-03-11 18:54:40,554 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:40,554 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:40,848 [INFO] Unmounting filesystem
+2025-03-11 18:54:40,848 [DEBUG] Calling fuse_session_unmount
+2025-03-11 18:54:40,876 [DEBUG] Calling fuse_session_destroy
+2025-03-11 18:54:40,883 [DEBUG] fetch_chunk: offset=2180419, chunk_size=2097152, elapsed=0.5804 seconds
+2025-03-11 18:54:40,890 [DEBUG] fetch_chunk: offset=6374723, chunk_size=2097152, elapsed=0.5881 seconds
+2025-03-11 18:54:40,999 [DEBUG] fetch_chunk: offset=83267, chunk_size=2097152, elapsed=0.6979 seconds
+2025-03-11 18:54:41,002 [DEBUG] fetch_chunk: offset=8471875, chunk_size=2097152, elapsed=0.7003 seconds
+2025-03-11 18:54:41,010 [DEBUG] fetch_chunk: offset=10569027, chunk_size=2097152, elapsed=0.7075 seconds
+2025-03-11 18:54:41,012 [DEBUG] fetch_chunk: offset=4277571, chunk_size=2097152, elapsed=0.7095 seconds
+2025-03-11 18:54:41,013 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 199.52 MB; active prefetch threads: 0
+2025-03-11 18:54:41,013 [DEBUG] fetch_chunks_sync took 0.7118 seconds
+2025-03-11 18:54:41,013 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:41,013 [DEBUG] Using selector: EpollSelector
+2025-03-11 18:54:41,279 [DEBUG] fetch_chunk: offset=14712832, chunk_size=2097152, elapsed=0.7245 seconds
+2025-03-11 18:54:41,310 [DEBUG] fetch_chunk: offset=16809984, chunk_size=2097152, elapsed=0.7556 seconds
+2025-03-11 18:54:41,311 [DEBUG] fetch_chunk: offset=23101440, chunk_size=2097152, elapsed=0.7568 seconds
+2025-03-11 18:54:41,325 [DEBUG] fetch_chunk: offset=18907136, chunk_size=2097152, elapsed=0.7712 seconds
+2025-03-11 18:54:41,338 [DEBUG] fetch_chunk: offset=21004288, chunk_size=2097152, elapsed=0.7839 seconds
+2025-03-11 18:54:41,377 [DEBUG] fetch_chunk: offset=12615680, chunk_size=2097152, elapsed=0.8233 seconds
+2025-03-11 18:54:41,378 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 199.52 MB; active prefetch threads: 0
+2025-03-11 18:54:41,378 [DEBUG] fetch_chunks_sync took 0.8242 seconds
+2025-03-11 18:54:41,380 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 18:54:41,380 [DEBUG] Using selector: EpollSelector

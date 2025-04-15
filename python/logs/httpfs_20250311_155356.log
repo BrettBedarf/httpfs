@@ -1,0 +1,557 @@
+2025-03-11 15:53:56,296 [DEBUG] Initializing pyfuse3
+2025-03-11 15:53:56,297 [DEBUG] Calling fuse_session_new
+2025-03-11 15:53:56,297 [DEBUG] Calling fuse_session_mount
+2025-03-11 15:53:56,299 [INFO] FUSE filesystem mounted on '/mnt/httpfs'
+2025-03-11 15:53:56,300 [DEBUG] pyfuse-02: No tasks waiting, starting another worker (now 2 total).
+2025-03-11 15:53:56,300 [INFO] Update server listening on port 9000
+2025-03-11 15:56:34,124 [DEBUG] getattr: inode=1
+2025-03-11 15:56:34,125 [DEBUG] Getting root attributes
+2025-03-11 15:57:38,882 [DEBUG] get_root_attr took 64.7568 seconds
+2025-03-11 15:57:38,902 [DEBUG] opendir: inode=1
+2025-03-11 15:57:38,902 [DEBUG] readdir: fh=1, start_id=0
+2025-03-11 15:57:38,902 [DEBUG] Getting root attributes
+2025-03-11 15:57:38,902 [DEBUG] get_root_attr took 0.0001 seconds
+2025-03-11 15:57:38,902 [DEBUG] Getting root attributes
+2025-03-11 15:57:38,902 [DEBUG] get_root_attr took 0.0000 seconds
+2025-03-11 15:57:38,903 [DEBUG] Getting file attributes for 'BigBuckBunny.mp4'
+2025-03-11 15:57:38,903 [INFO] Fetching HEAD from remote
+2025-03-11 15:57:38,909 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 15:57:39,095 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/BigBuckBunny.mp4 HTTP/1.1" 200 0
+2025-03-11 15:57:39,096 [DEBUG] Size of 'BigBuckBunny.mp4': 158008374 bytes
+2025-03-11 15:57:39,096 [DEBUG] get_file_attr took 0.1940 seconds
+2025-03-11 15:57:39,096 [DEBUG] readdir: adding entry 'BigBuckBunny.mp4'
+2025-03-11 15:57:39,096 [DEBUG] Getting file attributes for 'ElephantsDream.mp4'
+2025-03-11 15:57:39,097 [INFO] Fetching HEAD from remote
+2025-03-11 15:57:39,097 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 15:57:39,230 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/ElephantsDream.mp4 HTTP/1.1" 200 0
+2025-03-11 15:57:39,230 [DEBUG] Size of 'ElephantsDream.mp4': 169612362 bytes
+2025-03-11 15:57:39,230 [DEBUG] get_file_attr took 0.1336 seconds
+2025-03-11 15:57:39,230 [DEBUG] readdir: adding entry 'ElephantsDream.mp4'
+2025-03-11 15:57:39,230 [DEBUG] Getting file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 15:57:39,230 [INFO] Fetching HEAD from remote
+2025-03-11 15:57:39,231 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 15:57:39,356 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/ForBiggerBlazes.mp4 HTTP/1.1" 200 0
+2025-03-11 15:57:39,356 [DEBUG] Size of 'ForBiggerBlazes.mp4': 2498125 bytes
+2025-03-11 15:57:39,357 [DEBUG] get_file_attr took 0.1264 seconds
+2025-03-11 15:57:39,357 [DEBUG] readdir: adding entry 'ForBiggerBlazes.mp4'
+2025-03-11 15:57:39,357 [DEBUG] Getting file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 15:57:39,357 [INFO] Fetching HEAD from remote
+2025-03-11 15:57:39,357 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 15:57:39,486 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/ForBiggerEscapes.mp4 HTTP/1.1" 200 0
+2025-03-11 15:57:39,487 [DEBUG] Size of 'ForBiggerEscapes.mp4': 2299653 bytes
+2025-03-11 15:57:39,487 [DEBUG] get_file_attr took 0.1302 seconds
+2025-03-11 15:57:39,487 [DEBUG] readdir: adding entry 'ForBiggerEscapes.mp4'
+2025-03-11 15:57:39,487 [DEBUG] Getting file attributes for 'ForBiggerFun.mp4'
+2025-03-11 15:57:39,487 [INFO] Fetching HEAD from remote
+2025-03-11 15:57:39,488 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 15:57:39,612 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/ForBiggerFun.mp4 HTTP/1.1" 200 0
+2025-03-11 15:57:39,612 [DEBUG] Size of 'ForBiggerFun.mp4': 12917485 bytes
+2025-03-11 15:57:39,612 [DEBUG] get_file_attr took 0.1253 seconds
+2025-03-11 15:57:39,612 [DEBUG] readdir: adding entry 'ForBiggerFun.mp4'
+2025-03-11 15:57:39,612 [DEBUG] Getting file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 15:57:39,612 [INFO] Fetching HEAD from remote
+2025-03-11 15:57:39,613 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 15:57:39,744 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/ForBiggerJoyrides.mp4 HTTP/1.1" 200 0
+2025-03-11 15:57:39,745 [DEBUG] Size of 'ForBiggerJoyrides.mp4': 2372820 bytes
+2025-03-11 15:57:39,745 [DEBUG] get_file_attr took 0.1324 seconds
+2025-03-11 15:57:39,745 [DEBUG] readdir: adding entry 'ForBiggerJoyrides.mp4'
+2025-03-11 15:57:39,745 [DEBUG] Getting file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 15:57:39,745 [INFO] Fetching HEAD from remote
+2025-03-11 15:57:39,745 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 15:57:39,868 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4 HTTP/1.1" 200 0
+2025-03-11 15:57:39,868 [DEBUG] Size of 'ForBiggerMeltdowns.mp4': 2252313 bytes
+2025-03-11 15:57:39,868 [DEBUG] get_file_attr took 0.1231 seconds
+2025-03-11 15:57:39,868 [DEBUG] readdir: adding entry 'ForBiggerMeltdowns.mp4'
+2025-03-11 15:57:39,868 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 15:57:39,868 [INFO] Fetching HEAD from remote
+2025-03-11 15:57:39,869 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 15:57:39,994 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/Sintel.mp4 HTTP/1.1" 200 0
+2025-03-11 15:57:39,994 [DEBUG] Size of 'Sintel.mp4': 190612452 bytes
+2025-03-11 15:57:39,994 [DEBUG] get_file_attr took 0.1259 seconds
+2025-03-11 15:57:39,994 [DEBUG] readdir: adding entry 'Sintel.mp4'
+2025-03-11 15:57:39,994 [DEBUG] Getting file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 15:57:39,994 [INFO] Fetching HEAD from remote
+2025-03-11 15:57:39,995 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 15:57:40,122 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4 HTTP/1.1" 200 0
+2025-03-11 15:57:40,122 [DEBUG] Size of 'SubaruOutbackOnStreetAndDirt.mp4': 48051822 bytes
+2025-03-11 15:57:40,122 [DEBUG] get_file_attr took 0.1282 seconds
+2025-03-11 15:57:40,122 [DEBUG] readdir: adding entry 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 15:57:40,122 [DEBUG] Getting file attributes for 'TearsOfSteel.mp4'
+2025-03-11 15:57:40,122 [INFO] Fetching HEAD from remote
+2025-03-11 15:57:40,123 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 15:57:40,246 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/TearsOfSteel.mp4 HTTP/1.1" 200 0
+2025-03-11 15:57:40,246 [DEBUG] Size of 'TearsOfSteel.mp4': 185765954 bytes
+2025-03-11 15:57:40,246 [DEBUG] get_file_attr took 0.1238 seconds
+2025-03-11 15:57:40,246 [DEBUG] readdir: adding entry 'TearsOfSteel.mp4'
+2025-03-11 15:57:40,246 [DEBUG] Getting file attributes for 'VolkswagenGTIReview.mp4'
+2025-03-11 15:57:40,246 [INFO] Fetching HEAD from remote
+2025-03-11 15:57:40,247 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 15:57:40,381 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/VolkswagenGTIReview.mp4 HTTP/1.1" 200 0
+2025-03-11 15:57:40,382 [DEBUG] Size of 'VolkswagenGTIReview.mp4': 43780763 bytes
+2025-03-11 15:57:40,382 [DEBUG] get_file_attr took 0.1358 seconds
+2025-03-11 15:57:40,382 [DEBUG] readdir: adding entry 'VolkswagenGTIReview.mp4'
+2025-03-11 15:57:40,382 [DEBUG] Getting file attributes for 'WeAreGoingOnBullrun.mp4'
+2025-03-11 15:57:40,382 [INFO] Fetching HEAD from remote
+2025-03-11 15:57:40,383 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 15:57:40,507 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4 HTTP/1.1" 200 0
+2025-03-11 15:57:40,507 [DEBUG] Size of 'WeAreGoingOnBullrun.mp4': 13183260 bytes
+2025-03-11 15:57:40,507 [DEBUG] get_file_attr took 0.1256 seconds
+2025-03-11 15:57:40,507 [DEBUG] readdir: adding entry 'WeAreGoingOnBullrun.mp4'
+2025-03-11 15:57:40,508 [DEBUG] Getting file attributes for 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 15:57:40,508 [INFO] Fetching HEAD from remote
+2025-03-11 15:57:40,508 [DEBUG] Starting new HTTP connection (1): commondatastorage.googleapis.com:80
+2025-03-11 15:57:40,632 [DEBUG] http://commondatastorage.googleapis.com:80 "HEAD /gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4 HTTP/1.1" 200 0
+2025-03-11 15:57:40,633 [DEBUG] Size of 'WhatCarCanYouGetForAGrand.mp4': 45577410 bytes
+2025-03-11 15:57:40,633 [DEBUG] get_file_attr took 0.1253 seconds
+2025-03-11 15:57:40,633 [DEBUG] readdir: adding entry 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 15:57:40,633 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 15:57:40,634 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 15:57:40,634 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 15:57:40,634 [DEBUG] opendir: inode=1
+2025-03-11 15:57:40,634 [DEBUG] readdir: fh=1, start_id=15
+2025-03-11 15:57:40,634 [DEBUG] Getting root attributes
+2025-03-11 15:57:40,634 [DEBUG] get_root_attr took 0.0000 seconds
+2025-03-11 15:57:40,634 [DEBUG] Getting root attributes
+2025-03-11 15:57:40,634 [DEBUG] get_root_attr took 0.0000 seconds
+2025-03-11 15:57:40,634 [DEBUG] Getting file attributes for 'BigBuckBunny.mp4'
+2025-03-11 15:57:40,634 [DEBUG] Returning cached file attributes for 'BigBuckBunny.mp4'
+2025-03-11 15:57:40,634 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,634 [DEBUG] readdir: adding entry 'BigBuckBunny.mp4'
+2025-03-11 15:57:40,634 [DEBUG] Getting file attributes for 'ElephantsDream.mp4'
+2025-03-11 15:57:40,634 [DEBUG] Returning cached file attributes for 'ElephantsDream.mp4'
+2025-03-11 15:57:40,634 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,634 [DEBUG] readdir: adding entry 'ElephantsDream.mp4'
+2025-03-11 15:57:40,634 [DEBUG] Getting file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 15:57:40,634 [DEBUG] Returning cached file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 15:57:40,634 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,634 [DEBUG] readdir: adding entry 'ForBiggerBlazes.mp4'
+2025-03-11 15:57:40,634 [DEBUG] Getting file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 15:57:40,634 [DEBUG] Returning cached file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 15:57:40,634 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,634 [DEBUG] readdir: adding entry 'ForBiggerEscapes.mp4'
+2025-03-11 15:57:40,634 [DEBUG] Getting file attributes for 'ForBiggerFun.mp4'
+2025-03-11 15:57:40,634 [DEBUG] Returning cached file attributes for 'ForBiggerFun.mp4'
+2025-03-11 15:57:40,634 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,635 [DEBUG] readdir: adding entry 'ForBiggerFun.mp4'
+2025-03-11 15:57:40,635 [DEBUG] Getting file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 15:57:40,635 [DEBUG] Returning cached file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 15:57:40,635 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,635 [DEBUG] readdir: adding entry 'ForBiggerJoyrides.mp4'
+2025-03-11 15:57:40,635 [DEBUG] Getting file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 15:57:40,635 [DEBUG] Returning cached file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 15:57:40,635 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,635 [DEBUG] readdir: adding entry 'ForBiggerMeltdowns.mp4'
+2025-03-11 15:57:40,635 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 15:57:40,635 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 15:57:40,635 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,635 [DEBUG] readdir: adding entry 'Sintel.mp4'
+2025-03-11 15:57:40,635 [DEBUG] Getting file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 15:57:40,635 [DEBUG] Returning cached file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 15:57:40,635 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,635 [DEBUG] readdir: adding entry 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 15:57:40,635 [DEBUG] Getting file attributes for 'TearsOfSteel.mp4'
+2025-03-11 15:57:40,635 [DEBUG] Returning cached file attributes for 'TearsOfSteel.mp4'
+2025-03-11 15:57:40,635 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,635 [DEBUG] readdir: adding entry 'TearsOfSteel.mp4'
+2025-03-11 15:57:40,635 [DEBUG] Getting file attributes for 'VolkswagenGTIReview.mp4'
+2025-03-11 15:57:40,635 [DEBUG] Returning cached file attributes for 'VolkswagenGTIReview.mp4'
+2025-03-11 15:57:40,635 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,635 [DEBUG] readdir: adding entry 'VolkswagenGTIReview.mp4'
+2025-03-11 15:57:40,635 [DEBUG] Getting file attributes for 'WeAreGoingOnBullrun.mp4'
+2025-03-11 15:57:40,635 [DEBUG] Returning cached file attributes for 'WeAreGoingOnBullrun.mp4'
+2025-03-11 15:57:40,635 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,635 [DEBUG] readdir: adding entry 'WeAreGoingOnBullrun.mp4'
+2025-03-11 15:57:40,635 [DEBUG] Getting file attributes for 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 15:57:40,635 [DEBUG] Returning cached file attributes for 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 15:57:40,635 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,635 [DEBUG] readdir: adding entry 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 15:57:40,635 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 15:57:40,635 [DEBUG] readdir: fh=2, start_id=0
+2025-03-11 15:57:40,635 [DEBUG] Getting root attributes
+2025-03-11 15:57:40,635 [DEBUG] get_root_attr took 0.0000 seconds
+2025-03-11 15:57:40,635 [DEBUG] Getting root attributes
+2025-03-11 15:57:40,635 [DEBUG] get_root_attr took 0.0000 seconds
+2025-03-11 15:57:40,635 [DEBUG] Getting file attributes for 'BigBuckBunny.mp4'
+2025-03-11 15:57:40,635 [DEBUG] Returning cached file attributes for 'BigBuckBunny.mp4'
+2025-03-11 15:57:40,635 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,635 [DEBUG] readdir: adding entry 'BigBuckBunny.mp4'
+2025-03-11 15:57:40,635 [DEBUG] Getting file attributes for 'ElephantsDream.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Returning cached file attributes for 'ElephantsDream.mp4'
+2025-03-11 15:57:40,636 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,636 [DEBUG] readdir: adding entry 'ElephantsDream.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Getting file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Returning cached file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 15:57:40,636 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,636 [DEBUG] readdir: adding entry 'ForBiggerBlazes.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Getting file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Returning cached file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 15:57:40,636 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,636 [DEBUG] readdir: adding entry 'ForBiggerEscapes.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Getting file attributes for 'ForBiggerFun.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Returning cached file attributes for 'ForBiggerFun.mp4'
+2025-03-11 15:57:40,636 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,636 [DEBUG] readdir: adding entry 'ForBiggerFun.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Getting file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Returning cached file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 15:57:40,636 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,636 [DEBUG] readdir: adding entry 'ForBiggerJoyrides.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Getting file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Returning cached file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 15:57:40,636 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,636 [DEBUG] readdir: adding entry 'ForBiggerMeltdowns.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 15:57:40,636 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,636 [DEBUG] readdir: adding entry 'Sintel.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Getting file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Returning cached file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 15:57:40,636 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,636 [DEBUG] readdir: adding entry 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Getting file attributes for 'TearsOfSteel.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Returning cached file attributes for 'TearsOfSteel.mp4'
+2025-03-11 15:57:40,636 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,636 [DEBUG] readdir: adding entry 'TearsOfSteel.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Getting file attributes for 'VolkswagenGTIReview.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Returning cached file attributes for 'VolkswagenGTIReview.mp4'
+2025-03-11 15:57:40,636 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,636 [DEBUG] readdir: adding entry 'VolkswagenGTIReview.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Getting file attributes for 'WeAreGoingOnBullrun.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Returning cached file attributes for 'WeAreGoingOnBullrun.mp4'
+2025-03-11 15:57:40,636 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,636 [DEBUG] readdir: adding entry 'WeAreGoingOnBullrun.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Getting file attributes for 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 15:57:40,636 [DEBUG] Returning cached file attributes for 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 15:57:40,636 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,636 [DEBUG] readdir: adding entry 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 15:57:40,636 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 15:57:40,636 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 15:57:40,636 [DEBUG] readdir: fh=2, start_id=15
+2025-03-11 15:57:40,637 [DEBUG] Getting root attributes
+2025-03-11 15:57:40,637 [DEBUG] get_root_attr took 0.0000 seconds
+2025-03-11 15:57:40,637 [DEBUG] Getting root attributes
+2025-03-11 15:57:40,637 [DEBUG] get_root_attr took 0.0000 seconds
+2025-03-11 15:57:40,637 [DEBUG] Getting file attributes for 'BigBuckBunny.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Returning cached file attributes for 'BigBuckBunny.mp4'
+2025-03-11 15:57:40,637 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,637 [DEBUG] readdir: adding entry 'BigBuckBunny.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Getting file attributes for 'ElephantsDream.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Returning cached file attributes for 'ElephantsDream.mp4'
+2025-03-11 15:57:40,637 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 15:57:40,637 [DEBUG] readdir: adding entry 'ElephantsDream.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Getting file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Returning cached file attributes for 'ForBiggerBlazes.mp4'
+2025-03-11 15:57:40,637 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,637 [DEBUG] readdir: adding entry 'ForBiggerBlazes.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Getting file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Returning cached file attributes for 'ForBiggerEscapes.mp4'
+2025-03-11 15:57:40,637 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,637 [DEBUG] readdir: adding entry 'ForBiggerEscapes.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Getting file attributes for 'ForBiggerFun.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Returning cached file attributes for 'ForBiggerFun.mp4'
+2025-03-11 15:57:40,637 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,637 [DEBUG] readdir: adding entry 'ForBiggerFun.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Getting file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Returning cached file attributes for 'ForBiggerJoyrides.mp4'
+2025-03-11 15:57:40,637 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 15:57:40,637 [DEBUG] readdir: adding entry 'ForBiggerJoyrides.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Getting file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Returning cached file attributes for 'ForBiggerMeltdowns.mp4'
+2025-03-11 15:57:40,637 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,637 [DEBUG] readdir: adding entry 'ForBiggerMeltdowns.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Getting file attributes for 'Sintel.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Returning cached file attributes for 'Sintel.mp4'
+2025-03-11 15:57:40,637 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,637 [DEBUG] readdir: adding entry 'Sintel.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Getting file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Returning cached file attributes for 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 15:57:40,637 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,637 [DEBUG] readdir: adding entry 'SubaruOutbackOnStreetAndDirt.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Getting file attributes for 'TearsOfSteel.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Returning cached file attributes for 'TearsOfSteel.mp4'
+2025-03-11 15:57:40,637 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,637 [DEBUG] readdir: adding entry 'TearsOfSteel.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Getting file attributes for 'VolkswagenGTIReview.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Returning cached file attributes for 'VolkswagenGTIReview.mp4'
+2025-03-11 15:57:40,637 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,637 [DEBUG] readdir: adding entry 'VolkswagenGTIReview.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Getting file attributes for 'WeAreGoingOnBullrun.mp4'
+2025-03-11 15:57:40,637 [DEBUG] Returning cached file attributes for 'WeAreGoingOnBullrun.mp4'
+2025-03-11 15:57:40,637 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,638 [DEBUG] readdir: adding entry 'WeAreGoingOnBullrun.mp4'
+2025-03-11 15:57:40,638 [DEBUG] Getting file attributes for 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 15:57:40,638 [DEBUG] Returning cached file attributes for 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 15:57:40,638 [DEBUG] get_file_attr took 0.0000 seconds
+2025-03-11 15:57:40,638 [DEBUG] readdir: adding entry 'WhatCarCanYouGetForAGrand.mp4'
+2025-03-11 15:57:40,638 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 15:57:40,638 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 15:57:40,638 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 15:57:40,638 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,638 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,638 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,638 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,638 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,638 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,639 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,639 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,639 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,639 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 15:57:40,639 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 15:57:40,639 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 15:57:40,639 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 15:57:40,639 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 15:57:40,639 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 15:57:40,639 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 15:57:40,639 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 15:57:40,639 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 15:57:40,639 [ERROR] lookup: 'mise' not found
+2025-03-11 15:57:40,639 [ERROR] lookup: 'mise' not found
+2025-03-11 15:57:40,640 [ERROR] lookup: 'mise' not found
+2025-03-11 15:57:40,640 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,640 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,640 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,640 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,640 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,640 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,640 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,640 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,640 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,640 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,640 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,640 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,642 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 15:57:40,642 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 15:57:40,642 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 15:57:40,642 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 15:57:40,642 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 15:57:40,642 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 15:57:40,642 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 15:57:40,642 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 15:57:40,642 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 15:57:40,642 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,643 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,643 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,643 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,643 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,643 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,643 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,643 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,643 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,643 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 15:57:40,643 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 15:57:40,643 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 15:57:40,643 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 15:57:40,643 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 15:57:40,643 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 15:57:40,643 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 15:57:40,643 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 15:57:40,644 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 15:57:40,644 [ERROR] lookup: 'mise' not found
+2025-03-11 15:57:40,644 [ERROR] lookup: 'mise' not found
+2025-03-11 15:57:40,644 [ERROR] lookup: 'mise' not found
+2025-03-11 15:57:40,644 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,644 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,644 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,644 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,644 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,644 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,644 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,644 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,644 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,644 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,644 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,644 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,645 [ERROR] lookup: '.tool-versions' not found
+2025-03-11 15:57:40,645 [ERROR] lookup: '.tool-versions' not found
+2025-03-11 15:57:40,645 [ERROR] lookup: '.tool-versions' not found
+2025-03-11 15:57:40,645 [ERROR] lookup: 'rust-toolchain.toml' not found
+2025-03-11 15:57:40,645 [ERROR] lookup: 'rust-toolchain.toml' not found
+2025-03-11 15:57:40,645 [ERROR] lookup: 'rust-toolchain.toml' not found
+2025-03-11 15:57:40,645 [ERROR] lookup: '.hidden' not found
+2025-03-11 15:57:40,645 [ERROR] lookup: 'Gemfile' not found
+2025-03-11 15:57:40,645 [ERROR] lookup: 'Gemfile' not found
+2025-03-11 15:57:40,645 [ERROR] lookup: 'Gemfile' not found
+2025-03-11 15:57:40,645 [ERROR] lookup: '.zig-version' not found
+2025-03-11 15:57:40,645 [ERROR] lookup: '.zig-version' not found
+2025-03-11 15:57:40,645 [ERROR] lookup: '.zig-version' not found
+2025-03-11 15:57:40,645 [ERROR] lookup: '.terraform-version' not found
+2025-03-11 15:57:40,646 [ERROR] lookup: '.terraform-version' not found
+2025-03-11 15:57:40,646 [ERROR] lookup: '.terraform-version' not found
+2025-03-11 15:57:40,646 [ERROR] lookup: '.swift-version' not found
+2025-03-11 15:57:40,646 [ERROR] lookup: '.swift-version' not found
+2025-03-11 15:57:40,646 [ERROR] lookup: '.swift-version' not found
+2025-03-11 15:57:40,646 [ERROR] lookup: '.sdkmanrc' not found
+2025-03-11 15:57:40,646 [ERROR] lookup: '.sdkmanrc' not found
+2025-03-11 15:57:40,646 [ERROR] lookup: '.sdkmanrc' not found
+2025-03-11 15:57:40,646 [ERROR] lookup: '.ruby-version' not found
+2025-03-11 15:57:40,646 [ERROR] lookup: '.ruby-version' not found
+2025-03-11 15:57:40,646 [ERROR] lookup: '.ruby-version' not found
+2025-03-11 15:57:40,646 [ERROR] lookup: '.python-versions' not found
+2025-03-11 15:57:40,647 [ERROR] lookup: '.python-versions' not found
+2025-03-11 15:57:40,647 [ERROR] lookup: '.python-versions' not found
+2025-03-11 15:57:40,647 [ERROR] lookup: '.python-version' not found
+2025-03-11 15:57:40,647 [ERROR] lookup: '.python-version' not found
+2025-03-11 15:57:40,647 [ERROR] lookup: '.python-version' not found
+2025-03-11 15:57:40,647 [ERROR] lookup: '.nvmrc' not found
+2025-03-11 15:57:40,647 [ERROR] lookup: '.nvmrc' not found
+2025-03-11 15:57:40,647 [ERROR] lookup: '.nvmrc' not found
+2025-03-11 15:57:40,647 [ERROR] lookup: '.node-version' not found
+2025-03-11 15:57:40,647 [ERROR] lookup: '.node-version' not found
+2025-03-11 15:57:40,647 [ERROR] lookup: '.node-version' not found
+2025-03-11 15:57:40,647 [ERROR] lookup: '.java-version' not found
+2025-03-11 15:57:40,647 [ERROR] lookup: '.java-version' not found
+2025-03-11 15:57:40,647 [ERROR] lookup: '.java-version' not found
+2025-03-11 15:57:40,647 [ERROR] lookup: '.go-version' not found
+2025-03-11 15:57:40,647 [ERROR] lookup: '.go-version' not found
+2025-03-11 15:57:40,647 [ERROR] lookup: '.go-version' not found
+2025-03-11 15:57:40,648 [ERROR] lookup: '.deno-version' not found
+2025-03-11 15:57:40,648 [ERROR] lookup: '.deno-version' not found
+2025-03-11 15:57:40,648 [ERROR] lookup: '.deno-version' not found
+2025-03-11 15:57:40,648 [ERROR] lookup: '.bun-version' not found
+2025-03-11 15:57:40,648 [ERROR] lookup: '.bun-version' not found
+2025-03-11 15:57:40,648 [ERROR] lookup: '.bun-version' not found
+2025-03-11 15:57:40,663 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 15:57:40,663 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 15:57:40,663 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 15:57:40,663 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 15:57:40,663 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 15:57:40,663 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 15:57:40,664 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 15:57:40,664 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 15:57:40,664 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 15:57:40,664 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,664 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,664 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,664 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,664 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,664 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,664 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,664 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,664 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,664 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 15:57:40,664 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 15:57:40,664 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 15:57:40,665 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 15:57:40,665 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 15:57:40,665 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 15:57:40,665 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 15:57:40,665 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 15:57:40,665 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 15:57:40,665 [ERROR] lookup: 'mise' not found
+2025-03-11 15:57:40,665 [ERROR] lookup: 'mise' not found
+2025-03-11 15:57:40,665 [ERROR] lookup: 'mise' not found
+2025-03-11 15:57:40,665 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,665 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,665 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,665 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,665 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,665 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,666 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,666 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,666 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,666 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,666 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,666 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,667 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 15:57:40,667 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 15:57:40,668 [ERROR] lookup: '.mise.local.toml' not found
+2025-03-11 15:57:40,668 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 15:57:40,668 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 15:57:40,668 [ERROR] lookup: 'mise.local.toml' not found
+2025-03-11 15:57:40,668 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 15:57:40,668 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 15:57:40,668 [ERROR] lookup: '.rtx.local.toml' not found
+2025-03-11 15:57:40,668 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,668 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,668 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,668 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,668 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,669 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,669 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,669 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,669 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,669 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 15:57:40,669 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 15:57:40,669 [ERROR] lookup: '.mise.toml' not found
+2025-03-11 15:57:40,669 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 15:57:40,669 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 15:57:40,669 [ERROR] lookup: 'mise.toml' not found
+2025-03-11 15:57:40,669 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 15:57:40,669 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 15:57:40,669 [ERROR] lookup: '.rtx.toml' not found
+2025-03-11 15:57:40,669 [ERROR] lookup: 'mise' not found
+2025-03-11 15:57:40,669 [ERROR] lookup: 'mise' not found
+2025-03-11 15:57:40,670 [ERROR] lookup: 'mise' not found
+2025-03-11 15:57:40,670 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,670 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,670 [ERROR] lookup: '.mise' not found
+2025-03-11 15:57:40,670 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,670 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,670 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,670 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,670 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,670 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,670 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,670 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,670 [ERROR] lookup: '.config' not found
+2025-03-11 15:57:40,670 [ERROR] lookup: '.tool-versions' not found
+2025-03-11 15:57:40,671 [ERROR] lookup: '.tool-versions' not found
+2025-03-11 15:57:40,671 [ERROR] lookup: '.tool-versions' not found
+2025-03-11 15:57:40,671 [ERROR] lookup: 'rust-toolchain.toml' not found
+2025-03-11 15:57:40,671 [ERROR] lookup: 'rust-toolchain.toml' not found
+2025-03-11 15:57:40,671 [ERROR] lookup: 'rust-toolchain.toml' not found
+2025-03-11 15:57:40,671 [ERROR] lookup: 'Gemfile' not found
+2025-03-11 15:57:40,671 [ERROR] lookup: 'Gemfile' not found
+2025-03-11 15:57:40,671 [ERROR] lookup: 'Gemfile' not found
+2025-03-11 15:57:40,671 [ERROR] lookup: '.zig-version' not found
+2025-03-11 15:57:40,671 [ERROR] lookup: '.zig-version' not found
+2025-03-11 15:57:40,671 [ERROR] lookup: '.zig-version' not found
+2025-03-11 15:57:40,671 [ERROR] lookup: '.terraform-version' not found
+2025-03-11 15:57:40,671 [ERROR] lookup: '.terraform-version' not found
+2025-03-11 15:57:40,671 [ERROR] lookup: '.terraform-version' not found
+2025-03-11 15:57:40,671 [ERROR] lookup: '.swift-version' not found
+2025-03-11 15:57:40,672 [ERROR] lookup: '.swift-version' not found
+2025-03-11 15:57:40,672 [ERROR] lookup: '.swift-version' not found
+2025-03-11 15:57:40,672 [ERROR] lookup: '.sdkmanrc' not found
+2025-03-11 15:57:40,672 [ERROR] lookup: '.sdkmanrc' not found
+2025-03-11 15:57:40,672 [ERROR] lookup: '.sdkmanrc' not found
+2025-03-11 15:57:40,672 [ERROR] lookup: '.ruby-version' not found
+2025-03-11 15:57:40,672 [ERROR] lookup: '.ruby-version' not found
+2025-03-11 15:57:40,672 [ERROR] lookup: '.ruby-version' not found
+2025-03-11 15:57:40,672 [ERROR] lookup: '.python-versions' not found
+2025-03-11 15:57:40,672 [ERROR] lookup: '.python-versions' not found
+2025-03-11 15:57:40,672 [ERROR] lookup: '.python-versions' not found
+2025-03-11 15:57:40,672 [ERROR] lookup: '.python-version' not found
+2025-03-11 15:57:40,672 [ERROR] lookup: '.python-version' not found
+2025-03-11 15:57:40,672 [ERROR] lookup: '.python-version' not found
+2025-03-11 15:57:40,672 [ERROR] lookup: '.nvmrc' not found
+2025-03-11 15:57:40,672 [ERROR] lookup: '.nvmrc' not found
+2025-03-11 15:57:40,673 [ERROR] lookup: '.nvmrc' not found
+2025-03-11 15:57:40,673 [ERROR] lookup: '.node-version' not found
+2025-03-11 15:57:40,673 [ERROR] lookup: '.node-version' not found
+2025-03-11 15:57:40,673 [ERROR] lookup: '.node-version' not found
+2025-03-11 15:57:40,673 [ERROR] lookup: '.java-version' not found
+2025-03-11 15:57:40,673 [ERROR] lookup: '.java-version' not found
+2025-03-11 15:57:40,673 [ERROR] lookup: '.java-version' not found
+2025-03-11 15:57:40,673 [ERROR] lookup: '.go-version' not found
+2025-03-11 15:57:40,673 [ERROR] lookup: '.go-version' not found
+2025-03-11 15:57:40,673 [ERROR] lookup: '.go-version' not found
+2025-03-11 15:57:40,673 [ERROR] lookup: '.deno-version' not found
+2025-03-11 15:57:40,673 [ERROR] lookup: '.deno-version' not found
+2025-03-11 15:57:40,673 [ERROR] lookup: '.deno-version' not found
+2025-03-11 15:57:40,673 [ERROR] lookup: '.bun-version' not found
+2025-03-11 15:57:40,674 [ERROR] lookup: '.bun-version' not found
+2025-03-11 15:57:40,674 [ERROR] lookup: '.bun-version' not found
+2025-03-11 15:57:40,687 [ERROR] lookup: '.git' not found
+2025-03-11 15:57:40,687 [ERROR] lookup: '.python-version' not found
+2025-03-11 15:57:40,688 [ERROR] lookup: '.terraform' not found
+2025-03-11 15:57:40,688 [ERROR] lookup: '.terraform' not found
+2025-03-11 15:57:40,758 [DEBUG] open: inode=2, flags=32768
+2025-03-11 15:57:40,758 [DEBUG] read: fh=3, off=0, size=32768
+2025-03-11 15:57:40,758 [DEBUG] Getting file attributes for 'ElephantsDream.mp4'
+2025-03-11 15:57:40,758 [DEBUG] Returning cached file attributes for 'ElephantsDream.mp4'
+2025-03-11 15:57:40,758 [DEBUG] get_file_attr took 0.0001 seconds
+2025-03-11 15:59:10,488 [DEBUG] fetch_chunks_async took 0.0000 seconds
+2025-03-11 15:59:10,489 [DEBUG] Using selector: EpollSelector
+2025-03-11 15:59:11,108 [DEBUG] fetch_chunk: offset=0, chunk_size=2097152, elapsed=0.6166 seconds
+2025-03-11 16:04:28,305 [DEBUG] fetch_chunks_sync: current file_chunk_cache size: 0.00 MB; active prefetch threads: 0
+2025-03-11 16:04:28,305 [DEBUG] fetch_chunks_sync took 317.8173 seconds

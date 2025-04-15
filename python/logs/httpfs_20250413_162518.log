@@ -1,0 +1,4 @@
+2025-04-13 16:25:18,905 [DEBUG] Initializing pyfuse3
+2025-04-13 16:25:18,905 [DEBUG] Calling fuse_session_new
+2025-04-13 16:25:18,905 [DEBUG] Calling fuse_session_mount
+2025-04-13 16:25:18,910 [INFO] Update server listening on port 9000

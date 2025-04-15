@@ -1,0 +1,25 @@
+2025-04-13 16:31:59,211 [DEBUG] Initializing pyfuse3
+2025-04-13 16:31:59,212 [DEBUG] Calling fuse_session_new
+2025-04-13 16:31:59,212 [DEBUG] Calling fuse_session_mount
+2025-04-13 16:31:59,214 [INFO] FUSE filesystem mounted on '/mnt/httpfs'
+2025-04-13 16:31:59,214 [INFO] Update server listening on port 9000
+2025-04-13 16:31:59,214 [DEBUG] pyfuse-02: No tasks waiting, starting another worker (now 2 total).
+2025-04-13 16:31:59,214 [DEBUG] pyfuse-03: too many idle tasks (2 total, 1 waiting), terminating.
+2025-04-13 16:31:59,214 [DEBUG] pyfuse-03: terminated
+2025-04-13 16:31:59,215 [DEBUG] pyfuse-02: No tasks waiting, starting another worker (now 2 total).
+2025-04-13 16:31:59,215 [DEBUG] getattr: inode=1
+2025-04-13 16:31:59,215 [DEBUG] Getting root attributes
+2025-04-13 16:31:59,215 [DEBUG] get_root_attr took 0.0000 seconds
+2025-04-13 16:31:59,215 [DEBUG] pyfuse-04: too many idle tasks (2 total, 1 waiting), terminating.
+2025-04-13 16:31:59,215 [DEBUG] pyfuse-04: terminated
+2025-04-13 16:31:59,215 [DEBUG] pyfuse-02: No tasks waiting, starting another worker (now 2 total).
+2025-04-13 16:31:59,215 [ERROR] lookup: '.Trash' not found
+2025-04-13 16:31:59,215 [DEBUG] pyfuse-05: too many idle tasks (2 total, 1 waiting), terminating.
+2025-04-13 16:31:59,215 [DEBUG] pyfuse-05: terminated
+2025-04-13 16:31:59,215 [DEBUG] pyfuse-02: No tasks waiting, starting another worker (now 2 total).
+2025-04-13 16:31:59,215 [ERROR] lookup: '.Trash-1000' not found
+2025-04-13 16:31:59,215 [DEBUG] pyfuse-06: too many idle tasks (2 total, 1 waiting), terminating.
+2025-04-13 16:31:59,215 [DEBUG] pyfuse-06: terminated
+2025-04-13 16:32:05,079 [INFO] Unmounting filesystem
+2025-04-13 16:32:05,079 [DEBUG] Calling fuse_session_unmount
+2025-04-13 16:32:05,082 [DEBUG] Calling fuse_session_destroy
